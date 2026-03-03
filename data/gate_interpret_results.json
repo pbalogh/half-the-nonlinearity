@@ -1,0 +1,486 @@
+{
+  "layer_2": {
+    "gate_effective_rank": 6,
+    "geometric_metrics": {
+      "norm": {
+        "linear": "6.8364",
+        "nonlinear": "5.8443"
+      },
+      "activation_entropy": {
+        "linear": "4.7445",
+        "nonlinear": "4.8664"
+      },
+      "kurtosis": {
+        "linear": 68.1068,
+        "nonlinear": 37.1844
+      },
+      "dist_from_mean": {
+        "linear": "5.8354",
+        "nonlinear": "4.7218"
+      },
+      "max_abs_activation": {
+        "linear": "3.2773",
+        "nonlinear": "2.354"
+      },
+      "n_active_dims": {
+        "linear": 71.7737,
+        "nonlinear": 69.1621
+      }
+    },
+    "attn_contrib_ratio": {
+      "linear": "0.1204",
+      "nonlinear": "0.1331"
+    },
+    "correlations": {
+      "gate_score": {
+        "delta": -0.2239,
+        "gate": 1.0
+      },
+      "gate_dir_0": {
+        "delta": 0.1426,
+        "gate": -0.7725
+      },
+      "PC4": {
+        "delta": -0.0375,
+        "gate": 0.1233
+      },
+      "n_active": {
+        "delta": 0.033,
+        "gate": 0.0398
+      },
+      "PC2": {
+        "delta": 0.0278,
+        "gate": -0.1848
+      },
+      "attn_ratio": {
+        "delta": 0.027,
+        "gate": -0.1896
+      },
+      "PC1": {
+        "delta": 0.0268,
+        "gate": 0.0293
+      },
+      "attn_norm": {
+        "delta": 0.0245,
+        "gate": -0.1236
+      },
+      "max_abs": {
+        "delta": -0.0216,
+        "gate": 0.1944
+      },
+      "position": {
+        "delta": 0.0212,
+        "gate": -0.2783
+      },
+      "PC0": {
+        "delta": -0.0198,
+        "gate": 0.2392
+      },
+      "kurtosis": {
+        "delta": -0.0191,
+        "gate": 0.1536
+      },
+      "gate_dir_1": {
+        "delta": 0.0134,
+        "gate": -0.3576
+      },
+      "norm": {
+        "delta": -0.0114,
+        "gate": 0.2625
+      },
+      "dist_from_mean": {
+        "delta": -0.0078,
+        "gate": 0.2662
+      },
+      "PC3": {
+        "delta": -0.007,
+        "gate": 0.3138
+      },
+      "gate_dir_2": {
+        "delta": 0.0018,
+        "gate": -0.225
+      }
+    },
+    "logistic_approx": {
+      "accuracy": 0.8383,
+      "weights": {
+        "PC0": 1.4565,
+        "PC3": 1.1114,
+        "norm": 0.9741,
+        "max_abs": 0.5453,
+        "PC4": 0.4546,
+        "dist_from_mean": 0.4296,
+        "PC1": -0.1827,
+        "PC2": -0.1487,
+        "attn_ratio": 0.1273,
+        "attn_norm": -0.0416,
+        "kurtosis": -0.0372,
+        "n_active": -0.032,
+        "position": 0.0019
+      }
+    }
+  },
+  "layer_5": {
+    "gate_effective_rank": 9,
+    "geometric_metrics": {
+      "norm": {
+        "linear": "6.3611",
+        "nonlinear": "6.4513"
+      },
+      "activation_entropy": {
+        "linear": "5.1271",
+        "nonlinear": "5.0183"
+      },
+      "kurtosis": {
+        "linear": 18.9482,
+        "nonlinear": 30.517
+      },
+      "dist_from_mean": {
+        "linear": "5.3168",
+        "nonlinear": "5.3839"
+      },
+      "max_abs_activation": {
+        "linear": "2.1635",
+        "nonlinear": "2.3159"
+      },
+      "n_active_dims": {
+        "linear": 83.9638,
+        "nonlinear": 82.2788
+      }
+    },
+    "attn_contrib_ratio": {
+      "linear": "0.1315",
+      "nonlinear": "0.1292"
+    },
+    "correlations": {
+      "gate_score": {
+        "delta": -0.2581,
+        "gate": 1.0
+      },
+      "gate_dir_0": {
+        "delta": 0.1756,
+        "gate": -0.7403
+      },
+      "PC3": {
+        "delta": -0.0593,
+        "gate": 0.0016
+      },
+      "n_active": {
+        "delta": 0.0483,
+        "gate": 0.0339
+      },
+      "gate_dir_2": {
+        "delta": -0.0419,
+        "gate": 0.0928
+      },
+      "max_abs": {
+        "delta": -0.0263,
+        "gate": -0.0615
+      },
+      "PC4": {
+        "delta": -0.0228,
+        "gate": -0.0003
+      },
+      "PC1": {
+        "delta": -0.0221,
+        "gate": -0.0558
+      },
+      "kurtosis": {
+        "delta": -0.0211,
+        "gate": -0.0687
+      },
+      "dist_from_mean": {
+        "delta": 0.0205,
+        "gate": -0.0368
+      },
+      "PC0": {
+        "delta": 0.0114,
+        "gate": 0.1606
+      },
+      "norm": {
+        "delta": 0.0097,
+        "gate": -0.0636
+      },
+      "gate_dir_1": {
+        "delta": -0.006,
+        "gate": 0.2111
+      },
+      "attn_ratio": {
+        "delta": 0.0054,
+        "gate": 0.0221
+      },
+      "attn_norm": {
+        "delta": -0.0047,
+        "gate": 0.0624
+      },
+      "position": {
+        "delta": 0.0042,
+        "gate": -0.0518
+      },
+      "PC2": {
+        "delta": -0.0024,
+        "gate": -0.0434
+      }
+    },
+    "logistic_approx": {
+      "accuracy": 0.8037,
+      "weights": {
+        "attn_ratio": -2.4155,
+        "norm": -2.1376,
+        "max_abs": 1.3361,
+        "dist_from_mean": 0.7123,
+        "PC1": -0.3167,
+        "PC0": 0.2887,
+        "PC3": -0.1953,
+        "PC2": -0.1927,
+        "PC4": 0.1359,
+        "kurtosis": -0.0557,
+        "attn_norm": 0.0365,
+        "n_active": -0.0177,
+        "position": -0.003
+      }
+    }
+  },
+  "layer_8": {
+    "gate_effective_rank": 8,
+    "geometric_metrics": {
+      "norm": {
+        "linear": "5.6761",
+        "nonlinear": "5.7308"
+      },
+      "activation_entropy": {
+        "linear": "5.4532",
+        "nonlinear": "5.3804"
+      },
+      "kurtosis": {
+        "linear": 9.6379,
+        "nonlinear": 18.9273
+      },
+      "dist_from_mean": {
+        "linear": "4.9749",
+        "nonlinear": "5.0308"
+      },
+      "max_abs_activation": {
+        "linear": "1.577",
+        "nonlinear": "1.7295"
+      },
+      "n_active_dims": {
+        "linear": 95.7676,
+        "nonlinear": 95.4099
+      }
+    },
+    "attn_contrib_ratio": {
+      "linear": "0.1575",
+      "nonlinear": "0.1549"
+    },
+    "correlations": {
+      "gate_score": {
+        "delta": -0.2536,
+        "gate": 1.0
+      },
+      "gate_dir_0": {
+        "delta": -0.178,
+        "gate": 0.6909
+      },
+      "n_active": {
+        "delta": 0.0755,
+        "gate": -0.0035
+      },
+      "dist_from_mean": {
+        "delta": 0.0751,
+        "gate": -0.0266
+      },
+      "gate_dir_2": {
+        "delta": -0.0715,
+        "gate": 0.3467
+      },
+      "norm": {
+        "delta": 0.0701,
+        "gate": -0.0324
+      },
+      "PC4": {
+        "delta": -0.055,
+        "gate": 0.0309
+      },
+      "PC0": {
+        "delta": -0.048,
+        "gate": 0.0068
+      },
+      "PC1": {
+        "delta": -0.0452,
+        "gate": 0.1223
+      },
+      "attn_norm": {
+        "delta": -0.0397,
+        "gate": 0.0039
+      },
+      "attn_ratio": {
+        "delta": -0.0319,
+        "gate": 0.0154
+      },
+      "gate_dir_1": {
+        "delta": 0.0252,
+        "gate": 0.0766
+      },
+      "kurtosis": {
+        "delta": -0.0212,
+        "gate": -0.0316
+      },
+      "max_abs": {
+        "delta": -0.0163,
+        "gate": -0.0517
+      },
+      "PC2": {
+        "delta": 0.0114,
+        "gate": -0.3041
+      },
+      "PC3": {
+        "delta": -0.0076,
+        "gate": 0.194
+      },
+      "position": {
+        "delta": 0.0036,
+        "gate": -0.1243
+      }
+    },
+    "logistic_approx": {
+      "accuracy": 0.8914,
+      "weights": {
+        "norm": -3.8159,
+        "dist_from_mean": 2.1864,
+        "PC2": -1.4038,
+        "attn_ratio": 1.2707,
+        "max_abs": 1.185,
+        "PC3": 0.5679,
+        "PC1": 0.3844,
+        "PC4": 0.0985,
+        "PC0": 0.0496,
+        "attn_norm": -0.0186,
+        "n_active": 0.0105,
+        "kurtosis": -0.0058,
+        "position": -0.0034
+      }
+    }
+  },
+  "layer_11": {
+    "gate_effective_rank": 9,
+    "geometric_metrics": {
+      "norm": {
+        "linear": "5.278",
+        "nonlinear": "5.5607"
+      },
+      "activation_entropy": {
+        "linear": "5.6783",
+        "nonlinear": "5.5015"
+      },
+      "kurtosis": {
+        "linear": 2.7168,
+        "nonlinear": 9.1836
+      },
+      "dist_from_mean": {
+        "linear": "4.7095",
+        "nonlinear": "4.9577"
+      },
+      "max_abs_activation": {
+        "linear": "1.0499",
+        "nonlinear": "1.3466"
+      },
+      "n_active_dims": {
+        "linear": 96.0184,
+        "nonlinear": 96.8388
+      }
+    },
+    "attn_contrib_ratio": {
+      "linear": "0.5533",
+      "nonlinear": "0.5217"
+    },
+    "correlations": {
+      "gate_score": {
+        "delta": -0.3578,
+        "gate": 1.0
+      },
+      "gate_dir_0": {
+        "delta": -0.3199,
+        "gate": 0.7293
+      },
+      "gate_dir_2": {
+        "delta": 0.2692,
+        "gate": -0.4865
+      },
+      "PC2": {
+        "delta": 0.1732,
+        "gate": -0.3292
+      },
+      "PC4": {
+        "delta": -0.1666,
+        "gate": 0.1573
+      },
+      "norm": {
+        "delta": 0.1366,
+        "gate": -0.1024
+      },
+      "dist_from_mean": {
+        "delta": 0.1354,
+        "gate": -0.0848
+      },
+      "max_abs": {
+        "delta": 0.1317,
+        "gate": -0.2473
+      },
+      "attn_ratio": {
+        "delta": -0.1188,
+        "gate": 0.1273
+      },
+      "n_active": {
+        "delta": 0.092,
+        "gate": -0.0096
+      },
+      "PC3": {
+        "delta": 0.0896,
+        "gate": -0.0689
+      },
+      "gate_dir_1": {
+        "delta": -0.0527,
+        "gate": 0.2696
+      },
+      "kurtosis": {
+        "delta": 0.0518,
+        "gate": -0.0795
+      },
+      "position": {
+        "delta": 0.0462,
+        "gate": -0.0295
+      },
+      "PC0": {
+        "delta": 0.039,
+        "gate": 0.0105
+      },
+      "PC1": {
+        "delta": 0.0352,
+        "gate": -0.2226
+      },
+      "attn_norm": {
+        "delta": 0.0081,
+        "gate": -0.0191
+      }
+    },
+    "logistic_approx": {
+      "accuracy": 0.9225,
+      "weights": {
+        "PC2": -1.8786,
+        "PC1": -1.5402,
+        "PC4": 1.5111,
+        "attn_ratio": 1.2817,
+        "max_abs": 1.0098,
+        "norm": -0.9486,
+        "PC0": 0.293,
+        "kurtosis": -0.2308,
+        "PC3": 0.1271,
+        "dist_from_mean": 0.0473,
+        "n_active": 0.0078,
+        "position": -0.0076,
+        "attn_norm": -0.0038
+      }
+    }
+  }
+}

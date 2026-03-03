@@ -1,0 +1,1061 @@
+{
+  "model": "gpt2-medium",
+  "per_layer": [
+    {
+      "layer": 1,
+      "n_tokens": 50078,
+      "decomposition": {
+        "mean_token_norm": 3.1097,
+        "mean_context_norm": 6.3163,
+        "mean_full_norm": 5.9138,
+        "context_fraction_mean": 1.0698,
+        "context_fraction_std": 0.0357,
+        "cos_token_context_mean": -0.3713,
+        "cos_token_context_std": 0.0574
+      },
+      "gates_median": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.5261,
+          "auc": 0.5361,
+          "pct_linear": 47.3,
+          "n_params": 1025,
+          "direction_norm": 1.4894
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.5186,
+          "auc": 0.5332,
+          "pct_linear": 43.5,
+          "n_params": 1025,
+          "direction_norm": 0.9199
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.5244,
+          "auc": 0.5383,
+          "pct_linear": 46.9,
+          "n_params": 1025,
+          "direction_norm": 0.995
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.5337,
+          "auc": 0.5449,
+          "pct_linear": 42.9,
+          "n_params": 1025,
+          "direction_norm": 1.3368
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.5041,
+          "auc": 0.5,
+          "pct_linear": 49.9,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.4997,
+          "auc": 0.5022,
+          "pct_linear": 52.2,
+          "n_params": 2,
+          "direction_norm": 0.019
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.5299,
+          "auc": 0.5423,
+          "pct_linear": 45.5,
+          "n_params": 1025,
+          "direction_norm": 0.5811
+        }
+      },
+      "gates_q25": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.7434,
+          "auc": 0.5779,
+          "pct_linear": 2.7,
+          "n_params": 1025,
+          "direction_norm": 1.6434
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.7429,
+          "auc": 0.568,
+          "pct_linear": 2.5,
+          "n_params": 1025,
+          "direction_norm": 1.0953
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.7448,
+          "auc": 0.5745,
+          "pct_linear": 2.7,
+          "n_params": 1025,
+          "direction_norm": 1.3814
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.7377,
+          "auc": 0.5794,
+          "pct_linear": 3.2,
+          "n_params": 1025,
+          "direction_norm": 1.8104
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.5013,
+          "auc": 0.5,
+          "pct_linear": 49.9,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.7498,
+          "auc": 0.5164,
+          "pct_linear": 0.0,
+          "n_params": 2,
+          "direction_norm": 0.0689
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.7452,
+          "auc": 0.5703,
+          "pct_linear": 1.9,
+          "n_params": 1025,
+          "direction_norm": 0.7178
+        }
+      },
+      "correlations": {
+        "delta_vs_token_norm": -0.0046,
+        "delta_vs_context_norm": 0.0147,
+        "delta_vs_full_norm": 0.0292,
+        "delta_vs_context_fraction": -0.0583,
+        "delta_vs_cos_ec": 0.0424
+      },
+      "routing_consistency": {
+        "most_consistent": [
+          {
+            "token": "ges",
+            "count": 5,
+            "mean_delta": -0.0013,
+            "var_delta": 0.0,
+            "cv": 4.81
+          },
+          {
+            "token": "isers",
+            "count": 11,
+            "mean_delta": 0.0005,
+            "var_delta": 0.0,
+            "cv": 2.6
+          },
+          {
+            "token": "igate",
+            "count": 6,
+            "mean_delta": 0.0012,
+            "var_delta": 0.0,
+            "cv": 2.31
+          },
+          {
+            "token": "ri",
+            "count": 5,
+            "mean_delta": -0.0024,
+            "var_delta": 0.0,
+            "cv": 2.43
+          },
+          {
+            "token": "ets",
+            "count": 7,
+            "mean_delta": 0.0032,
+            "var_delta": 0.0,
+            "cv": 1.75
+          },
+          {
+            "token": "anders",
+            "count": 9,
+            "mean_delta": -0.0043,
+            "var_delta": 0.0,
+            "cv": 1.5
+          },
+          {
+            "token": "acon",
+            "count": 6,
+            "mean_delta": 0.0004,
+            "var_delta": 0.0,
+            "cv": 1.24
+          },
+          {
+            "token": "ard",
+            "count": 5,
+            "mean_delta": -0.0021,
+            "var_delta": 0.0,
+            "cv": 2.1
+          },
+          {
+            "token": "aga",
+            "count": 5,
+            "mean_delta": -0.0006,
+            "var_delta": 0.0,
+            "cv": 1.75
+          },
+          {
+            "token": "erers",
+            "count": 9,
+            "mean_delta": -0.0003,
+            "var_delta": 0.0,
+            "cv": 1.18
+          },
+          {
+            "token": " Angeles",
+            "count": 10,
+            "mean_delta": 0.0013,
+            "var_delta": 0.0,
+            "cv": 2.14
+          },
+          {
+            "token": "IP",
+            "count": 5,
+            "mean_delta": 0.0007,
+            "var_delta": 0.0,
+            "cv": 5.77
+          },
+          {
+            "token": "cher",
+            "count": 6,
+            "mean_delta": 0.005,
+            "var_delta": 0.0001,
+            "cv": 1.53
+          },
+          {
+            "token": " Crown",
+            "count": 6,
+            "mean_delta": -0.0035,
+            "var_delta": 0.0002,
+            "cv": 3.95
+          },
+          {
+            "token": "board",
+            "count": 6,
+            "mean_delta": 0.0046,
+            "var_delta": 0.0003,
+            "cv": 3.83
+          }
+        ],
+        "most_variable": [
+          {
+            "token": "ore",
+            "count": 9,
+            "mean_delta": -0.4653,
+            "var_delta": 1.5227,
+            "cv": 2.65
+          },
+          {
+            "token": " runs",
+            "count": 8,
+            "mean_delta": 0.7026,
+            "var_delta": 1.4256,
+            "cv": 1.7
+          },
+          {
+            "token": " run",
+            "count": 11,
+            "mean_delta": 0.3803,
+            "var_delta": 1.2521,
+            "cv": 2.94
+          },
+          {
+            "token": " USA",
+            "count": 6,
+            "mean_delta": -0.3836,
+            "var_delta": 1.2513,
+            "cv": 2.92
+          },
+          {
+            "token": " Star",
+            "count": 12,
+            "mean_delta": -0.2125,
+            "var_delta": 0.9331,
+            "cv": 4.55
+          },
+          {
+            "token": ",",
+            "count": 19,
+            "mean_delta": -0.1063,
+            "var_delta": 0.9288,
+            "cv": 9.07
+          },
+          {
+            "token": "uls",
+            "count": 5,
+            "mean_delta": 0.4631,
+            "var_delta": 0.9033,
+            "cv": 2.05
+          },
+          {
+            "token": "aurus",
+            "count": 17,
+            "mean_delta": -0.5092,
+            "var_delta": 0.8964,
+            "cv": 1.86
+          },
+          {
+            "token": " Truth",
+            "count": 5,
+            "mean_delta": 0.4544,
+            "var_delta": 0.8896,
+            "cv": 2.08
+          },
+          {
+            "token": "y",
+            "count": 10,
+            "mean_delta": -0.2107,
+            "var_delta": 0.8752,
+            "cv": 4.44
+          },
+          {
+            "token": " pitchers",
+            "count": 7,
+            "mean_delta": 0.3359,
+            "var_delta": 0.828,
+            "cv": 2.71
+          },
+          {
+            "token": " Adolf",
+            "count": 5,
+            "mean_delta": -0.108,
+            "var_delta": 0.721,
+            "cv": 7.86
+          },
+          {
+            "token": "b",
+            "count": 10,
+            "mean_delta": 0.1214,
+            "var_delta": 0.6496,
+            "cv": 6.64
+          },
+          {
+            "token": "ities",
+            "count": 10,
+            "mean_delta": -0.2597,
+            "var_delta": 0.6234,
+            "cv": 3.04
+          },
+          {
+            "token": " satellite",
+            "count": 13,
+            "mean_delta": 0.1722,
+            "var_delta": 0.5887,
+            "cv": 4.46
+          }
+        ],
+        "overall_mean_variance": 0.062129
+      },
+      "time_seconds": 150.8
+    },
+    {
+      "layer": 12,
+      "n_tokens": 50078,
+      "decomposition": {
+        "mean_token_norm": 3.1097,
+        "mean_context_norm": 8.2938,
+        "mean_full_norm": 7.705,
+        "context_fraction_mean": 1.0761,
+        "context_fraction_std": 0.0315,
+        "cos_token_context_mean": -0.3629,
+        "cos_token_context_std": 0.0637
+      },
+      "gates_median": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.5515,
+          "auc": 0.5785,
+          "pct_linear": 44.0,
+          "n_params": 1025,
+          "direction_norm": 0.6829
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.5532,
+          "auc": 0.5682,
+          "pct_linear": 41.0,
+          "n_params": 1025,
+          "direction_norm": 0.8439
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.5497,
+          "auc": 0.5752,
+          "pct_linear": 44.2,
+          "n_params": 1025,
+          "direction_norm": 0.6829
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.5604,
+          "auc": 0.5793,
+          "pct_linear": 42.8,
+          "n_params": 1025,
+          "direction_norm": 1.3942
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.5004,
+          "auc": 0.5,
+          "pct_linear": 49.9,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.5377,
+          "auc": 0.5577,
+          "pct_linear": 49.5,
+          "n_params": 2,
+          "direction_norm": 0.1599
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.5507,
+          "auc": 0.5719,
+          "pct_linear": 43.6,
+          "n_params": 1025,
+          "direction_norm": 0.5845
+        }
+      },
+      "gates_q25": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.7365,
+          "auc": 0.6028,
+          "pct_linear": 3.2,
+          "n_params": 1025,
+          "direction_norm": 0.866
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.7388,
+          "auc": 0.5651,
+          "pct_linear": 1.7,
+          "n_params": 1025,
+          "direction_norm": 0.991
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.7393,
+          "auc": 0.6001,
+          "pct_linear": 3.0,
+          "n_params": 1025,
+          "direction_norm": 0.8594
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.736,
+          "auc": 0.5808,
+          "pct_linear": 3.0,
+          "n_params": 1025,
+          "direction_norm": 2.0153
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.5005,
+          "auc": 0.5,
+          "pct_linear": 49.9,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.7452,
+          "auc": 0.5484,
+          "pct_linear": 0.0,
+          "n_params": 2,
+          "direction_norm": 0.179
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.7379,
+          "auc": 0.5805,
+          "pct_linear": 2.2,
+          "n_params": 1025,
+          "direction_norm": 0.6908
+        }
+      },
+      "correlations": {
+        "delta_vs_token_norm": -0.006,
+        "delta_vs_context_norm": -0.0097,
+        "delta_vs_full_norm": -0.0105,
+        "delta_vs_context_fraction": -0.0025,
+        "delta_vs_cos_ec": 0.0009
+      },
+      "routing_consistency": {
+        "most_consistent": [
+          {
+            "token": "uls",
+            "count": 5,
+            "mean_delta": 0.0049,
+            "var_delta": 0.0,
+            "cv": 1.34
+          },
+          {
+            "token": "isers",
+            "count": 11,
+            "mean_delta": -0.0001,
+            "var_delta": 0.0,
+            "cv": 8.79
+          },
+          {
+            "token": "acon",
+            "count": 6,
+            "mean_delta": 0.0002,
+            "var_delta": 0.0,
+            "cv": 2.8
+          },
+          {
+            "token": "aga",
+            "count": 5,
+            "mean_delta": 0.0006,
+            "var_delta": 0.0,
+            "cv": 2.39
+          },
+          {
+            "token": "erers",
+            "count": 9,
+            "mean_delta": 0.0024,
+            "var_delta": 0.0,
+            "cv": 0.58
+          },
+          {
+            "token": " Angeles",
+            "count": 10,
+            "mean_delta": 0.0037,
+            "var_delta": 0.0,
+            "cv": 1.65
+          },
+          {
+            "token": "IP",
+            "count": 5,
+            "mean_delta": 0.0032,
+            "var_delta": 0.0,
+            "cv": 0.85
+          },
+          {
+            "token": "ger",
+            "count": 30,
+            "mean_delta": -0.0019,
+            "var_delta": 0.0001,
+            "cv": 4.14
+          },
+          {
+            "token": "igate",
+            "count": 6,
+            "mean_delta": 0.0074,
+            "var_delta": 0.0003,
+            "cv": 2.17
+          },
+          {
+            "token": " related",
+            "count": 6,
+            "mean_delta": -0.0005,
+            "var_delta": 0.0003,
+            "cv": 32.09
+          },
+          {
+            "token": "ifer",
+            "count": 14,
+            "mean_delta": -0.0061,
+            "var_delta": 0.0004,
+            "cv": 3.14
+          },
+          {
+            "token": "anders",
+            "count": 9,
+            "mean_delta": 0.0054,
+            "var_delta": 0.0004,
+            "cv": 3.73
+          },
+          {
+            "token": "bishop",
+            "count": 5,
+            "mean_delta": -0.0137,
+            "var_delta": 0.0004,
+            "cv": 1.54
+          },
+          {
+            "token": "balls",
+            "count": 7,
+            "mean_delta": 0.0195,
+            "var_delta": 0.0004,
+            "cv": 1.0
+          },
+          {
+            "token": "ke",
+            "count": 8,
+            "mean_delta": 0.0193,
+            "var_delta": 0.0007,
+            "cv": 1.37
+          }
+        ],
+        "most_variable": [
+          {
+            "token": " Old",
+            "count": 5,
+            "mean_delta": 0.1346,
+            "var_delta": 1.3032,
+            "cv": 8.48
+          },
+          {
+            "token": " award",
+            "count": 8,
+            "mean_delta": 0.6254,
+            "var_delta": 1.2412,
+            "cv": 1.78
+          },
+          {
+            "token": "ities",
+            "count": 10,
+            "mean_delta": -0.765,
+            "var_delta": 1.1627,
+            "cv": 1.41
+          },
+          {
+            "token": " Brun",
+            "count": 5,
+            "mean_delta": 0.5309,
+            "var_delta": 1.1101,
+            "cv": 1.98
+          },
+          {
+            "token": " Truth",
+            "count": 5,
+            "mean_delta": 0.7129,
+            "var_delta": 0.8973,
+            "cv": 1.33
+          },
+          {
+            "token": " USA",
+            "count": 6,
+            "mean_delta": -0.2659,
+            "var_delta": 0.7577,
+            "cv": 3.27
+          },
+          {
+            "token": " rept",
+            "count": 5,
+            "mean_delta": 0.3865,
+            "var_delta": 0.6381,
+            "cv": 2.07
+          },
+          {
+            "token": " pitchers",
+            "count": 7,
+            "mean_delta": 0.1338,
+            "var_delta": 0.6212,
+            "cv": 5.89
+          },
+          {
+            "token": " man",
+            "count": 6,
+            "mean_delta": 0.1842,
+            "var_delta": 0.6154,
+            "cv": 4.26
+          },
+          {
+            "token": " school",
+            "count": 6,
+            "mean_delta": -0.1818,
+            "var_delta": 0.5749,
+            "cv": 4.17
+          },
+          {
+            "token": " cut",
+            "count": 6,
+            "mean_delta": 0.3367,
+            "var_delta": 0.538,
+            "cv": 2.18
+          },
+          {
+            "token": " Roger",
+            "count": 5,
+            "mean_delta": -0.0602,
+            "var_delta": 0.5294,
+            "cv": 12.08
+          },
+          {
+            "token": "oph",
+            "count": 22,
+            "mean_delta": 0.5116,
+            "var_delta": 0.5272,
+            "cv": 1.42
+          },
+          {
+            "token": "cephal",
+            "count": 6,
+            "mean_delta": -0.4831,
+            "var_delta": 0.512,
+            "cv": 1.48
+          },
+          {
+            "token": " positions",
+            "count": 9,
+            "mean_delta": 0.2901,
+            "var_delta": 0.4915,
+            "cv": 2.42
+          }
+        ],
+        "overall_mean_variance": 0.088977
+      },
+      "time_seconds": 145.3
+    },
+    {
+      "layer": 23,
+      "n_tokens": 50078,
+      "decomposition": {
+        "mean_token_norm": 3.1097,
+        "mean_context_norm": 9.7244,
+        "mean_full_norm": 9.1705,
+        "context_fraction_mean": 1.0607,
+        "context_fraction_std": 0.0368,
+        "cos_token_context_mean": -0.3277,
+        "cos_token_context_std": 0.0875
+      },
+      "gates_median": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.5757,
+          "auc": 0.6088,
+          "pct_linear": 48.7,
+          "n_params": 1025,
+          "direction_norm": 0.9463
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.5434,
+          "auc": 0.5672,
+          "pct_linear": 49.5,
+          "n_params": 1025,
+          "direction_norm": 0.8047
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.5706,
+          "auc": 0.6054,
+          "pct_linear": 49.2,
+          "n_params": 1025,
+          "direction_norm": 0.9233
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.5821,
+          "auc": 0.6065,
+          "pct_linear": 49.8,
+          "n_params": 1025,
+          "direction_norm": 1.6916
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.5033,
+          "auc": 0.5,
+          "pct_linear": 49.9,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.4929,
+          "auc": 0.4991,
+          "pct_linear": 40.3,
+          "n_params": 2,
+          "direction_norm": 0.1196
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.555,
+          "auc": 0.5843,
+          "pct_linear": 47.7,
+          "n_params": 1025,
+          "direction_norm": 0.7054
+        }
+      },
+      "gates_q25": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.74,
+          "auc": 0.6125,
+          "pct_linear": 2.7,
+          "n_params": 1025,
+          "direction_norm": 1.025
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.7388,
+          "auc": 0.5784,
+          "pct_linear": 2.2,
+          "n_params": 1025,
+          "direction_norm": 1.0692
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.7394,
+          "auc": 0.6141,
+          "pct_linear": 2.9,
+          "n_params": 1025,
+          "direction_norm": 0.9992
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.7399,
+          "auc": 0.6245,
+          "pct_linear": 4.1,
+          "n_params": 1025,
+          "direction_norm": 1.8332
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.5032,
+          "auc": 0.5,
+          "pct_linear": 49.9,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.7501,
+          "auc": 0.5339,
+          "pct_linear": 0.0,
+          "n_params": 2,
+          "direction_norm": 0.3247
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.7395,
+          "auc": 0.605,
+          "pct_linear": 2.9,
+          "n_params": 1025,
+          "direction_norm": 0.9016
+        }
+      },
+      "correlations": {
+        "delta_vs_token_norm": -0.0012,
+        "delta_vs_context_norm": 0.0275,
+        "delta_vs_full_norm": 0.038,
+        "delta_vs_context_fraction": -0.0431,
+        "delta_vs_cos_ec": 0.0371
+      },
+      "routing_consistency": {
+        "most_consistent": [
+          {
+            "token": "isers",
+            "count": 11,
+            "mean_delta": 0.0046,
+            "var_delta": 0.0,
+            "cv": 0.94
+          },
+          {
+            "token": "acon",
+            "count": 6,
+            "mean_delta": 0.0017,
+            "var_delta": 0.0,
+            "cv": 0.81
+          },
+          {
+            "token": "erers",
+            "count": 9,
+            "mean_delta": 0.0075,
+            "var_delta": 0.0,
+            "cv": 0.87
+          },
+          {
+            "token": "haw",
+            "count": 106,
+            "mean_delta": 0.0004,
+            "var_delta": 0.0,
+            "cv": 19.18
+          },
+          {
+            "token": " Angeles",
+            "count": 10,
+            "mean_delta": -0.0006,
+            "var_delta": 0.0,
+            "cv": 5.74
+          },
+          {
+            "token": "igate",
+            "count": 6,
+            "mean_delta": 0.0062,
+            "var_delta": 0.0001,
+            "cv": 1.61
+          },
+          {
+            "token": "aga",
+            "count": 5,
+            "mean_delta": 0.0141,
+            "var_delta": 0.0001,
+            "cv": 0.53
+          },
+          {
+            "token": "fax",
+            "count": 14,
+            "mean_delta": 0.0083,
+            "var_delta": 0.0002,
+            "cv": 1.65
+          },
+          {
+            "token": "anders",
+            "count": 9,
+            "mean_delta": -0.0068,
+            "var_delta": 0.0003,
+            "cv": 2.45
+          },
+          {
+            "token": " drums",
+            "count": 6,
+            "mean_delta": -0.066,
+            "var_delta": 0.0004,
+            "cv": 0.3
+          },
+          {
+            "token": "ical",
+            "count": 6,
+            "mean_delta": 0.0394,
+            "var_delta": 0.0009,
+            "cv": 0.77
+          },
+          {
+            "token": " 1985",
+            "count": 5,
+            "mean_delta": -0.0244,
+            "var_delta": 0.001,
+            "cv": 1.28
+          },
+          {
+            "token": "board",
+            "count": 6,
+            "mean_delta": 0.0267,
+            "var_delta": 0.0012,
+            "cv": 1.3
+          },
+          {
+            "token": "bishop",
+            "count": 5,
+            "mean_delta": -0.0131,
+            "var_delta": 0.0013,
+            "cv": 2.72
+          },
+          {
+            "token": "ital",
+            "count": 6,
+            "mean_delta": 0.0538,
+            "var_delta": 0.0014,
+            "cv": 0.7
+          }
+        ],
+        "most_variable": [
+          {
+            "token": " Val",
+            "count": 6,
+            "mean_delta": 2.4929,
+            "var_delta": 3.1249,
+            "cv": 0.71
+          },
+          {
+            "token": "ors",
+            "count": 6,
+            "mean_delta": 0.5335,
+            "var_delta": 1.333,
+            "cv": 2.16
+          },
+          {
+            "token": " \ufffd",
+            "count": 8,
+            "mean_delta": 0.8101,
+            "var_delta": 1.2897,
+            "cv": 1.4
+          },
+          {
+            "token": "ec",
+            "count": 9,
+            "mean_delta": 0.8572,
+            "var_delta": 1.2061,
+            "cv": 1.28
+          },
+          {
+            "token": "p",
+            "count": 9,
+            "mean_delta": 1.1424,
+            "var_delta": 1.204,
+            "cv": 0.96
+          },
+          {
+            "token": " Star",
+            "count": 12,
+            "mean_delta": -0.2877,
+            "var_delta": 1.1442,
+            "cv": 3.72
+          },
+          {
+            "token": "ega",
+            "count": 5,
+            "mean_delta": 0.8507,
+            "var_delta": 1.0844,
+            "cv": 1.22
+          },
+          {
+            "token": "\u00e9",
+            "count": 9,
+            "mean_delta": 0.374,
+            "var_delta": 1.0839,
+            "cv": 2.78
+          },
+          {
+            "token": " Pacific",
+            "count": 5,
+            "mean_delta": 0.535,
+            "var_delta": 1.0811,
+            "cv": 1.94
+          },
+          {
+            "token": "and",
+            "count": 7,
+            "mean_delta": 1.0445,
+            "var_delta": 1.074,
+            "cv": 0.99
+          },
+          {
+            "token": " t",
+            "count": 7,
+            "mean_delta": 0.6174,
+            "var_delta": 1.0368,
+            "cv": 1.65
+          },
+          {
+            "token": "d",
+            "count": 11,
+            "mean_delta": 0.7663,
+            "var_delta": 1.0304,
+            "cv": 1.32
+          },
+          {
+            "token": " Game",
+            "count": 11,
+            "mean_delta": -0.6507,
+            "var_delta": 1.0021,
+            "cv": 1.54
+          },
+          {
+            "token": " An",
+            "count": 6,
+            "mean_delta": 0.537,
+            "var_delta": 0.9864,
+            "cv": 1.85
+          },
+          {
+            "token": " nine",
+            "count": 5,
+            "mean_delta": 0.4379,
+            "var_delta": 0.8597,
+            "cv": 2.12
+          }
+        ],
+        "overall_mean_variance": 0.1417
+      },
+      "time_seconds": 146.3
+    }
+  ]
+}

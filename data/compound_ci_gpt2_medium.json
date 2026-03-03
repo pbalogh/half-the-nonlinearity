@@ -1,0 +1,132 @@
+{
+  "model": "gpt2-medium",
+  "family": "gpt2",
+  "n_layers": 24,
+  "hidden_dim": 1024,
+  "skipped_layers": [],
+  "gated_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "n_eval": 50000,
+  "n_bootstrap": 10000,
+  "baseline": {
+    "ppl": 40.1292,
+    "ci_lo": 38.3736,
+    "ci_hi": 42.0605
+  },
+  "all_linear_compound": {
+    "ppl": 1859.7069,
+    "ci_lo": 1768.3788,
+    "ci_hi": 1955.8942,
+    "delta_pct": 4534.3
+  },
+  "compound_gated": {
+    "ppl": 149.132,
+    "ci_lo": 140.65,
+    "ci_hi": 158.5205,
+    "delta_pct": 271.63,
+    "delta_ci_lo": 250.49,
+    "delta_ci_hi": 295.03,
+    "significant": "\u2705 SIGNIFICANT DEGRADATION",
+    "avg_linear_pct": 47.7,
+    "flops_saved_mlp_pct": 47.7,
+    "flops_saved_total_pct": 31.8
+  },
+  "per_layer": {
+    "0": {
+      "linear_pct": 38.9
+    },
+    "1": {
+      "linear_pct": 43.6
+    },
+    "2": {
+      "linear_pct": 40.3
+    },
+    "3": {
+      "linear_pct": 37.3
+    },
+    "4": {
+      "linear_pct": 36.1
+    },
+    "5": {
+      "linear_pct": 41.6
+    },
+    "6": {
+      "linear_pct": 42.0
+    },
+    "7": {
+      "linear_pct": 45.1
+    },
+    "8": {
+      "linear_pct": 48.2
+    },
+    "9": {
+      "linear_pct": 51.9
+    },
+    "10": {
+      "linear_pct": 55.5
+    },
+    "11": {
+      "linear_pct": 47.2
+    },
+    "12": {
+      "linear_pct": 53.9
+    },
+    "13": {
+      "linear_pct": 46.0
+    },
+    "14": {
+      "linear_pct": 39.8
+    },
+    "15": {
+      "linear_pct": 47.7
+    },
+    "16": {
+      "linear_pct": 64.9
+    },
+    "17": {
+      "linear_pct": 64.2
+    },
+    "18": {
+      "linear_pct": 52.7
+    },
+    "19": {
+      "linear_pct": 54.3
+    },
+    "20": {
+      "linear_pct": 63.4
+    },
+    "21": {
+      "linear_pct": 50.9
+    },
+    "22": {
+      "linear_pct": 42.1
+    },
+    "23": {
+      "linear_pct": 37.3
+    }
+  }
+}

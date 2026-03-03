@@ -1,0 +1,34 @@
+{
+  "model": "gpt2-medium",
+  "mode": "full_linear",
+  "linear_layers": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "ft_steps": 2000,
+  "baseline": {
+    "wikitext-103": 22.983386325605338,
+    "wikitext-2": 26.972443288252254,
+    "lambada": 40.421122269589645,
+    "c4": 25.016365773338737,
+    "hellaswag_acc": 0.395
+  },
+  "modified": {
+    "wikitext-103": 20.729611858844876,
+    "wikitext-2": 19.694587569830883,
+    "lambada": 55.68395516720897,
+    "c4": 40.50974320224379,
+    "hellaswag_acc": 0.35
+  },
+  "deltas": {
+    "wikitext-103": -9.80610269884197,
+    "wikitext-2": -26.98256009158508,
+    "lambada": 37.75954758461058,
+    "c4": 61.932966479955944
+  },
+  "n_better": 2,
+  "n_worse": 2,
+  "n_total": 4
+}

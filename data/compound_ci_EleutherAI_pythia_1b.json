@@ -1,0 +1,95 @@
+{
+  "model": "EleutherAI/pythia-1b",
+  "family": "gpt_neox",
+  "n_layers": 16,
+  "hidden_dim": 2048,
+  "skipped_layers": [
+    3,
+    15
+  ],
+  "gated_layers": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "n_eval": 50000,
+  "n_bootstrap": 10000,
+  "baseline": {
+    "ppl": 28.1892,
+    "ci_lo": 26.8947,
+    "ci_hi": 29.665
+  },
+  "all_linear_compound": {
+    "ppl": 1245.3628,
+    "ci_lo": 1178.0158,
+    "ci_hi": 1313.2248,
+    "delta_pct": 4317.88
+  },
+  "compound_gated": {
+    "ppl": 59.8452,
+    "ci_lo": 56.6729,
+    "ci_hi": 63.3694,
+    "delta_pct": 112.3,
+    "delta_ci_lo": 101.04,
+    "delta_ci_hi": 124.8,
+    "significant": "\u2705 SIGNIFICANT DEGRADATION",
+    "avg_linear_pct": 34.4,
+    "flops_saved_mlp_pct": 30.1,
+    "flops_saved_total_pct": 20.1
+  },
+  "per_layer": {
+    "0": {
+      "linear_pct": 8.4
+    },
+    "1": {
+      "linear_pct": 30.7
+    },
+    "2": {
+      "linear_pct": 22.5
+    },
+    "4": {
+      "linear_pct": 22.0
+    },
+    "5": {
+      "linear_pct": 28.3
+    },
+    "6": {
+      "linear_pct": 54.3
+    },
+    "7": {
+      "linear_pct": 29.8
+    },
+    "8": {
+      "linear_pct": 33.4
+    },
+    "9": {
+      "linear_pct": 44.3
+    },
+    "10": {
+      "linear_pct": 41.8
+    },
+    "11": {
+      "linear_pct": 27.7
+    },
+    "12": {
+      "linear_pct": 48.0
+    },
+    "13": {
+      "linear_pct": 42.8
+    },
+    "14": {
+      "linear_pct": 47.4
+    }
+  }
+}

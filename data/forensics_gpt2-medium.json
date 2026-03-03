@@ -1,0 +1,2033 @@
+{
+  "model": "gpt2-medium",
+  "n_tokens": 5000,
+  "layers_analyzed": [
+    1,
+    12,
+    23
+  ],
+  "per_layer": [
+    {
+      "layer": 1,
+      "regression": {
+        "feature_importances": {
+          "log_frequency": 0.015041,
+          "log_rank": 0.027824,
+          "is_subword": 0.03643,
+          "char_length": 0.004944,
+          "is_function_word": 0.000442,
+          "position_normalized": 0.001026,
+          "unigram_surprise": -0.015041,
+          "next_token_entropy": -0.003007,
+          "is_alpha": -0.010374,
+          "starts_word": 0.034584
+        },
+        "r_squared": 0.0072,
+        "n_samples": 5110,
+        "ranked_features": [
+          {
+            "name": "is_subword",
+            "coef": 0.03643
+          },
+          {
+            "name": "starts_word",
+            "coef": 0.034584
+          },
+          {
+            "name": "log_rank",
+            "coef": 0.027824
+          },
+          {
+            "name": "unigram_surprise",
+            "coef": -0.015041
+          },
+          {
+            "name": "log_frequency",
+            "coef": 0.015041
+          },
+          {
+            "name": "is_alpha",
+            "coef": -0.010374
+          },
+          {
+            "name": "char_length",
+            "coef": 0.004944
+          },
+          {
+            "name": "next_token_entropy",
+            "coef": -0.003007
+          },
+          {
+            "name": "position_normalized",
+            "coef": 0.001026
+          },
+          {
+            "name": "is_function_word",
+            "coef": 0.000442
+          }
+        ]
+      },
+      "category_stats": {
+        "punctuation": {
+          "count": 520,
+          "mean_delta": 0.042853,
+          "median_delta": 0.036088,
+          "std_delta": 0.232889,
+          "pct_mlp_helps": 67.1,
+          "pct_linear_better": 32.9
+        },
+        "negation": {
+          "count": 7,
+          "mean_delta": 0.0375,
+          "median_delta": 0.001241,
+          "std_delta": 0.117351,
+          "pct_mlp_helps": 71.4,
+          "pct_linear_better": 28.6
+        },
+        "subword": {
+          "count": 379,
+          "mean_delta": 0.030635,
+          "median_delta": 0.00044,
+          "std_delta": 0.324902,
+          "pct_mlp_helps": 54.1,
+          "pct_linear_better": 45.9
+        },
+        "content_word": {
+          "count": 2194,
+          "mean_delta": 0.013293,
+          "median_delta": 0.005505,
+          "std_delta": 0.233801,
+          "pct_mlp_helps": 52.5,
+          "pct_linear_better": 47.5
+        },
+        "pronoun": {
+          "count": 127,
+          "mean_delta": 0.010506,
+          "median_delta": 0.008034,
+          "std_delta": 0.179432,
+          "pct_mlp_helps": 54.3,
+          "pct_linear_better": 45.7
+        },
+        "determiner": {
+          "count": 607,
+          "mean_delta": 0.004763,
+          "median_delta": -0.000272,
+          "std_delta": 0.143364,
+          "pct_mlp_helps": 49.9,
+          "pct_linear_better": 50.1
+        },
+        "conjunction": {
+          "count": 167,
+          "mean_delta": 0.003979,
+          "median_delta": 0.002905,
+          "std_delta": 0.165328,
+          "pct_mlp_helps": 51.5,
+          "pct_linear_better": 48.5
+        },
+        "preposition": {
+          "count": 540,
+          "mean_delta": -0.001863,
+          "median_delta": -7.4e-05,
+          "std_delta": 0.159051,
+          "pct_mlp_helps": 49.8,
+          "pct_linear_better": 50.2
+        },
+        "whitespace": {
+          "count": 84,
+          "mean_delta": -0.005876,
+          "median_delta": -0.004808,
+          "std_delta": 0.179765,
+          "pct_mlp_helps": 46.4,
+          "pct_linear_better": 53.6
+        },
+        "auxiliary": {
+          "count": 121,
+          "mean_delta": -0.006391,
+          "median_delta": -0.004473,
+          "std_delta": 0.108155,
+          "pct_mlp_helps": 47.9,
+          "pct_linear_better": 52.1
+        },
+        "symbol": {
+          "count": 360,
+          "mean_delta": -0.016305,
+          "median_delta": -0.001885,
+          "std_delta": 0.218035,
+          "pct_mlp_helps": 48.6,
+          "pct_linear_better": 51.4
+        }
+      },
+      "top_need_mlp": [
+        {
+          "token_id": 1123,
+          "text": " each",
+          "mean_delta": 0.551284,
+          "count": 4,
+          "std": 0.435756,
+          "category": "determiner"
+        },
+        {
+          "token_id": 469,
+          "text": "ge",
+          "mean_delta": 0.498119,
+          "count": 3,
+          "std": 0.476546,
+          "category": "subword"
+        },
+        {
+          "token_id": 4474,
+          "text": " establish",
+          "mean_delta": 0.493474,
+          "count": 3,
+          "std": 0.15103,
+          "category": "content_word"
+        },
+        {
+          "token_id": 5753,
+          "text": "uls",
+          "mean_delta": 0.463069,
+          "count": 5,
+          "std": 0.950443,
+          "category": "subword"
+        },
+        {
+          "token_id": 5249,
+          "text": " combat",
+          "mean_delta": 0.411185,
+          "count": 5,
+          "std": 0.592806,
+          "category": "content_word"
+        },
+        {
+          "token_id": 32193,
+          "text": " Headquarters",
+          "mean_delta": 0.363497,
+          "count": 3,
+          "std": 0.149256,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3790,
+          "text": " officers",
+          "mean_delta": 0.312778,
+          "count": 3,
+          "std": 0.454793,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1633,
+          "text": " air",
+          "mean_delta": 0.280198,
+          "count": 4,
+          "std": 0.35744,
+          "category": "content_word"
+        },
+        {
+          "token_id": 904,
+          "text": "ward",
+          "mean_delta": 0.251911,
+          "count": 12,
+          "std": 0.249796,
+          "category": "subword"
+        },
+        {
+          "token_id": 37628,
+          "text": " ni",
+          "mean_delta": 0.23798,
+          "count": 5,
+          "std": 0.369669,
+          "category": "content_word"
+        },
+        {
+          "token_id": 5323,
+          "text": " 500",
+          "mean_delta": 0.230771,
+          "count": 3,
+          "std": 0.175105,
+          "category": "symbol"
+        },
+        {
+          "token_id": 3951,
+          "text": " lines",
+          "mean_delta": 0.2237,
+          "count": 7,
+          "std": 0.244371,
+          "category": "content_word"
+        },
+        {
+          "token_id": 10181,
+          "text": " battles",
+          "mean_delta": 0.221343,
+          "count": 3,
+          "std": 0.024419,
+          "category": "content_word"
+        },
+        {
+          "token_id": 15447,
+          "text": " Tank",
+          "mean_delta": 0.220322,
+          "count": 5,
+          "std": 0.094767,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3434,
+          "text": " attacks",
+          "mean_delta": 0.215939,
+          "count": 4,
+          "std": 0.12622,
+          "category": "content_word"
+        },
+        {
+          "token_id": 45333,
+          "text": " marines",
+          "mean_delta": 0.212563,
+          "count": 5,
+          "std": 0.358777,
+          "category": "content_word"
+        },
+        {
+          "token_id": 23164,
+          "text": " Engineer",
+          "mean_delta": 0.200226,
+          "count": 5,
+          "std": 0.407269,
+          "category": "content_word"
+        },
+        {
+          "token_id": 2063,
+          "text": " half",
+          "mean_delta": 0.186889,
+          "count": 3,
+          "std": 0.110555,
+          "category": "content_word"
+        },
+        {
+          "token_id": 6116,
+          "text": " positions",
+          "mean_delta": 0.180293,
+          "count": 7,
+          "std": 0.34201,
+          "category": "content_word"
+        },
+        {
+          "token_id": 18468,
+          "text": " PE",
+          "mean_delta": 0.17587,
+          "count": 6,
+          "std": 0.206878,
+          "category": "content_word"
+        },
+        {
+          "token_id": 10571,
+          "text": " km",
+          "mean_delta": 0.174917,
+          "count": 6,
+          "std": 0.129021,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1281,
+          "text": " post",
+          "mean_delta": 0.174601,
+          "count": 5,
+          "std": 0.245639,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1913,
+          "text": " strong",
+          "mean_delta": 0.166642,
+          "count": 3,
+          "std": 0.43987,
+          "category": "content_word"
+        },
+        {
+          "token_id": 4330,
+          "text": " fighting",
+          "mean_delta": 0.165681,
+          "count": 3,
+          "std": 0.183915,
+          "category": "content_word"
+        },
+        {
+          "token_id": 11657,
+          "text": " tanks",
+          "mean_delta": 0.154937,
+          "count": 3,
+          "std": 0.098262,
+          "category": "content_word"
+        }
+      ],
+      "top_linear_ok": [
+        {
+          "token_id": 11,
+          "text": ",",
+          "mean_delta": -0.45191,
+          "count": 9,
+          "std": 1.1564,
+          "category": "punctuation"
+        },
+        {
+          "token_id": 4202,
+          "text": " strength",
+          "mean_delta": -0.414783,
+          "count": 5,
+          "std": 0.405941,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1989,
+          "text": " area",
+          "mean_delta": -0.324552,
+          "count": 4,
+          "std": 0.243255,
+          "category": "content_word"
+        },
+        {
+          "token_id": 8286,
+          "text": " rear",
+          "mean_delta": -0.307321,
+          "count": 7,
+          "std": 0.753372,
+          "category": "content_word"
+        },
+        {
+          "token_id": 35588,
+          "text": " Regiment",
+          "mean_delta": -0.249857,
+          "count": 8,
+          "std": 0.287879,
+          "category": "content_word"
+        },
+        {
+          "token_id": 30172,
+          "text": " flank",
+          "mean_delta": -0.239226,
+          "count": 3,
+          "std": 0.050848,
+          "category": "content_word"
+        },
+        {
+          "token_id": 10120,
+          "text": " Walker",
+          "mean_delta": -0.231378,
+          "count": 4,
+          "std": 0.417761,
+          "category": "content_word"
+        },
+        {
+          "token_id": 2524,
+          "text": " site",
+          "mean_delta": -0.218688,
+          "count": 3,
+          "std": 0.346012,
+          "category": "content_word"
+        },
+        {
+          "token_id": 8030,
+          "text": " friendly",
+          "mean_delta": -0.203578,
+          "count": 3,
+          "std": 0.089243,
+          "category": "content_word"
+        },
+        {
+          "token_id": 2293,
+          "text": " After",
+          "mean_delta": -0.19639,
+          "count": 4,
+          "std": 0.303282,
+          "category": "preposition"
+        },
+        {
+          "token_id": 604,
+          "text": " 4",
+          "mean_delta": -0.19311,
+          "count": 8,
+          "std": 0.292279,
+          "category": "symbol"
+        },
+        {
+          "token_id": 9361,
+          "text": " attempting",
+          "mean_delta": -0.179917,
+          "count": 3,
+          "std": 0.116124,
+          "category": "content_word"
+        },
+        {
+          "token_id": 11515,
+          "text": " reserve",
+          "mean_delta": -0.172057,
+          "count": 3,
+          "std": 0.011706,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3767,
+          "text": " continued",
+          "mean_delta": -0.169916,
+          "count": 5,
+          "std": 0.179459,
+          "category": "content_word"
+        },
+        {
+          "token_id": 6167,
+          "text": " label",
+          "mean_delta": -0.169846,
+          "count": 4,
+          "std": 0.141577,
+          "category": "content_word"
+        },
+        {
+          "token_id": 2005,
+          "text": " cut",
+          "mean_delta": -0.164147,
+          "count": 3,
+          "std": 0.044954,
+          "category": "content_word"
+        },
+        {
+          "token_id": 517,
+          "text": " more",
+          "mean_delta": -0.15527,
+          "count": 4,
+          "std": 0.138754,
+          "category": "determiner"
+        },
+        {
+          "token_id": 2162,
+          "text": " ;",
+          "mean_delta": -0.151271,
+          "count": 4,
+          "std": 0.181508,
+          "category": "punctuation"
+        },
+        {
+          "token_id": 1679,
+          "text": " 25",
+          "mean_delta": -0.147798,
+          "count": 4,
+          "std": 0.139125,
+          "category": "symbol"
+        },
+        {
+          "token_id": 5127,
+          "text": " supply",
+          "mean_delta": -0.140502,
+          "count": 5,
+          "std": 0.202581,
+          "category": "content_word"
+        },
+        {
+          "token_id": 925,
+          "text": " made",
+          "mean_delta": -0.139355,
+          "count": 5,
+          "std": 0.116688,
+          "category": "content_word"
+        },
+        {
+          "token_id": 276,
+          "text": "ed",
+          "mean_delta": -0.13827,
+          "count": 8,
+          "std": 0.214341,
+          "category": "subword"
+        },
+        {
+          "token_id": 866,
+          "text": " down",
+          "mean_delta": -0.137711,
+          "count": 6,
+          "std": 0.147251,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1664,
+          "text": " company",
+          "mean_delta": -0.136755,
+          "count": 5,
+          "std": 0.05489,
+          "category": "content_word"
+        },
+        {
+          "token_id": 31,
+          "text": "@",
+          "mean_delta": -0.134991,
+          "count": 36,
+          "std": 0.254218,
+          "category": "symbol"
+        }
+      ],
+      "hypotheses": {
+        "H1_frequency": {
+          "correlation": 0.0044,
+          "direction": "frequent tokens need MLP more"
+        },
+        "H2_entropy": {
+          "correlation": -0.0206,
+          "direction": "low-entropy positions need MLP more"
+        },
+        "H3_function_word": {
+          "correlation": 0.0021
+        },
+        "H4_subword": {
+          "correlation": 0.023
+        },
+        "H5_position": {
+          "correlation": 0.0047
+        },
+        "H6_prediction_agreement": {
+          "correlation": 0.0427,
+          "agreement_rate": 92.2
+        },
+        "H7_kl_divergence": {
+          "mean_kl": 0.0182,
+          "median_kl": 0.0091,
+          "corr_with_delta": -0.2244
+        }
+      },
+      "univariate_r2": {
+        "is_subword": 0.0005,
+        "next_token_entropy": 0.0004,
+        "starts_word": 0.0003,
+        "is_alpha": 0.0001,
+        "log_frequency": 0.0,
+        "log_rank": 0.0,
+        "char_length": 0.0,
+        "is_function_word": 0.0,
+        "position_normalized": 0.0,
+        "unigram_surprise": 0.0
+      },
+      "narrative": {
+        "dominant_feature": "is_subword",
+        "most_mlp_needy_category": "punctuation",
+        "regression_r2": 0.007166866583891651,
+        "top3_need_mlp_tokens": [
+          " each",
+          "ge",
+          " establish"
+        ],
+        "top3_linear_ok_tokens": [
+          ",",
+          " strength",
+          " area"
+        ]
+      },
+      "time_seconds": 29.8
+    },
+    {
+      "layer": 12,
+      "regression": {
+        "feature_importances": {
+          "log_frequency": -0.005491,
+          "log_rank": 0.007718,
+          "is_subword": 0.004361,
+          "char_length": -0.00646,
+          "is_function_word": 0.00017,
+          "position_normalized": 0.002144,
+          "unigram_surprise": 0.005491,
+          "next_token_entropy": 0.004212,
+          "is_alpha": 0.022299,
+          "starts_word": 0.006872
+        },
+        "r_squared": 0.0129,
+        "n_samples": 5110,
+        "ranked_features": [
+          {
+            "name": "is_alpha",
+            "coef": 0.022299
+          },
+          {
+            "name": "log_rank",
+            "coef": 0.007718
+          },
+          {
+            "name": "starts_word",
+            "coef": 0.006872
+          },
+          {
+            "name": "char_length",
+            "coef": -0.00646
+          },
+          {
+            "name": "unigram_surprise",
+            "coef": 0.005491
+          },
+          {
+            "name": "log_frequency",
+            "coef": -0.005491
+          },
+          {
+            "name": "is_subword",
+            "coef": 0.004361
+          },
+          {
+            "name": "next_token_entropy",
+            "coef": 0.004212
+          },
+          {
+            "name": "position_normalized",
+            "coef": 0.002144
+          },
+          {
+            "name": "is_function_word",
+            "coef": 0.00017
+          }
+        ]
+      },
+      "category_stats": {
+        "pronoun": {
+          "count": 127,
+          "mean_delta": 0.050608,
+          "median_delta": 0.017087,
+          "std_delta": 0.313856,
+          "pct_mlp_helps": 53.5,
+          "pct_linear_better": 46.5
+        },
+        "content_word": {
+          "count": 2194,
+          "mean_delta": 0.048966,
+          "median_delta": 0.034655,
+          "std_delta": 0.317134,
+          "pct_mlp_helps": 58.1,
+          "pct_linear_better": 41.9
+        },
+        "subword": {
+          "count": 379,
+          "mean_delta": 0.041841,
+          "median_delta": 0.001722,
+          "std_delta": 0.255214,
+          "pct_mlp_helps": 62.3,
+          "pct_linear_better": 37.7
+        },
+        "conjunction": {
+          "count": 167,
+          "mean_delta": 0.039754,
+          "median_delta": 0.035336,
+          "std_delta": 0.276371,
+          "pct_mlp_helps": 59.9,
+          "pct_linear_better": 40.1
+        },
+        "auxiliary": {
+          "count": 121,
+          "mean_delta": 0.026363,
+          "median_delta": 0.032649,
+          "std_delta": 0.191734,
+          "pct_mlp_helps": 62.0,
+          "pct_linear_better": 38.0
+        },
+        "determiner": {
+          "count": 607,
+          "mean_delta": 0.013157,
+          "median_delta": 0.017204,
+          "std_delta": 0.204873,
+          "pct_mlp_helps": 56.2,
+          "pct_linear_better": 43.8
+        },
+        "whitespace": {
+          "count": 84,
+          "mean_delta": 0.009926,
+          "median_delta": 0.013528,
+          "std_delta": 0.180603,
+          "pct_mlp_helps": 58.3,
+          "pct_linear_better": 41.7
+        },
+        "preposition": {
+          "count": 540,
+          "mean_delta": 0.008399,
+          "median_delta": 0.005469,
+          "std_delta": 0.217501,
+          "pct_mlp_helps": 54.8,
+          "pct_linear_better": 45.2
+        },
+        "punctuation": {
+          "count": 520,
+          "mean_delta": -0.025691,
+          "median_delta": -0.016163,
+          "std_delta": 0.213509,
+          "pct_mlp_helps": 43.1,
+          "pct_linear_better": 56.9
+        },
+        "symbol": {
+          "count": 360,
+          "mean_delta": -0.050374,
+          "median_delta": -0.00628,
+          "std_delta": 0.314396,
+          "pct_mlp_helps": 47.8,
+          "pct_linear_better": 52.2
+        },
+        "negation": {
+          "count": 7,
+          "mean_delta": -0.063182,
+          "median_delta": -0.030647,
+          "std_delta": 0.153479,
+          "pct_mlp_helps": 28.6,
+          "pct_linear_better": 71.4
+        }
+      },
+      "top_need_mlp": [
+        {
+          "token_id": 393,
+          "text": " or",
+          "mean_delta": 0.555902,
+          "count": 6,
+          "std": 0.801153,
+          "category": "conjunction"
+        },
+        {
+          "token_id": 625,
+          "text": " over",
+          "mean_delta": 0.414129,
+          "count": 3,
+          "std": 0.07701,
+          "category": "preposition"
+        },
+        {
+          "token_id": 3311,
+          "text": " Rec",
+          "mean_delta": 0.402227,
+          "count": 4,
+          "std": 0.255974,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3352,
+          "text": " plans",
+          "mean_delta": 0.400367,
+          "count": 3,
+          "std": 0.214419,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1566,
+          "text": " until",
+          "mean_delta": 0.384818,
+          "count": 4,
+          "std": 0.267147,
+          "category": "conjunction"
+        },
+        {
+          "token_id": 5243,
+          "text": " radio",
+          "mean_delta": 0.369659,
+          "count": 4,
+          "std": 0.262152,
+          "category": "content_word"
+        },
+        {
+          "token_id": 440,
+          "text": " O",
+          "mean_delta": 0.34865,
+          "count": 6,
+          "std": 0.507002,
+          "category": "content_word"
+        },
+        {
+          "token_id": 25840,
+          "text": " numbered",
+          "mean_delta": 0.326641,
+          "count": 3,
+          "std": 0.265642,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3356,
+          "text": " movement",
+          "mean_delta": 0.322957,
+          "count": 3,
+          "std": 0.523364,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1664,
+          "text": " company",
+          "mean_delta": 0.314678,
+          "count": 5,
+          "std": 0.641486,
+          "category": "content_word"
+        },
+        {
+          "token_id": 6167,
+          "text": " label",
+          "mean_delta": 0.303625,
+          "count": 4,
+          "std": 0.125135,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1811,
+          "text": " several",
+          "mean_delta": 0.291892,
+          "count": 5,
+          "std": 0.140699,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3434,
+          "text": " attacks",
+          "mean_delta": 0.291458,
+          "count": 4,
+          "std": 0.278905,
+          "category": "content_word"
+        },
+        {
+          "token_id": 9075,
+          "text": " Hay",
+          "mean_delta": 0.286735,
+          "count": 3,
+          "std": 0.282661,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1568,
+          "text": " later",
+          "mean_delta": 0.2817,
+          "count": 4,
+          "std": 0.06294,
+          "category": "content_word"
+        },
+        {
+          "token_id": 14487,
+          "text": " Combat",
+          "mean_delta": 0.281416,
+          "count": 3,
+          "std": 0.220246,
+          "category": "content_word"
+        },
+        {
+          "token_id": 18468,
+          "text": " PE",
+          "mean_delta": 0.276617,
+          "count": 6,
+          "std": 0.499522,
+          "category": "content_word"
+        },
+        {
+          "token_id": 12788,
+          "text": " hill",
+          "mean_delta": 0.269358,
+          "count": 8,
+          "std": 0.235934,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1816,
+          "text": " went",
+          "mean_delta": 0.26826,
+          "count": 3,
+          "std": 0.037011,
+          "category": "content_word"
+        },
+        {
+          "token_id": 354,
+          "text": "ch",
+          "mean_delta": 0.26335,
+          "count": 3,
+          "std": 0.426675,
+          "category": "subword"
+        },
+        {
+          "token_id": 34792,
+          "text": " regiment",
+          "mean_delta": 0.260015,
+          "count": 3,
+          "std": 0.151204,
+          "category": "content_word"
+        },
+        {
+          "token_id": 477,
+          "text": " all",
+          "mean_delta": 0.259146,
+          "count": 8,
+          "std": 0.303438,
+          "category": "determiner"
+        },
+        {
+          "token_id": 4202,
+          "text": " strength",
+          "mean_delta": 0.258835,
+          "count": 5,
+          "std": 0.297211,
+          "category": "content_word"
+        },
+        {
+          "token_id": 318,
+          "text": " is",
+          "mean_delta": 0.256601,
+          "count": 3,
+          "std": 0.221592,
+          "category": "auxiliary"
+        },
+        {
+          "token_id": 28850,
+          "text": " grenades",
+          "mean_delta": 0.254719,
+          "count": 5,
+          "std": 0.285079,
+          "category": "content_word"
+        }
+      ],
+      "top_linear_ok": [
+        {
+          "token_id": 3571,
+          "text": " 00",
+          "mean_delta": -0.500098,
+          "count": 8,
+          "std": 0.343524,
+          "category": "symbol"
+        },
+        {
+          "token_id": 21831,
+          "text": " fox",
+          "mean_delta": -0.42287,
+          "count": 4,
+          "std": 0.334426,
+          "category": "content_word"
+        },
+        {
+          "token_id": 8372,
+          "text": " southern",
+          "mean_delta": -0.386989,
+          "count": 3,
+          "std": 0.052759,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1913,
+          "text": " strong",
+          "mean_delta": -0.366871,
+          "count": 3,
+          "std": 0.093856,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3344,
+          "text": " battle",
+          "mean_delta": -0.315798,
+          "count": 3,
+          "std": 0.396039,
+          "category": "content_word"
+        },
+        {
+          "token_id": 28815,
+          "text": " 209",
+          "mean_delta": -0.296991,
+          "count": 4,
+          "std": 0.500117,
+          "category": "symbol"
+        },
+        {
+          "token_id": 517,
+          "text": " more",
+          "mean_delta": -0.280619,
+          "count": 4,
+          "std": 0.353297,
+          "category": "determiner"
+        },
+        {
+          "token_id": 3761,
+          "text": " defense",
+          "mean_delta": -0.265182,
+          "count": 3,
+          "std": 0.183823,
+          "category": "content_word"
+        },
+        {
+          "token_id": 26010,
+          "text": " daylight",
+          "mean_delta": -0.264375,
+          "count": 4,
+          "std": 0.259146,
+          "category": "content_word"
+        },
+        {
+          "token_id": 26012,
+          "text": " Brigade",
+          "mean_delta": -0.261491,
+          "count": 3,
+          "std": 0.193823,
+          "category": "content_word"
+        },
+        {
+          "token_id": 4353,
+          "text": " 38",
+          "mean_delta": -0.259098,
+          "count": 9,
+          "std": 0.409214,
+          "category": "symbol"
+        },
+        {
+          "token_id": 2448,
+          "text": " Per",
+          "mean_delta": -0.251652,
+          "count": 7,
+          "std": 0.291711,
+          "category": "content_word"
+        },
+        {
+          "token_id": 6133,
+          "text": " aid",
+          "mean_delta": -0.246934,
+          "count": 3,
+          "std": 0.414687,
+          "category": "content_word"
+        },
+        {
+          "token_id": 807,
+          "text": " 8",
+          "mean_delta": -0.242899,
+          "count": 6,
+          "std": 0.172283,
+          "category": "symbol"
+        },
+        {
+          "token_id": 8207,
+          "text": "iel",
+          "mean_delta": -0.236313,
+          "count": 4,
+          "std": 0.409645,
+          "category": "subword"
+        },
+        {
+          "token_id": 43161,
+          "text": " Provision",
+          "mean_delta": -0.235103,
+          "count": 3,
+          "std": 0.093521,
+          "category": "content_word"
+        },
+        {
+          "token_id": 46465,
+          "text": " NK",
+          "mean_delta": -0.215795,
+          "count": 9,
+          "std": 0.487928,
+          "category": "content_word"
+        },
+        {
+          "token_id": 991,
+          "text": " still",
+          "mean_delta": -0.212293,
+          "count": 3,
+          "std": 0.270348,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3006,
+          "text": " areas",
+          "mean_delta": -0.211556,
+          "count": 3,
+          "std": 0.132634,
+          "category": "content_word"
+        },
+        {
+          "token_id": 523,
+          "text": " so",
+          "mean_delta": -0.183827,
+          "count": 3,
+          "std": 0.30858,
+          "category": "conjunction"
+        },
+        {
+          "token_id": 5407,
+          "text": " Army",
+          "mean_delta": -0.181671,
+          "count": 3,
+          "std": 0.221781,
+          "category": "content_word"
+        },
+        {
+          "token_id": 6873,
+          "text": " tank",
+          "mean_delta": -0.180152,
+          "count": 9,
+          "std": 0.366745,
+          "category": "content_word"
+        },
+        {
+          "token_id": 11657,
+          "text": " tanks",
+          "mean_delta": -0.17762,
+          "count": 3,
+          "std": 0.256689,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3226,
+          "text": " Of",
+          "mean_delta": -0.175827,
+          "count": 3,
+          "std": 0.085075,
+          "category": "preposition"
+        },
+        {
+          "token_id": 3377,
+          "text": " spent",
+          "mean_delta": -0.175259,
+          "count": 3,
+          "std": 0.209381,
+          "category": "content_word"
+        }
+      ],
+      "hypotheses": {
+        "H1_frequency": {
+          "correlation": -0.0858,
+          "direction": "rare tokens need MLP more"
+        },
+        "H2_entropy": {
+          "correlation": 0.0306,
+          "direction": "high-entropy positions need MLP more"
+        },
+        "H3_function_word": {
+          "correlation": -0.0495
+        },
+        "H4_subword": {
+          "correlation": 0.0165
+        },
+        "H5_position": {
+          "correlation": 0.0019
+        },
+        "H6_prediction_agreement": {
+          "correlation": -0.0253,
+          "agreement_rate": 88.4
+        },
+        "H7_kl_divergence": {
+          "mean_kl": 0.0347,
+          "median_kl": 0.024,
+          "corr_with_delta": 0.1136
+        }
+      },
+      "univariate_r2": {
+        "is_alpha": 0.0093,
+        "log_frequency": 0.0074,
+        "unigram_surprise": 0.0074,
+        "log_rank": 0.0072,
+        "char_length": 0.004,
+        "is_function_word": 0.0025,
+        "next_token_entropy": 0.0009,
+        "is_subword": 0.0003,
+        "starts_word": 0.0001,
+        "position_normalized": 0.0
+      },
+      "narrative": {
+        "dominant_feature": "is_alpha",
+        "most_mlp_needy_category": "pronoun",
+        "regression_r2": 0.012941325135389703,
+        "top3_need_mlp_tokens": [
+          " or",
+          " over",
+          " Rec"
+        ],
+        "top3_linear_ok_tokens": [
+          " 00",
+          " fox",
+          " southern"
+        ]
+      },
+      "time_seconds": 28.2
+    },
+    {
+      "layer": 23,
+      "regression": {
+        "feature_importances": {
+          "log_frequency": 0.044991,
+          "log_rank": 0.107783,
+          "is_subword": 0.002837,
+          "char_length": -0.016261,
+          "is_function_word": -0.00223,
+          "position_normalized": -0.000993,
+          "unigram_surprise": -0.044991,
+          "next_token_entropy": 0.01169,
+          "is_alpha": 0.022255,
+          "starts_word": 0.001358
+        },
+        "r_squared": 0.0081,
+        "n_samples": 5110,
+        "ranked_features": [
+          {
+            "name": "log_rank",
+            "coef": 0.107783
+          },
+          {
+            "name": "unigram_surprise",
+            "coef": -0.044991
+          },
+          {
+            "name": "log_frequency",
+            "coef": 0.044991
+          },
+          {
+            "name": "is_alpha",
+            "coef": 0.022255
+          },
+          {
+            "name": "char_length",
+            "coef": -0.016261
+          },
+          {
+            "name": "next_token_entropy",
+            "coef": 0.01169
+          },
+          {
+            "name": "is_subword",
+            "coef": 0.002837
+          },
+          {
+            "name": "is_function_word",
+            "coef": -0.00223
+          },
+          {
+            "name": "starts_word",
+            "coef": 0.001358
+          },
+          {
+            "name": "position_normalized",
+            "coef": -0.000993
+          }
+        ]
+      },
+      "category_stats": {
+        "negation": {
+          "count": 7,
+          "mean_delta": 0.100199,
+          "median_delta": -0.000126,
+          "std_delta": 0.227533,
+          "pct_mlp_helps": 42.9,
+          "pct_linear_better": 57.1
+        },
+        "whitespace": {
+          "count": 84,
+          "mean_delta": 0.091981,
+          "median_delta": 0.048811,
+          "std_delta": 0.306184,
+          "pct_mlp_helps": 59.5,
+          "pct_linear_better": 40.5
+        },
+        "content_word": {
+          "count": 2194,
+          "mean_delta": 0.073798,
+          "median_delta": 0.032516,
+          "std_delta": 0.367962,
+          "pct_mlp_helps": 56.1,
+          "pct_linear_better": 43.9
+        },
+        "preposition": {
+          "count": 540,
+          "mean_delta": 0.070586,
+          "median_delta": 0.017098,
+          "std_delta": 0.231886,
+          "pct_mlp_helps": 55.4,
+          "pct_linear_better": 44.6
+        },
+        "subword": {
+          "count": 379,
+          "mean_delta": 0.064139,
+          "median_delta": 0.00752,
+          "std_delta": 0.523731,
+          "pct_mlp_helps": 66.8,
+          "pct_linear_better": 33.2
+        },
+        "determiner": {
+          "count": 607,
+          "mean_delta": 0.04012,
+          "median_delta": -0.00271,
+          "std_delta": 0.245702,
+          "pct_mlp_helps": 49.1,
+          "pct_linear_better": 50.9
+        },
+        "conjunction": {
+          "count": 167,
+          "mean_delta": 0.034036,
+          "median_delta": -0.020088,
+          "std_delta": 0.326314,
+          "pct_mlp_helps": 45.5,
+          "pct_linear_better": 54.5
+        },
+        "punctuation": {
+          "count": 520,
+          "mean_delta": 0.015694,
+          "median_delta": -0.020185,
+          "std_delta": 0.352996,
+          "pct_mlp_helps": 46.3,
+          "pct_linear_better": 53.7
+        },
+        "pronoun": {
+          "count": 127,
+          "mean_delta": -0.013738,
+          "median_delta": -0.055141,
+          "std_delta": 0.31824,
+          "pct_mlp_helps": 43.3,
+          "pct_linear_better": 56.7
+        },
+        "symbol": {
+          "count": 360,
+          "mean_delta": -0.022206,
+          "median_delta": -0.020129,
+          "std_delta": 0.284964,
+          "pct_mlp_helps": 43.3,
+          "pct_linear_better": 56.7
+        },
+        "auxiliary": {
+          "count": 121,
+          "mean_delta": -0.024705,
+          "median_delta": -0.056999,
+          "std_delta": 0.215955,
+          "pct_mlp_helps": 38.0,
+          "pct_linear_better": 62.0
+        }
+      },
+      "top_need_mlp": [
+        {
+          "token_id": 67,
+          "text": "d",
+          "mean_delta": 1.516757,
+          "count": 3,
+          "std": 0.680175,
+          "category": "subword"
+        },
+        {
+          "token_id": 261,
+          "text": "on",
+          "mean_delta": 1.157111,
+          "count": 3,
+          "std": 0.651317,
+          "category": "preposition"
+        },
+        {
+          "token_id": 1281,
+          "text": " post",
+          "mean_delta": 0.863561,
+          "count": 5,
+          "std": 0.53392,
+          "category": "content_word"
+        },
+        {
+          "token_id": 83,
+          "text": "t",
+          "mean_delta": 0.857585,
+          "count": 12,
+          "std": 0.717639,
+          "category": "subword"
+        },
+        {
+          "token_id": 842,
+          "text": " reg",
+          "mean_delta": 0.775132,
+          "count": 10,
+          "std": 0.3311,
+          "category": "content_word"
+        },
+        {
+          "token_id": 5243,
+          "text": " radio",
+          "mean_delta": 0.736466,
+          "count": 4,
+          "std": 0.162146,
+          "category": "content_word"
+        },
+        {
+          "token_id": 835,
+          "text": " way",
+          "mean_delta": 0.725193,
+          "count": 3,
+          "std": 0.479573,
+          "category": "content_word"
+        },
+        {
+          "token_id": 21831,
+          "text": " fox",
+          "mean_delta": 0.722705,
+          "count": 4,
+          "std": 0.258352,
+          "category": "content_word"
+        },
+        {
+          "token_id": 4847,
+          "text": " elements",
+          "mean_delta": 0.681577,
+          "count": 3,
+          "std": 0.323342,
+          "category": "content_word"
+        },
+        {
+          "token_id": 425,
+          "text": "ive",
+          "mean_delta": 0.670504,
+          "count": 4,
+          "std": 0.968115,
+          "category": "subword"
+        },
+        {
+          "token_id": 4330,
+          "text": " fighting",
+          "mean_delta": 0.669658,
+          "count": 3,
+          "std": 0.613775,
+          "category": "content_word"
+        },
+        {
+          "token_id": 34792,
+          "text": " regiment",
+          "mean_delta": 0.661007,
+          "count": 3,
+          "std": 0.305489,
+          "category": "content_word"
+        },
+        {
+          "token_id": 2046,
+          "text": " fire",
+          "mean_delta": 0.631606,
+          "count": 12,
+          "std": 0.392033,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1598,
+          "text": " clear",
+          "mean_delta": 0.620847,
+          "count": 3,
+          "std": 0.193535,
+          "category": "content_word"
+        },
+        {
+          "token_id": 282,
+          "text": "al",
+          "mean_delta": 0.551835,
+          "count": 3,
+          "std": 0.321429,
+          "category": "subword"
+        },
+        {
+          "token_id": 7297,
+          "text": " division",
+          "mean_delta": 0.551567,
+          "count": 8,
+          "std": 0.38691,
+          "category": "content_word"
+        },
+        {
+          "token_id": 11657,
+          "text": " tanks",
+          "mean_delta": 0.537139,
+          "count": 3,
+          "std": 0.052849,
+          "category": "content_word"
+        },
+        {
+          "token_id": 6108,
+          "text": " estimated",
+          "mean_delta": 0.520667,
+          "count": 6,
+          "std": 0.300817,
+          "category": "content_word"
+        },
+        {
+          "token_id": 6116,
+          "text": " positions",
+          "mean_delta": 0.496275,
+          "count": 7,
+          "std": 0.324886,
+          "category": "content_word"
+        },
+        {
+          "token_id": 46465,
+          "text": " NK",
+          "mean_delta": 0.485684,
+          "count": 9,
+          "std": 0.187973,
+          "category": "content_word"
+        },
+        {
+          "token_id": 15447,
+          "text": " Tank",
+          "mean_delta": 0.44641,
+          "count": 5,
+          "std": 0.262675,
+          "category": "content_word"
+        },
+        {
+          "token_id": 6110,
+          "text": " defensive",
+          "mean_delta": 0.438704,
+          "count": 3,
+          "std": 0.325521,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1128,
+          "text": " rep",
+          "mean_delta": 0.420128,
+          "count": 4,
+          "std": 0.240727,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3274,
+          "text": " First",
+          "mean_delta": 0.419746,
+          "count": 5,
+          "std": 0.170734,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3223,
+          "text": " dark",
+          "mean_delta": 0.417829,
+          "count": 4,
+          "std": 0.238065,
+          "category": "content_word"
+        }
+      ],
+      "top_linear_ok": [
+        {
+          "token_id": 356,
+          "text": " we",
+          "mean_delta": -0.425874,
+          "count": 4,
+          "std": 0.084597,
+          "category": "pronoun"
+        },
+        {
+          "token_id": 1816,
+          "text": " went",
+          "mean_delta": -0.416805,
+          "count": 3,
+          "std": 0.176718,
+          "category": "content_word"
+        },
+        {
+          "token_id": 11,
+          "text": ",",
+          "mean_delta": -0.37567,
+          "count": 9,
+          "std": 1.115478,
+          "category": "punctuation"
+        },
+        {
+          "token_id": 1566,
+          "text": " until",
+          "mean_delta": -0.375466,
+          "count": 4,
+          "std": 0.27412,
+          "category": "conjunction"
+        },
+        {
+          "token_id": 4474,
+          "text": " establish",
+          "mean_delta": -0.351418,
+          "count": 3,
+          "std": 0.224548,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1982,
+          "text": " Mc",
+          "mean_delta": -0.321601,
+          "count": 3,
+          "std": 0.258013,
+          "category": "content_word"
+        },
+        {
+          "token_id": 8598,
+          "text": " mountain",
+          "mean_delta": -0.295694,
+          "count": 3,
+          "std": 0.258893,
+          "category": "content_word"
+        },
+        {
+          "token_id": 6572,
+          "text": " destroyed",
+          "mean_delta": -0.292146,
+          "count": 6,
+          "std": 0.334351,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1627,
+          "text": " line",
+          "mean_delta": -0.2766,
+          "count": 4,
+          "std": 0.13382,
+          "category": "content_word"
+        },
+        {
+          "token_id": 7384,
+          "text": " attacked",
+          "mean_delta": -0.273562,
+          "count": 5,
+          "std": 0.507213,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1294,
+          "text": " US",
+          "mean_delta": -0.270326,
+          "count": 26,
+          "std": 0.322081,
+          "category": "pronoun"
+        },
+        {
+          "token_id": 736,
+          "text": " back",
+          "mean_delta": -0.265818,
+          "count": 5,
+          "std": 0.204367,
+          "category": "content_word"
+        },
+        {
+          "token_id": 2628,
+          "text": " groups",
+          "mean_delta": -0.262367,
+          "count": 3,
+          "std": 0.078655,
+          "category": "content_word"
+        },
+        {
+          "token_id": 5407,
+          "text": " Army",
+          "mean_delta": -0.255667,
+          "count": 3,
+          "std": 0.115356,
+          "category": "content_word"
+        },
+        {
+          "token_id": 440,
+          "text": " O",
+          "mean_delta": -0.247298,
+          "count": 6,
+          "std": 0.219036,
+          "category": "content_word"
+        },
+        {
+          "token_id": 4991,
+          "text": " units",
+          "mean_delta": -0.246039,
+          "count": 8,
+          "std": 0.3453,
+          "category": "content_word"
+        },
+        {
+          "token_id": 6553,
+          "text": " troops",
+          "mean_delta": -0.244895,
+          "count": 11,
+          "std": 0.271011,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1568,
+          "text": " later",
+          "mean_delta": -0.243539,
+          "count": 4,
+          "std": 0.30719,
+          "category": "content_word"
+        },
+        {
+          "token_id": 8372,
+          "text": " southern",
+          "mean_delta": -0.240983,
+          "count": 3,
+          "std": 0.208284,
+          "category": "content_word"
+        },
+        {
+          "token_id": 1368,
+          "text": " attack",
+          "mean_delta": -0.234978,
+          "count": 15,
+          "std": 0.287632,
+          "category": "content_word"
+        },
+        {
+          "token_id": 2524,
+          "text": " site",
+          "mean_delta": -0.23093,
+          "count": 3,
+          "std": 0.505148,
+          "category": "content_word"
+        },
+        {
+          "token_id": 327,
+          "text": " C",
+          "mean_delta": -0.229553,
+          "count": 4,
+          "std": 0.391675,
+          "category": "content_word"
+        },
+        {
+          "token_id": 3006,
+          "text": " areas",
+          "mean_delta": -0.224982,
+          "count": 3,
+          "std": 0.587323,
+          "category": "content_word"
+        },
+        {
+          "token_id": 506,
+          "text": "ong",
+          "mean_delta": -0.212649,
+          "count": 25,
+          "std": 0.659842,
+          "category": "subword"
+        },
+        {
+          "token_id": 904,
+          "text": "ward",
+          "mean_delta": -0.212493,
+          "count": 12,
+          "std": 0.304842,
+          "category": "subword"
+        }
+      ],
+      "hypotheses": {
+        "H1_frequency": {
+          "correlation": -0.0586,
+          "direction": "rare tokens need MLP more"
+        },
+        "H2_entropy": {
+          "correlation": 0.0377,
+          "direction": "high-entropy positions need MLP more"
+        },
+        "H3_function_word": {
+          "correlation": -0.0382
+        },
+        "H4_subword": {
+          "correlation": 0.0212
+        },
+        "H5_position": {
+          "correlation": -0.0064
+        },
+        "H6_prediction_agreement": {
+          "correlation": -0.0111,
+          "agreement_rate": 86.7
+        },
+        "H7_kl_divergence": {
+          "mean_kl": 0.056,
+          "median_kl": 0.0346,
+          "corr_with_delta": 0.1327
+        }
+      },
+      "univariate_r2": {
+        "log_rank": 0.0036,
+        "is_alpha": 0.0035,
+        "log_frequency": 0.0034,
+        "unigram_surprise": 0.0034,
+        "is_function_word": 0.0015,
+        "next_token_entropy": 0.0014,
+        "is_subword": 0.0004,
+        "char_length": 0.0004,
+        "starts_word": 0.0001,
+        "position_normalized": 0.0
+      },
+      "narrative": {
+        "dominant_feature": "log_rank",
+        "most_mlp_needy_category": "negation",
+        "regression_r2": 0.008102909363996269,
+        "top3_need_mlp_tokens": [
+          "d",
+          "on",
+          " post"
+        ],
+        "top3_linear_ok_tokens": [
+          " we",
+          " went",
+          ","
+        ]
+      },
+      "time_seconds": 28.0
+    }
+  ],
+  "cross_layer_summary": {
+    "feature_importance_by_layer": {
+      "1": [
+        {
+          "name": "is_subword",
+          "coef": 0.03643
+        },
+        {
+          "name": "starts_word",
+          "coef": 0.034584
+        },
+        {
+          "name": "log_rank",
+          "coef": 0.027824
+        },
+        {
+          "name": "unigram_surprise",
+          "coef": -0.015041
+        },
+        {
+          "name": "log_frequency",
+          "coef": 0.015041
+        },
+        {
+          "name": "is_alpha",
+          "coef": -0.010374
+        },
+        {
+          "name": "char_length",
+          "coef": 0.004944
+        },
+        {
+          "name": "next_token_entropy",
+          "coef": -0.003007
+        },
+        {
+          "name": "position_normalized",
+          "coef": 0.001026
+        },
+        {
+          "name": "is_function_word",
+          "coef": 0.000442
+        }
+      ],
+      "12": [
+        {
+          "name": "is_alpha",
+          "coef": 0.022299
+        },
+        {
+          "name": "log_rank",
+          "coef": 0.007718
+        },
+        {
+          "name": "starts_word",
+          "coef": 0.006872
+        },
+        {
+          "name": "char_length",
+          "coef": -0.00646
+        },
+        {
+          "name": "unigram_surprise",
+          "coef": 0.005491
+        },
+        {
+          "name": "log_frequency",
+          "coef": -0.005491
+        },
+        {
+          "name": "is_subword",
+          "coef": 0.004361
+        },
+        {
+          "name": "next_token_entropy",
+          "coef": 0.004212
+        },
+        {
+          "name": "position_normalized",
+          "coef": 0.002144
+        },
+        {
+          "name": "is_function_word",
+          "coef": 0.00017
+        }
+      ],
+      "23": [
+        {
+          "name": "log_rank",
+          "coef": 0.107783
+        },
+        {
+          "name": "unigram_surprise",
+          "coef": -0.044991
+        },
+        {
+          "name": "log_frequency",
+          "coef": 0.044991
+        },
+        {
+          "name": "is_alpha",
+          "coef": 0.022255
+        },
+        {
+          "name": "char_length",
+          "coef": -0.016261
+        },
+        {
+          "name": "next_token_entropy",
+          "coef": 0.01169
+        },
+        {
+          "name": "is_subword",
+          "coef": 0.002837
+        },
+        {
+          "name": "is_function_word",
+          "coef": -0.00223
+        },
+        {
+          "name": "starts_word",
+          "coef": 0.001358
+        },
+        {
+          "name": "position_normalized",
+          "coef": -0.000993
+        }
+      ]
+    },
+    "dominant_feature_by_layer": {
+      "1": "is_subword",
+      "12": "is_alpha",
+      "23": "log_rank"
+    },
+    "category_ranking_by_layer": {
+      "1": [
+        "punctuation",
+        "negation",
+        "subword",
+        "content_word",
+        "pronoun"
+      ],
+      "12": [
+        "pronoun",
+        "content_word",
+        "subword",
+        "conjunction",
+        "auxiliary"
+      ],
+      "23": [
+        "negation",
+        "whitespace",
+        "content_word",
+        "preposition",
+        "subword"
+      ]
+    },
+    "hypothesis_correlations_by_layer": {
+      "1": {
+        "H1_frequency": 0.0044,
+        "H2_entropy": -0.0206,
+        "H3_function_word": 0.0021,
+        "H4_subword": 0.023,
+        "H5_position": 0.0047,
+        "H6_prediction_agreement": 0.0427
+      },
+      "12": {
+        "H1_frequency": -0.0858,
+        "H2_entropy": 0.0306,
+        "H3_function_word": -0.0495,
+        "H4_subword": 0.0165,
+        "H5_position": 0.0019,
+        "H6_prediction_agreement": -0.0253
+      },
+      "23": {
+        "H1_frequency": -0.0586,
+        "H2_entropy": 0.0377,
+        "H3_function_word": -0.0382,
+        "H4_subword": 0.0212,
+        "H5_position": -0.0064,
+        "H6_prediction_agreement": -0.0111
+      }
+    },
+    "depth_pattern": {
+      "early_dominant": "is_subword",
+      "mid_dominant": "is_alpha",
+      "late_dominant": "log_rank"
+    }
+  }
+}

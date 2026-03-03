@@ -1,0 +1,2712 @@
+{
+  "model": "gpt2-large",
+  "family": "gpt2",
+  "hidden_dim": 1280,
+  "n_layers": 36,
+  "model_params": 774030080,
+  "baseline_ppl": 30.65,
+  "device": "mps",
+  "dtype": "float32",
+  "layers": {
+    "0": {
+      "all_linear_ppl": 31.2,
+      "all_linear_delta_pct": 1.77,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.84,
+          "delta_pct": 0.61,
+          "pct_linear": 39.8
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 31.1,
+          "delta_pct": 1.47,
+          "pct_linear": 52.2
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.85,
+          "delta_pct": 0.66,
+          "pct_linear": 49.8
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.79,
+          "delta_pct": 0.43,
+          "pct_linear": 52.5,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0196,
+            "corr_function_word": -0.3111,
+            "top_tokens_linear_ok": [
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " ="
+            ],
+            "bottom_tokens_need_mlp": [
+              " .",
+              " .",
+              " .",
+              " .",
+              " .",
+              " the",
+              " the",
+              " the",
+              " the",
+              " .",
+              " .",
+              " the",
+              " .",
+              " .",
+              " ."
+            ],
+            "q4_mean_delta": 0.0185,
+            "q1_mean_delta": 0.0392
+          }
+        }
+      ],
+      "time_seconds": 890.9
+    },
+    "1": {
+      "all_linear_ppl": 30.84,
+      "all_linear_delta_pct": 0.61,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.72,
+          "delta_pct": 0.23,
+          "pct_linear": 46.4
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.62,
+          "delta_pct": -0.12,
+          "pct_linear": 29.5
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.64,
+          "delta_pct": -0.03,
+          "pct_linear": 63.2
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.64,
+          "delta_pct": -0.04,
+          "pct_linear": 65.2,
+          "direction_analysis": {
+            "corr_loss_delta": -0.004,
+            "corr_function_word": 0.1974,
+            "top_tokens_linear_ok": [
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@"
+            ],
+            "bottom_tokens_need_mlp": [
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " ="
+            ],
+            "q4_mean_delta": 0.0135,
+            "q1_mean_delta": 0.0179
+          }
+        }
+      ],
+      "time_seconds": 876.5
+    },
+    "2": {
+      "all_linear_ppl": 30.8,
+      "all_linear_delta_pct": 0.47,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.66,
+          "delta_pct": 0.03,
+          "pct_linear": 45.4
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.64,
+          "delta_pct": -0.05,
+          "pct_linear": 17.7
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.73,
+          "delta_pct": 0.24,
+          "pct_linear": 49.8
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.76,
+          "delta_pct": 0.36,
+          "pct_linear": 49.4,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0128,
+            "corr_function_word": -0.1831,
+            "top_tokens_linear_ok": [
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo"
+            ],
+            "bottom_tokens_need_mlp": [
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " ="
+            ],
+            "q4_mean_delta": 0.0051,
+            "q1_mean_delta": 0.0128
+          }
+        }
+      ],
+      "time_seconds": 180.0
+    },
+    "3": {
+      "all_linear_ppl": 30.87,
+      "all_linear_delta_pct": 0.72,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.64,
+          "delta_pct": -0.03,
+          "pct_linear": 38.6
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.66,
+          "delta_pct": 0.02,
+          "pct_linear": 28.9
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.64,
+          "delta_pct": -0.06,
+          "pct_linear": 26.1
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.65,
+          "delta_pct": -0.02,
+          "pct_linear": 20.5,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0503,
+            "corr_function_word": -0.1683,
+            "top_tokens_linear_ok": [
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " @",
+              " ",
+              " @",
+              " ",
+              " ",
+              " @",
+              " "
+            ],
+            "bottom_tokens_need_mlp": [
+              " gold",
+              " the",
+              " gold",
+              " gold",
+              " gold",
+              " gold",
+              " the",
+              " gold",
+              " gold",
+              " gold",
+              " the",
+              " silver",
+              " the",
+              " the",
+              " gold"
+            ],
+            "q4_mean_delta": -0.0026,
+            "q1_mean_delta": 0.0265
+          }
+        }
+      ],
+      "time_seconds": 171.0
+    },
+    "4": {
+      "all_linear_ppl": 30.85,
+      "all_linear_delta_pct": 0.63,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.61,
+          "delta_pct": -0.15,
+          "pct_linear": 43.3
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.63,
+          "delta_pct": -0.08,
+          "pct_linear": 32.9
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.78,
+          "delta_pct": 0.4,
+          "pct_linear": 42.5
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.72,
+          "delta_pct": 0.23,
+          "pct_linear": 35.9,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0093,
+            "corr_function_word": -0.5509,
+            "top_tokens_linear_ok": [
+              "ihu",
+              "\u00f3",
+              " Oro",
+              "illo",
+              "illo",
+              "ihu",
+              "\u00eda",
+              "\u00fa",
+              "illo",
+              "\u00ed",
+              "\u00eda",
+              "ihu",
+              " Dominican",
+              "ihu",
+              "illo"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0115,
+            "q1_mean_delta": 0.0119
+          }
+        }
+      ],
+      "time_seconds": 171.5
+    },
+    "5": {
+      "all_linear_ppl": 30.77,
+      "all_linear_delta_pct": 0.38,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.65,
+          "delta_pct": -0.02,
+          "pct_linear": 42.5
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.58,
+          "delta_pct": -0.25,
+          "pct_linear": 34.5
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.63,
+          "delta_pct": -0.08,
+          "pct_linear": 30.5
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.58,
+          "delta_pct": -0.23,
+          "pct_linear": 25.1,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0585,
+            "corr_function_word": -0.1938,
+            "top_tokens_linear_ok": [
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " "
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": -0.0142,
+            "q1_mean_delta": 0.0218
+          }
+        }
+      ],
+      "time_seconds": 170.9
+    },
+    "6": {
+      "all_linear_ppl": 30.88,
+      "all_linear_delta_pct": 0.75,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.74,
+          "delta_pct": 0.29,
+          "pct_linear": 42.4
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.7,
+          "delta_pct": 0.15,
+          "pct_linear": 38.3
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.66,
+          "delta_pct": 0.03,
+          "pct_linear": 29.9
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.67,
+          "delta_pct": 0.05,
+          "pct_linear": 27.1,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0235,
+            "corr_function_word": -0.3121,
+            "top_tokens_linear_ok": [
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              "@",
+              "@",
+              " @",
+              " @",
+              " @",
+              "@",
+              " @",
+              "@",
+              " @",
+              " @"
+            ],
+            "bottom_tokens_need_mlp": [
+              " interactions",
+              " interaction",
+              " reactions",
+              " reaction",
+              " reaction",
+              " reaction",
+              " reactions",
+              " of",
+              " of",
+              " by",
+              " of",
+              " of",
+              " of",
+              " of",
+              " effect"
+            ],
+            "q4_mean_delta": 0.0019,
+            "q1_mean_delta": 0.0142
+          }
+        }
+      ],
+      "time_seconds": 176.6
+    },
+    "7": {
+      "all_linear_ppl": 31.34,
+      "all_linear_delta_pct": 2.25,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.91,
+          "delta_pct": 0.85,
+          "pct_linear": 49.6
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.98,
+          "delta_pct": 1.05,
+          "pct_linear": 36.3
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 31.13,
+          "delta_pct": 1.57,
+          "pct_linear": 38.7
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 31.1,
+          "delta_pct": 1.47,
+          "pct_linear": 37.1,
+          "direction_analysis": {
+            "corr_loss_delta": -0.017,
+            "corr_function_word": -0.5191,
+            "top_tokens_linear_ok": [
+              "@",
+              " @",
+              " Ll",
+              " Ll",
+              " Ll",
+              "illo",
+              "\u00f1",
+              "rez",
+              "@",
+              "\u00ed",
+              "\u00ed",
+              "@",
+              "@",
+              "@",
+              "rez"
+            ],
+            "bottom_tokens_need_mlp": [
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " in",
+              " of",
+              " in",
+              " of",
+              " of",
+              " of",
+              " of"
+            ],
+            "q4_mean_delta": 0.0063,
+            "q1_mean_delta": 0.0173
+          }
+        }
+      ],
+      "time_seconds": 181.1
+    },
+    "8": {
+      "all_linear_ppl": 31.17,
+      "all_linear_delta_pct": 1.7,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.83,
+          "delta_pct": 0.58,
+          "pct_linear": 49.5
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.86,
+          "delta_pct": 0.66,
+          "pct_linear": 37.1
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.89,
+          "delta_pct": 0.76,
+          "pct_linear": 38.5
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.87,
+          "delta_pct": 0.7,
+          "pct_linear": 35.7,
+          "direction_analysis": {
+            "corr_loss_delta": -0.012,
+            "corr_function_word": -0.4471,
+            "top_tokens_linear_ok": [
+              " Fey",
+              " Fey",
+              " Fey",
+              " Fey",
+              " Fey",
+              " Fey",
+              " Fey",
+              "@",
+              " Fey",
+              " Fey",
+              " Fey",
+              " Fey",
+              "@",
+              "@",
+              " Fey"
+            ],
+            "bottom_tokens_need_mlp": [
+              " of",
+              " of",
+              " of",
+              " of",
+              " in",
+              " of",
+              " were",
+              " to",
+              " of",
+              " was",
+              " to",
+              " of",
+              " are",
+              " in",
+              " of"
+            ],
+            "q4_mean_delta": 0.0113,
+            "q1_mean_delta": 0.0192
+          }
+        }
+      ],
+      "time_seconds": 175.3
+    },
+    "9": {
+      "all_linear_ppl": 31.02,
+      "all_linear_delta_pct": 1.19,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.83,
+          "delta_pct": 0.57,
+          "pct_linear": 44.5
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.79,
+          "delta_pct": 0.44,
+          "pct_linear": 35.3
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.86,
+          "delta_pct": 0.66,
+          "pct_linear": 43.2
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.83,
+          "delta_pct": 0.58,
+          "pct_linear": 37.3,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0114,
+            "corr_function_word": -0.5425,
+            "top_tokens_linear_ok": [
+              "illo",
+              "agu",
+              "ihu",
+              "agu",
+              " Ll",
+              "illo",
+              "illo",
+              "ihu",
+              "\u00ed",
+              "\u00e1",
+              "rez",
+              " Luis",
+              "illo",
+              "ihu",
+              "\u00f3n"
+            ],
+            "bottom_tokens_need_mlp": [
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of",
+              " of"
+            ],
+            "q4_mean_delta": 0.0084,
+            "q1_mean_delta": 0.02
+          }
+        }
+      ],
+      "time_seconds": 174.5
+    },
+    "10": {
+      "all_linear_ppl": 30.89,
+      "all_linear_delta_pct": 0.76,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.62,
+          "delta_pct": -0.1,
+          "pct_linear": 40.4
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.62,
+          "delta_pct": -0.12,
+          "pct_linear": 34.3
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.64,
+          "delta_pct": -0.04,
+          "pct_linear": 40.4
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.62,
+          "delta_pct": -0.12,
+          "pct_linear": 34.3,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0127,
+            "corr_function_word": -0.5205,
+            "top_tokens_linear_ok": [
+              " Varg",
+              "agu",
+              "az",
+              " Ll",
+              "\u00f1",
+              "illo",
+              "illo",
+              "illo",
+              "agu",
+              "az",
+              "illo",
+              " Ll",
+              " Ll",
+              " Varg",
+              "ero"
+            ],
+            "bottom_tokens_need_mlp": [
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in"
+            ],
+            "q4_mean_delta": 0.0089,
+            "q1_mean_delta": 0.0135
+          }
+        }
+      ],
+      "time_seconds": 176.1
+    },
+    "11": {
+      "all_linear_ppl": 30.98,
+      "all_linear_delta_pct": 1.06,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.69,
+          "delta_pct": 0.11,
+          "pct_linear": 46.5
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.66,
+          "delta_pct": 0.02,
+          "pct_linear": 34.5
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.64,
+          "delta_pct": -0.06,
+          "pct_linear": 36.1
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.65,
+          "delta_pct": -0.01,
+          "pct_linear": 33.3,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0273,
+            "corr_function_word": -0.4812,
+            "top_tokens_linear_ok": [
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " ="
+            ],
+            "bottom_tokens_need_mlp": [
+              " in",
+              " in",
+              " in",
+              " in",
+              " and",
+              " in",
+              " in",
+              " in",
+              " and",
+              " and",
+              " and",
+              " and",
+              " in",
+              " and",
+              " in"
+            ],
+            "q4_mean_delta": 0.0037,
+            "q1_mean_delta": 0.0203
+          }
+        }
+      ],
+      "time_seconds": 176.4
+    },
+    "12": {
+      "all_linear_ppl": 30.89,
+      "all_linear_delta_pct": 0.77,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.73,
+          "delta_pct": 0.25,
+          "pct_linear": 54.5
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.61,
+          "delta_pct": -0.14,
+          "pct_linear": 33.9
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.64,
+          "delta_pct": -0.04,
+          "pct_linear": 36.2
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.66,
+          "delta_pct": 0.03,
+          "pct_linear": 38.8,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0027,
+            "corr_function_word": -0.4377,
+            "top_tokens_linear_ok": [
+              " @",
+              " @",
+              "@",
+              " @",
+              " @",
+              "@",
+              "@",
+              " @",
+              "@",
+              " @",
+              " @",
+              "@",
+              " @",
+              "@",
+              "@"
+            ],
+            "bottom_tokens_need_mlp": [
+              " of",
+              " in",
+              " and",
+              " of",
+              " of",
+              " and",
+              " by",
+              " of",
+              " for",
+              " by",
+              " in",
+              " of",
+              " of",
+              " in",
+              " of"
+            ],
+            "q4_mean_delta": 0.0148,
+            "q1_mean_delta": 0.0194
+          }
+        }
+      ],
+      "time_seconds": 178.9
+    },
+    "13": {
+      "all_linear_ppl": 30.85,
+      "all_linear_delta_pct": 0.66,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.65,
+          "delta_pct": 0.0,
+          "pct_linear": 45.4
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.64,
+          "delta_pct": -0.03,
+          "pct_linear": 34.8
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.67,
+          "delta_pct": 0.06,
+          "pct_linear": 36.3
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.71,
+          "delta_pct": 0.19,
+          "pct_linear": 45.4,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0233,
+            "corr_function_word": -0.4706,
+            "top_tokens_linear_ok": [
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " ="
+            ],
+            "bottom_tokens_need_mlp": [
+              " and",
+              " and",
+              " and",
+              " and",
+              " and",
+              " of",
+              " and",
+              " and",
+              " and",
+              " and",
+              " and",
+              " and",
+              " as",
+              " to",
+              " as"
+            ],
+            "q4_mean_delta": 0.0065,
+            "q1_mean_delta": 0.0189
+          }
+        }
+      ],
+      "time_seconds": 172.7
+    },
+    "14": {
+      "all_linear_ppl": 30.91,
+      "all_linear_delta_pct": 0.85,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.71,
+          "delta_pct": 0.19,
+          "pct_linear": 47.1
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.69,
+          "delta_pct": 0.13,
+          "pct_linear": 35.4
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.73,
+          "delta_pct": 0.25,
+          "pct_linear": 43.5
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.76,
+          "delta_pct": 0.34,
+          "pct_linear": 43.7,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0061,
+            "corr_function_word": -0.425,
+            "top_tokens_linear_ok": [
+              " SN",
+              " @",
+              " @",
+              " @",
+              " @",
+              " SN",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @"
+            ],
+            "bottom_tokens_need_mlp": [
+              " were",
+              " were",
+              " was",
+              " by",
+              " were",
+              " and",
+              " of",
+              " by",
+              " as",
+              " to",
+              " of",
+              " were",
+              " is",
+              " =",
+              " of"
+            ],
+            "q4_mean_delta": 0.0109,
+            "q1_mean_delta": 0.0163
+          }
+        }
+      ],
+      "time_seconds": 174.8
+    },
+    "15": {
+      "all_linear_ppl": 30.92,
+      "all_linear_delta_pct": 0.88,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.71,
+          "delta_pct": 0.18,
+          "pct_linear": 45.6
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.71,
+          "delta_pct": 0.2,
+          "pct_linear": 37.6
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.71,
+          "delta_pct": 0.17,
+          "pct_linear": 39.3
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.73,
+          "delta_pct": 0.25,
+          "pct_linear": 45.2,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0132,
+            "corr_function_word": -0.557,
+            "top_tokens_linear_ok": [
+              "@",
+              "@",
+              "@",
+              "@",
+              " Ll",
+              " Fey",
+              " Fey",
+              " Fey",
+              " Fey",
+              " Fey",
+              " Fey",
+              " Fey",
+              " Fey",
+              " Ll",
+              " Ll"
+            ],
+            "bottom_tokens_need_mlp": [
+              " and",
+              " and",
+              "s",
+              " and",
+              " and",
+              " were",
+              " \"",
+              " and",
+              " and",
+              " and",
+              " '",
+              " and",
+              " and",
+              " and",
+              " and"
+            ],
+            "q4_mean_delta": 0.0113,
+            "q1_mean_delta": 0.0186
+          }
+        }
+      ],
+      "time_seconds": 174.0
+    },
+    "16": {
+      "all_linear_ppl": 30.95,
+      "all_linear_delta_pct": 0.97,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.69,
+          "delta_pct": 0.13,
+          "pct_linear": 44.5
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.7,
+          "delta_pct": 0.16,
+          "pct_linear": 35.2
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.69,
+          "delta_pct": 0.13,
+          "pct_linear": 40.8
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.69,
+          "delta_pct": 0.13,
+          "pct_linear": 44.2,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0153,
+            "corr_function_word": -0.1926,
+            "top_tokens_linear_ok": [
+              " @",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              " @",
+              "j",
+              "j",
+              "j"
+            ],
+            "bottom_tokens_need_mlp": [
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " "
+            ],
+            "q4_mean_delta": 0.0094,
+            "q1_mean_delta": 0.0153
+          }
+        }
+      ],
+      "time_seconds": 174.6
+    },
+    "17": {
+      "all_linear_ppl": 30.95,
+      "all_linear_delta_pct": 0.97,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.66,
+          "delta_pct": 0.01,
+          "pct_linear": 43.8
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.63,
+          "delta_pct": -0.09,
+          "pct_linear": 36.6
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.66,
+          "delta_pct": 0.02,
+          "pct_linear": 39.8
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.67,
+          "delta_pct": 0.05,
+          "pct_linear": 42.1,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0346,
+            "corr_function_word": -0.3455,
+            "top_tokens_linear_ok": [
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " "
+            ],
+            "bottom_tokens_need_mlp": [
+              " in",
+              " in",
+              " with",
+              " in",
+              " in",
+              " in",
+              " with",
+              " on",
+              " in",
+              " in",
+              " the",
+              " in",
+              " at",
+              " of",
+              " on"
+            ],
+            "q4_mean_delta": 0.001,
+            "q1_mean_delta": 0.0174
+          }
+        }
+      ],
+      "time_seconds": 177.6
+    },
+    "18": {
+      "all_linear_ppl": 30.92,
+      "all_linear_delta_pct": 0.88,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.66,
+          "delta_pct": 0.02,
+          "pct_linear": 46.9
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.69,
+          "delta_pct": 0.11,
+          "pct_linear": 38.4
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.71,
+          "delta_pct": 0.17,
+          "pct_linear": 44.2
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.66,
+          "delta_pct": 0.01,
+          "pct_linear": 40.3,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0128,
+            "corr_function_word": -0.2332,
+            "top_tokens_linear_ok": [
+              "@",
+              "@",
+              " '",
+              " @",
+              " '",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              " @",
+              " @",
+              " '",
+              "@",
+              "@"
+            ],
+            "bottom_tokens_need_mlp": [
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " in",
+              " by",
+              " of",
+              " in",
+              " in",
+              " in"
+            ],
+            "q4_mean_delta": 0.0081,
+            "q1_mean_delta": 0.0175
+          }
+        }
+      ],
+      "time_seconds": 175.9
+    },
+    "19": {
+      "all_linear_ppl": 31.08,
+      "all_linear_delta_pct": 1.4,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.79,
+          "delta_pct": 0.46,
+          "pct_linear": 48.0
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.74,
+          "delta_pct": 0.29,
+          "pct_linear": 38.1
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.74,
+          "delta_pct": 0.29,
+          "pct_linear": 37.5
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.78,
+          "delta_pct": 0.42,
+          "pct_linear": 41.6,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0306,
+            "corr_function_word": -0.3345,
+            "top_tokens_linear_ok": [
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " to",
+              " the",
+              " with",
+              " a",
+              " as",
+              " as",
+              " the",
+              " the",
+              " the",
+              " of",
+              " the",
+              " in",
+              " as",
+              " a"
+            ],
+            "q4_mean_delta": 0.003,
+            "q1_mean_delta": 0.0238
+          }
+        }
+      ],
+      "time_seconds": 175.8
+    },
+    "20": {
+      "all_linear_ppl": 31.04,
+      "all_linear_delta_pct": 1.26,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.67,
+          "delta_pct": 0.05,
+          "pct_linear": 43.0
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.7,
+          "delta_pct": 0.16,
+          "pct_linear": 38.9
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.66,
+          "delta_pct": 0.03,
+          "pct_linear": 34.1
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.68,
+          "delta_pct": 0.07,
+          "pct_linear": 40.2,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0147,
+            "corr_function_word": -0.3311,
+            "top_tokens_linear_ok": [
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " "
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " in",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " of",
+              " the",
+              " the",
+              "s"
+            ],
+            "q4_mean_delta": 0.0109,
+            "q1_mean_delta": 0.0157
+          }
+        }
+      ],
+      "time_seconds": 174.7
+    },
+    "21": {
+      "all_linear_ppl": 31.06,
+      "all_linear_delta_pct": 1.34,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.81,
+          "delta_pct": 0.51,
+          "pct_linear": 52.9
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.71,
+          "delta_pct": 0.18,
+          "pct_linear": 37.6
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.68,
+          "delta_pct": 0.1,
+          "pct_linear": 38.9
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.69,
+          "delta_pct": 0.11,
+          "pct_linear": 44.5,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0364,
+            "corr_function_word": -0.2067,
+            "top_tokens_linear_ok": [
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " @",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " as",
+              " on",
+              " the",
+              " the",
+              " in",
+              " in",
+              " the",
+              " in",
+              " in",
+              " the",
+              " in",
+              " of",
+              " for",
+              " the"
+            ],
+            "q4_mean_delta": -0.0043,
+            "q1_mean_delta": 0.0193
+          }
+        }
+      ],
+      "time_seconds": 174.7
+    },
+    "22": {
+      "all_linear_ppl": 31.06,
+      "all_linear_delta_pct": 1.33,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.74,
+          "delta_pct": 0.29,
+          "pct_linear": 47.5
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.71,
+          "delta_pct": 0.18,
+          "pct_linear": 41.2
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.89,
+          "delta_pct": 0.76,
+          "pct_linear": 54.8
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.89,
+          "delta_pct": 0.76,
+          "pct_linear": 56.7,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0016,
+            "corr_function_word": -0.315,
+            "top_tokens_linear_ok": [
+              "-",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " "
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              "s",
+              " the",
+              "s",
+              "s",
+              " the",
+              " the",
+              " her",
+              " the",
+              "s",
+              " the",
+              " as",
+              " her",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0216,
+            "q1_mean_delta": 0.0181
+          }
+        }
+      ],
+      "time_seconds": 178.9
+    },
+    "23": {
+      "all_linear_ppl": 31.23,
+      "all_linear_delta_pct": 1.87,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.8,
+          "delta_pct": 0.48,
+          "pct_linear": 47.4
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.89,
+          "delta_pct": 0.76,
+          "pct_linear": 41.8
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.93,
+          "delta_pct": 0.89,
+          "pct_linear": 45.1
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.86,
+          "delta_pct": 0.69,
+          "pct_linear": 48.5,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0302,
+            "corr_function_word": -0.3529,
+            "top_tokens_linear_ok": [
+              "-",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " "
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0067,
+            "q1_mean_delta": 0.0191
+          }
+        }
+      ],
+      "time_seconds": 177.7
+    },
+    "24": {
+      "all_linear_ppl": 31.05,
+      "all_linear_delta_pct": 1.31,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.73,
+          "delta_pct": 0.25,
+          "pct_linear": 51.7
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.84,
+          "delta_pct": 0.6,
+          "pct_linear": 42.6
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.82,
+          "delta_pct": 0.55,
+          "pct_linear": 43.6
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.81,
+          "delta_pct": 0.49,
+          "pct_linear": 48.5,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0153,
+            "corr_function_word": -0.1339,
+            "top_tokens_linear_ok": [
+              " @",
+              "-",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              "@",
+              " @",
+              " @",
+              " @",
+              " @"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " her",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0172,
+            "q1_mean_delta": 0.0239
+          }
+        }
+      ],
+      "time_seconds": 176.6
+    },
+    "25": {
+      "all_linear_ppl": 30.99,
+      "all_linear_delta_pct": 1.11,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.66,
+          "delta_pct": 0.02,
+          "pct_linear": 44.7
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.66,
+          "delta_pct": 0.01,
+          "pct_linear": 39.0
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.74,
+          "delta_pct": 0.28,
+          "pct_linear": 38.3
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.73,
+          "delta_pct": 0.25,
+          "pct_linear": 39.7,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0284,
+            "corr_function_word": -0.1569,
+            "top_tokens_linear_ok": [
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " "
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.012,
+            "q1_mean_delta": 0.0211
+          }
+        }
+      ],
+      "time_seconds": 182.3
+    },
+    "26": {
+      "all_linear_ppl": 31.27,
+      "all_linear_delta_pct": 2.02,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.87,
+          "delta_pct": 0.7,
+          "pct_linear": 56.2
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 31.19,
+          "delta_pct": 1.73,
+          "pct_linear": 91.9
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 31.02,
+          "delta_pct": 1.2,
+          "pct_linear": 59.0
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.96,
+          "delta_pct": 0.99,
+          "pct_linear": 62.7,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0385,
+            "corr_function_word": -0.2001,
+            "top_tokens_linear_ok": [
+              "-",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @",
+              " @"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " her",
+              " her",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " Her",
+              " her",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0048,
+            "q1_mean_delta": 0.0305
+          }
+        }
+      ],
+      "time_seconds": 169.4
+    },
+    "27": {
+      "all_linear_ppl": 31.11,
+      "all_linear_delta_pct": 1.47,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.68,
+          "delta_pct": 0.1,
+          "pct_linear": 40.2
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.74,
+          "delta_pct": 0.28,
+          "pct_linear": 48.5
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.68,
+          "delta_pct": 0.09,
+          "pct_linear": 40.9
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.65,
+          "delta_pct": -0.03,
+          "pct_linear": 48.1,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0863,
+            "corr_function_word": -0.0666,
+            "top_tokens_linear_ok": [
+              " @",
+              "@",
+              "@",
+              "@",
+              "@",
+              " @",
+              "@",
+              " @",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              "@",
+              " @"
+            ],
+            "bottom_tokens_need_mlp": [
+              " a",
+              " a",
+              " a",
+              " a",
+              " a",
+              "standing",
+              "standing",
+              "standing",
+              " the",
+              " a",
+              " the",
+              " a",
+              "standing",
+              "standing",
+              " Best"
+            ],
+            "q4_mean_delta": -0.0063,
+            "q1_mean_delta": 0.0534
+          }
+        }
+      ],
+      "time_seconds": 174.8
+    },
+    "28": {
+      "all_linear_ppl": 31.14,
+      "all_linear_delta_pct": 1.59,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.84,
+          "delta_pct": 0.62,
+          "pct_linear": 54.4
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.81,
+          "delta_pct": 0.52,
+          "pct_linear": 45.4
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.73,
+          "delta_pct": 0.26,
+          "pct_linear": 41.8
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.76,
+          "delta_pct": 0.36,
+          "pct_linear": 55.6,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0593,
+            "corr_function_word": -0.1769,
+            "top_tokens_linear_ok": [
+              " \"",
+              " \"",
+              " face",
+              " )",
+              " \"",
+              "illo",
+              " absence",
+              " order",
+              " agrees",
+              " authority",
+              " later",
+              " \"",
+              " behind",
+              " world",
+              " \""
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " her",
+              " her",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " her",
+              " the",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0046,
+            "q1_mean_delta": 0.0388
+          }
+        }
+      ],
+      "time_seconds": 178.0
+    },
+    "29": {
+      "all_linear_ppl": 31.11,
+      "all_linear_delta_pct": 1.5,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.77,
+          "delta_pct": 0.37,
+          "pct_linear": 50.6
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.73,
+          "delta_pct": 0.25,
+          "pct_linear": 37.9
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.7,
+          "delta_pct": 0.15,
+          "pct_linear": 38.0
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 30.74,
+          "delta_pct": 0.28,
+          "pct_linear": 53.2,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0704,
+            "corr_function_word": -0.1569,
+            "top_tokens_linear_ok": [
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " "
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " a"
+            ],
+            "q4_mean_delta": 0.0013,
+            "q1_mean_delta": 0.0472
+          }
+        }
+      ],
+      "time_seconds": 175.1
+    },
+    "30": {
+      "all_linear_ppl": 31.21,
+      "all_linear_delta_pct": 1.8,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.77,
+          "delta_pct": 0.39,
+          "pct_linear": 45.1
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 31.1,
+          "delta_pct": 1.44,
+          "pct_linear": 81.5
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.78,
+          "delta_pct": 0.42,
+          "pct_linear": 54.7
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 31.03,
+          "delta_pct": 1.24,
+          "pct_linear": 68.6,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0462,
+            "corr_function_word": -0.1405,
+            "top_tokens_linear_ok": [
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " ",
+              " "
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " in",
+              " the",
+              " the",
+              " 2010",
+              " 2010",
+              " 2004",
+              " in",
+              " the",
+              " the",
+              " 2015",
+              " 2014"
+            ],
+            "q4_mean_delta": 0.0058,
+            "q1_mean_delta": 0.0366
+          }
+        }
+      ],
+      "time_seconds": 169.5
+    },
+    "31": {
+      "all_linear_ppl": 31.78,
+      "all_linear_delta_pct": 3.69,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 31.01,
+          "delta_pct": 1.17,
+          "pct_linear": 52.2
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 31.63,
+          "delta_pct": 3.17,
+          "pct_linear": 85.7
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 31.05,
+          "delta_pct": 1.3,
+          "pct_linear": 59.5
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 31.41,
+          "delta_pct": 2.46,
+          "pct_linear": 70.6,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0581,
+            "corr_function_word": -0.0146,
+            "top_tokens_linear_ok": [
+              " @",
+              " ,",
+              " us",
+              " ,",
+              "ing",
+              "-",
+              " care",
+              " least",
+              "-",
+              " ,",
+              " @",
+              " ,",
+              " refers",
+              " recounts",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " 2004",
+              " 2010",
+              " the",
+              " the",
+              " 2010",
+              " the",
+              " 2015",
+              " 2014",
+              " the",
+              " the",
+              " Broadway",
+              " the",
+              " 2007",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0095,
+            "q1_mean_delta": 0.0542
+          }
+        }
+      ],
+      "time_seconds": 169.7
+    },
+    "32": {
+      "all_linear_ppl": 31.47,
+      "all_linear_delta_pct": 2.66,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.93,
+          "delta_pct": 0.9,
+          "pct_linear": 59.2
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.9,
+          "delta_pct": 0.8,
+          "pct_linear": 45.9
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.8,
+          "delta_pct": 0.47,
+          "pct_linear": 40.6
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 31.08,
+          "delta_pct": 1.39,
+          "pct_linear": 63.1,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0447,
+            "corr_function_word": -0.3042,
+            "top_tokens_linear_ok": [
+              " aware",
+              "ing",
+              " front",
+              " forget",
+              " explained",
+              " account",
+              " revealed",
+              " concluded",
+              " knew",
+              " noting",
+              " states",
+              " remembers",
+              " all",
+              " recounts",
+              " wrote"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              "s",
+              "s",
+              " a",
+              " the",
+              " the",
+              "s",
+              " the",
+              " his",
+              "s",
+              " a",
+              "s",
+              " his",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.012,
+            "q1_mean_delta": 0.0493
+          }
+        }
+      ],
+      "time_seconds": 170.2
+    },
+    "33": {
+      "all_linear_ppl": 31.45,
+      "all_linear_delta_pct": 2.61,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 30.99,
+          "delta_pct": 1.11,
+          "pct_linear": 54.6
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.91,
+          "delta_pct": 0.83,
+          "pct_linear": 52.7
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.84,
+          "delta_pct": 0.61,
+          "pct_linear": 45.0
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 31.02,
+          "delta_pct": 1.2,
+          "pct_linear": 63.0,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0827,
+            "corr_function_word": -0.1553,
+            "top_tokens_linear_ok": [
+              " exclusively",
+              "ly",
+              "ues",
+              " pilots",
+              " made",
+              " used",
+              " things",
+              " retain",
+              "mented",
+              " compelled",
+              " remembered",
+              " persona",
+              "ately",
+              "udes",
+              " attributed"
+            ],
+            "bottom_tokens_need_mlp": [
+              "us",
+              " a",
+              "standing",
+              " a",
+              " a",
+              " film",
+              " Broadway",
+              " member",
+              " a",
+              "standing",
+              " ,",
+              " a",
+              " comedy",
+              " stars",
+              " a"
+            ],
+            "q4_mean_delta": 0.011,
+            "q1_mean_delta": 0.0752
+          }
+        }
+      ],
+      "time_seconds": 170.3
+    },
+    "34": {
+      "all_linear_ppl": 31.67,
+      "all_linear_delta_pct": 3.31,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 31.05,
+          "delta_pct": 1.29,
+          "pct_linear": 49.9
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.93,
+          "delta_pct": 0.9,
+          "pct_linear": 42.0
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.85,
+          "delta_pct": 0.64,
+          "pct_linear": 37.4
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 31.09,
+          "delta_pct": 1.41,
+          "pct_linear": 62.6,
+          "direction_analysis": {
+            "corr_loss_delta": -0.09,
+            "corr_function_word": -0.0964,
+            "top_tokens_linear_ok": [
+              " \"",
+              " agrees",
+              " thoughts",
+              " \"",
+              " things",
+              " humor",
+              " things",
+              " )",
+              " aspects",
+              " remembering",
+              " behold",
+              " theme",
+              " trauma",
+              " \"",
+              " it"
+            ],
+            "bottom_tokens_need_mlp": [
+              "ido",
+              " Francisco",
+              "bered",
+              " T",
+              " corresponding",
+              " all",
+              " the",
+              " (",
+              " the",
+              " the",
+              " Mad",
+              " leaving",
+              " la",
+              "bered",
+              " the"
+            ],
+            "q4_mean_delta": 0.0137,
+            "q1_mean_delta": 0.0833
+          }
+        }
+      ],
+      "time_seconds": 169.7
+    },
+    "35": {
+      "all_linear_ppl": 31.76,
+      "all_linear_delta_pct": 3.61,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 1281,
+          "ppl": 31.02,
+          "delta_pct": 1.2,
+          "pct_linear": 55.8
+        },
+        {
+          "name": "b=1",
+          "params": 2565,
+          "ppl": 30.98,
+          "delta_pct": 1.08,
+          "pct_linear": 41.3
+        },
+        {
+          "name": "b=3",
+          "params": 7693,
+          "ppl": 30.88,
+          "delta_pct": 0.75,
+          "pct_linear": 37.7
+        },
+        {
+          "name": "b=6",
+          "params": 15385,
+          "ppl": 31.19,
+          "delta_pct": 1.75,
+          "pct_linear": 59.5,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0684,
+            "corr_function_word": -0.1056,
+            "top_tokens_linear_ok": [
+              " back",
+              " written",
+              " told",
+              " going",
+              " respond",
+              "ues",
+              " continues",
+              " unprecedented",
+              " went",
+              " \"",
+              " went",
+              "ing",
+              " came",
+              " revealed",
+              " retain"
+            ],
+            "bottom_tokens_need_mlp": [
+              "ido",
+              "az",
+              " Francisco",
+              " Francisco",
+              " Francisco",
+              "az",
+              "az",
+              " the",
+              "iano",
+              "\u00f3n",
+              "iano",
+              "ero",
+              "ata",
+              "ardo",
+              " the"
+            ],
+            "q4_mean_delta": 0.0245,
+            "q1_mean_delta": 0.074
+          }
+        }
+      ],
+      "time_seconds": 169.3
+    }
+  }
+}

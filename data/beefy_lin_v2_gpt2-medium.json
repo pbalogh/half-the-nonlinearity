@@ -1,0 +1,113 @@
+{
+  "model": "gpt2-medium",
+  "linear_layers": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "fit_tokens": 50000,
+  "train_corpus": "wikitext103_train_tokens.npy",
+  "train_corpus_size": 117920140,
+  "steps": 5000,
+  "tokens_seen": 1280000,
+  "corpus_coverage_pct": 1.0854803937647972,
+  "lr": 2e-05,
+  "batch_size": 256,
+  "baseline": {
+    "wiki": 22.983386325605338,
+    "lambada": 40.421122269589645
+  },
+  "post_linearization": {
+    "wiki": 27.092347304785903,
+    "lambada": 55.26879024653329
+  },
+  "final": {
+    "wiki": 19.889605793820227,
+    "lambada": 57.59971134730154
+  },
+  "wiki_delta_pct": -13.460942995760336,
+  "lambada_delta_pct": 42.499040385714395,
+  "trajectory": [
+    {
+      "step": 500,
+      "wiki_ppl": 22.380908064811205,
+      "lambada_ppl": 59.901675250872586,
+      "wiki_delta": -2.621364198725248,
+      "lambada_delta": 48.193993356634,
+      "train_pos": 128000
+    },
+    {
+      "step": 1000,
+      "wiki_ppl": 21.674652118599163,
+      "lambada_ppl": 57.77483885862321,
+      "wiki_delta": -5.694261883194036,
+      "lambada_delta": 42.93229780532202,
+      "train_pos": 256000
+    },
+    {
+      "step": 1500,
+      "wiki_ppl": 21.17053601104065,
+      "lambada_ppl": 57.22070729224205,
+      "wiki_delta": -7.887655408485335,
+      "lambada_delta": 41.56140176071106,
+      "train_pos": 384000
+    },
+    {
+      "step": 2000,
+      "wiki_ppl": 21.18054459654037,
+      "lambada_ppl": 58.936147680274395,
+      "wiki_delta": -7.844108363859588,
+      "lambada_delta": 45.8053224925284,
+      "train_pos": 512000
+    },
+    {
+      "step": 2500,
+      "wiki_ppl": 20.65173596870599,
+      "lambada_ppl": 57.43792324902797,
+      "wiki_delta": -10.144938277879893,
+      "lambada_delta": 42.098784061324075,
+      "train_pos": 640000
+    },
+    {
+      "step": 3000,
+      "wiki_ppl": 20.49433363107691,
+      "lambada_ppl": 57.67100671601022,
+      "wiki_delta": -10.829790959722171,
+      "lambada_delta": 42.67542185338659,
+      "train_pos": 768000
+    },
+    {
+      "step": 3500,
+      "wiki_ppl": 20.207582615514887,
+      "lambada_ppl": 57.497333488238674,
+      "wiki_delta": -12.077435721462777,
+      "lambada_delta": 42.24576226448843,
+      "train_pos": 896000
+    },
+    {
+      "step": 4000,
+      "wiki_ppl": 20.014625410263058,
+      "lambada_ppl": 57.33225357993552,
+      "wiki_delta": -12.916986527937539,
+      "lambada_delta": 41.837362153273915,
+      "train_pos": 1024000
+    },
+    {
+      "step": 4500,
+      "wiki_ppl": 20.06075915873481,
+      "lambada_ppl": 57.11152299194406,
+      "wiki_delta": -12.716260021328907,
+      "lambada_delta": 41.2912848164813,
+      "train_pos": 1152000
+    },
+    {
+      "step": 5000,
+      "wiki_ppl": 19.889605793820227,
+      "lambada_ppl": 57.59971134730154,
+      "wiki_delta": -13.460942995760336,
+      "lambada_delta": 42.499040385714395,
+      "train_pos": 1280000
+    }
+  ]
+}

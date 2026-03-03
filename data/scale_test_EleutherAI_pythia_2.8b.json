@@ -1,0 +1,2352 @@
+{
+  "model": "EleutherAI/pythia-2.8b",
+  "family": "gpt_neox",
+  "hidden_dim": 2560,
+  "n_layers": 32,
+  "model_params": 2775208960,
+  "baseline_ppl": 17.68,
+  "device": "mps",
+  "dtype": "float32",
+  "layers": {
+    "0": {
+      "all_linear_ppl": 108.42,
+      "all_linear_delta_pct": 513.22,
+      "gates": [
+        {
+          "name": "skipped",
+          "params": 0,
+          "ppl": 17.679646745908332,
+          "delta_pct": 0.0,
+          "pct_linear": 0.0,
+          "note": "all-linear too catastrophic (513%) for meaningful gating"
+        }
+      ],
+      "time_seconds": 62.7
+    },
+    "1": {
+      "all_linear_ppl": 23.5,
+      "all_linear_delta_pct": 32.9,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 20.19,
+          "delta_pct": 14.23,
+          "pct_linear": 55.0
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 18.56,
+          "delta_pct": 4.96,
+          "pct_linear": 22.9
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.61,
+          "delta_pct": 5.27,
+          "pct_linear": 50.3
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.71,
+          "delta_pct": 5.85,
+          "pct_linear": 41.2,
+          "direction_analysis": {
+            "corr_loss_delta": -0.1098,
+            "corr_function_word": 0.2299,
+            "top_tokens_linear_ok": [
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " ="
+            ],
+            "bottom_tokens_need_mlp": [
+              "idents",
+              "ilities",
+              "itary",
+              "ilities",
+              " reconciliation",
+              "naissance",
+              "orical",
+              "sky",
+              "ochemistry",
+              "atorial",
+              " Republic",
+              "sky",
+              "sky",
+              "sky",
+              "sky"
+            ],
+            "q4_mean_delta": 0.2338,
+            "q1_mean_delta": 0.6332
+          }
+        }
+      ],
+      "time_seconds": 538.8
+    },
+    "2": {
+      "all_linear_ppl": 23.55,
+      "all_linear_delta_pct": 33.2,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 19.58,
+          "delta_pct": 10.77,
+          "pct_linear": 44.3
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.84,
+          "delta_pct": 0.91,
+          "pct_linear": 14.8
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.84,
+          "delta_pct": 6.59,
+          "pct_linear": 46.1
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.5,
+          "delta_pct": 4.63,
+          "pct_linear": 43.1,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0932,
+            "corr_function_word": -0.1282,
+            "top_tokens_linear_ok": [
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " =",
+              " ="
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              "illo",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              "illo"
+            ],
+            "q4_mean_delta": 0.1559,
+            "q1_mean_delta": 0.3934
+          }
+        }
+      ],
+      "time_seconds": 535.4
+    },
+    "3": {
+      "all_linear_ppl": 20.5,
+      "all_linear_delta_pct": 15.94,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.61,
+          "delta_pct": 5.24,
+          "pct_linear": 50.4
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.66,
+          "delta_pct": -0.13,
+          "pct_linear": 14.2
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 19.81,
+          "delta_pct": 12.06,
+          "pct_linear": 56.0
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.06,
+          "delta_pct": 2.13,
+          "pct_linear": 43.9,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0999,
+            "corr_function_word": -0.0674,
+            "top_tokens_linear_ok": [
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo"
+            ],
+            "q4_mean_delta": 0.0914,
+            "q1_mean_delta": 0.2967
+          }
+        }
+      ],
+      "time_seconds": 540.7
+    },
+    "4": {
+      "all_linear_ppl": 19.48,
+      "all_linear_delta_pct": 10.18,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.37,
+          "delta_pct": 3.91,
+          "pct_linear": 50.2
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.95,
+          "delta_pct": 1.55,
+          "pct_linear": 20.8
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.76,
+          "delta_pct": 6.11,
+          "pct_linear": 36.2
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.13,
+          "delta_pct": 2.57,
+          "pct_linear": 37.9,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0417,
+            "corr_function_word": -0.1421,
+            "top_tokens_linear_ok": [
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '"
+            ],
+            "bottom_tokens_need_mlp": [
+              "ines",
+              "lect",
+              "ines",
+              "lect",
+              "lect",
+              " group",
+              "lect",
+              "ines",
+              "lect",
+              "ochemistry",
+              "lect",
+              "lect",
+              "ines",
+              "lect",
+              "ines"
+            ],
+            "q4_mean_delta": 0.0693,
+            "q1_mean_delta": 0.1312
+          }
+        }
+      ],
+      "time_seconds": 591.7
+    },
+    "5": {
+      "all_linear_ppl": 18.65,
+      "all_linear_delta_pct": 5.5,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.08,
+          "delta_pct": 2.29,
+          "pct_linear": 53.0
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 18.13,
+          "delta_pct": 2.54,
+          "pct_linear": 26.6
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.38,
+          "delta_pct": 3.94,
+          "pct_linear": 45.8
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.02,
+          "delta_pct": 1.94,
+          "pct_linear": 48.3,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0528,
+            "corr_function_word": -0.1419,
+            "top_tokens_linear_ok": [
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " Tru",
+              " '",
+              " '",
+              " '",
+              " '",
+              " '",
+              " Tru",
+              " '"
+            ],
+            "bottom_tokens_need_mlp": [
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "illo",
+              "hler",
+              "hler",
+              "illo",
+              "illo",
+              "hler",
+              "hler",
+              "osa",
+              "hler",
+              "illo",
+              "osa"
+            ],
+            "q4_mean_delta": 0.0354,
+            "q1_mean_delta": 0.0995
+          }
+        }
+      ],
+      "time_seconds": 518.8
+    },
+    "6": {
+      "all_linear_ppl": 18.83,
+      "all_linear_delta_pct": 6.5,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.09,
+          "delta_pct": 2.34,
+          "pct_linear": 48.1
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.98,
+          "delta_pct": 1.7,
+          "pct_linear": 24.8
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.06,
+          "delta_pct": 2.16,
+          "pct_linear": 36.3
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.14,
+          "delta_pct": 2.62,
+          "pct_linear": 43.7,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0238,
+            "corr_function_word": -0.139,
+            "top_tokens_linear_ok": [
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " of",
+              "ses",
+              " 1961",
+              " 1961",
+              "s",
+              " of",
+              " 1961",
+              "ses",
+              "ses",
+              "s",
+              "al",
+              "ivity",
+              " century",
+              " 2005",
+              "back"
+            ],
+            "q4_mean_delta": 0.0621,
+            "q1_mean_delta": 0.0805
+          }
+        }
+      ],
+      "time_seconds": 509.6
+    },
+    "7": {
+      "all_linear_ppl": 18.34,
+      "all_linear_delta_pct": 3.72,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.91,
+          "delta_pct": 1.32,
+          "pct_linear": 45.0
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.89,
+          "delta_pct": 1.18,
+          "pct_linear": 29.4
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.88,
+          "delta_pct": 1.11,
+          "pct_linear": 28.5
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.81,
+          "delta_pct": 0.71,
+          "pct_linear": 36.1,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0363,
+            "corr_function_word": -0.2789,
+            "top_tokens_linear_ok": [
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j"
+            ],
+            "bottom_tokens_need_mlp": [
+              "ides",
+              "ides",
+              "ide",
+              "des",
+              "ones",
+              "ide",
+              "ide",
+              "ones",
+              "ides",
+              "des",
+              " derivatives",
+              " group",
+              "ide",
+              "ides",
+              "dehyde"
+            ],
+            "q4_mean_delta": 0.032,
+            "q1_mean_delta": 0.063
+          }
+        }
+      ],
+      "time_seconds": 512.3
+    },
+    "8": {
+      "all_linear_ppl": 18.23,
+      "all_linear_delta_pct": 3.08,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.84,
+          "delta_pct": 0.9,
+          "pct_linear": 47.3
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.87,
+          "delta_pct": 1.07,
+          "pct_linear": 31.5
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.77,
+          "delta_pct": 0.54,
+          "pct_linear": 29.5
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.84,
+          "delta_pct": 0.91,
+          "pct_linear": 40.9,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0407,
+            "corr_function_word": -0.3577,
+            "top_tokens_linear_ok": [
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0138,
+            "q1_mean_delta": 0.0572
+          }
+        }
+      ],
+      "time_seconds": 499.9
+    },
+    "9": {
+      "all_linear_ppl": 18.3,
+      "all_linear_delta_pct": 3.51,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.84,
+          "delta_pct": 0.93,
+          "pct_linear": 46.7
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.92,
+          "delta_pct": 1.39,
+          "pct_linear": 33.2
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.84,
+          "delta_pct": 0.9,
+          "pct_linear": 33.3
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.88,
+          "delta_pct": 1.11,
+          "pct_linear": 37.4,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0215,
+            "corr_function_word": -0.3107,
+            "top_tokens_linear_ok": [
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j"
+            ],
+            "bottom_tokens_need_mlp": [
+              "ses",
+              " reactions",
+              " with",
+              " with",
+              " with",
+              " reagents",
+              " derivatives",
+              " substrates",
+              " reactions",
+              " of",
+              " of",
+              " of",
+              " in",
+              " in",
+              " in"
+            ],
+            "q4_mean_delta": 0.0176,
+            "q1_mean_delta": 0.0396
+          }
+        }
+      ],
+      "time_seconds": 503.6
+    },
+    "10": {
+      "all_linear_ppl": 18.01,
+      "all_linear_delta_pct": 1.86,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.77,
+          "delta_pct": 0.5,
+          "pct_linear": 45.6
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.74,
+          "delta_pct": 0.31,
+          "pct_linear": 31.1
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.71,
+          "delta_pct": 0.15,
+          "pct_linear": 27.6
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.73,
+          "delta_pct": 0.29,
+          "pct_linear": 37.2,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0214,
+            "corr_function_word": -0.3226,
+            "top_tokens_linear_ok": [
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j"
+            ],
+            "bottom_tokens_need_mlp": [
+              " in",
+              " in",
+              " the",
+              " in",
+              " of",
+              " in",
+              " on",
+              " in",
+              " the",
+              " in",
+              " comedy",
+              " with",
+              " the",
+              " of",
+              " in"
+            ],
+            "q4_mean_delta": 0.0107,
+            "q1_mean_delta": 0.0324
+          }
+        }
+      ],
+      "time_seconds": 495.3
+    },
+    "11": {
+      "all_linear_ppl": 18.16,
+      "all_linear_delta_pct": 2.69,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.84,
+          "delta_pct": 0.92,
+          "pct_linear": 48.5
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.82,
+          "delta_pct": 0.8,
+          "pct_linear": 33.0
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.79,
+          "delta_pct": 0.6,
+          "pct_linear": 34.2
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.83,
+          "delta_pct": 0.84,
+          "pct_linear": 42.6,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0079,
+            "corr_function_word": -0.3211,
+            "top_tokens_linear_ok": [
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " in",
+              " of",
+              " the",
+              " about",
+              " in",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0249,
+            "q1_mean_delta": 0.03
+          }
+        }
+      ],
+      "time_seconds": 1237.5
+    },
+    "12": {
+      "all_linear_ppl": 18.18,
+      "all_linear_delta_pct": 2.81,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.82,
+          "delta_pct": 0.81,
+          "pct_linear": 47.7
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.84,
+          "delta_pct": 0.89,
+          "pct_linear": 33.5
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.82,
+          "delta_pct": 0.77,
+          "pct_linear": 31.8
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.84,
+          "delta_pct": 0.9,
+          "pct_linear": 37.8,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0106,
+            "corr_function_word": -0.204,
+            "top_tokens_linear_ok": [
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j",
+              "j"
+            ],
+            "bottom_tokens_need_mlp": [
+              " in",
+              " the",
+              " series",
+              " of",
+              " film",
+              " in",
+              " in",
+              " of",
+              " in",
+              " of",
+              " by",
+              " in",
+              " of",
+              " forces",
+              " in"
+            ],
+            "q4_mean_delta": 0.0206,
+            "q1_mean_delta": 0.0303
+          }
+        }
+      ],
+      "time_seconds": 950.9
+    },
+    "13": {
+      "all_linear_ppl": 18.24,
+      "all_linear_delta_pct": 3.15,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.89,
+          "delta_pct": 1.22,
+          "pct_linear": 53.3
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.86,
+          "delta_pct": 1.01,
+          "pct_linear": 31.4
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.84,
+          "delta_pct": 0.9,
+          "pct_linear": 30.3
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.86,
+          "delta_pct": 1.05,
+          "pct_linear": 38.4,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0142,
+            "corr_function_word": -0.2945,
+            "top_tokens_linear_ok": [
+              "-",
+              "-",
+              "j",
+              "-",
+              "j",
+              "j",
+              "-",
+              "-",
+              "-",
+              "j",
+              "j",
+              "-",
+              "-",
+              "j",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " in",
+              " the",
+              " for",
+              " the"
+            ],
+            "q4_mean_delta": 0.0267,
+            "q1_mean_delta": 0.0382
+          }
+        }
+      ],
+      "time_seconds": 479.9
+    },
+    "14": {
+      "all_linear_ppl": 18.15,
+      "all_linear_delta_pct": 2.68,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.83,
+          "delta_pct": 0.88,
+          "pct_linear": 51.6
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.89,
+          "delta_pct": 1.18,
+          "pct_linear": 33.4
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.87,
+          "delta_pct": 1.09,
+          "pct_linear": 33.6
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.82,
+          "delta_pct": 0.81,
+          "pct_linear": 39.4,
+          "direction_analysis": {
+            "corr_loss_delta": -0.033,
+            "corr_function_word": -0.1415,
+            "top_tokens_linear_ok": [
+              "-",
+              "-",
+              "-",
+              ",",
+              ",",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              ",",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              "s",
+              "s",
+              " the",
+              " the",
+              "s",
+              "s",
+              " of",
+              "s",
+              " the",
+              "s",
+              " the",
+              " the",
+              " series",
+              " film",
+              " show"
+            ],
+            "q4_mean_delta": 0.0171,
+            "q1_mean_delta": 0.0387
+          }
+        }
+      ],
+      "time_seconds": 476.5
+    },
+    "15": {
+      "all_linear_ppl": 18.34,
+      "all_linear_delta_pct": 3.71,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.84,
+          "delta_pct": 0.93,
+          "pct_linear": 46.9
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.9,
+          "delta_pct": 1.23,
+          "pct_linear": 39.5
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.9,
+          "delta_pct": 1.23,
+          "pct_linear": 32.8
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.87,
+          "delta_pct": 1.08,
+          "pct_linear": 41.7,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0183,
+            "corr_function_word": -0.1713,
+            "top_tokens_linear_ok": [
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              ",",
+              ",",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " show",
+              " film",
+              " film",
+              " for",
+              " the",
+              " the",
+              " comedy",
+              " comedy",
+              "s",
+              " the",
+              " in",
+              " comedy",
+              " for",
+              " comedy",
+              " the"
+            ],
+            "q4_mean_delta": 0.0263,
+            "q1_mean_delta": 0.0383
+          }
+        }
+      ],
+      "time_seconds": 476.9
+    },
+    "16": {
+      "all_linear_ppl": 18.36,
+      "all_linear_delta_pct": 3.84,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.92,
+          "delta_pct": 1.35,
+          "pct_linear": 46.0
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.9,
+          "delta_pct": 1.24,
+          "pct_linear": 38.5
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.89,
+          "delta_pct": 1.19,
+          "pct_linear": 34.4
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.94,
+          "delta_pct": 1.48,
+          "pct_linear": 42.5,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0178,
+            "corr_function_word": -0.247,
+            "top_tokens_linear_ok": [
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              ",",
+              ",",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " from",
+              " of",
+              " to",
+              "anes",
+              " of",
+              " for",
+              " form",
+              "ines",
+              " the",
+              " of",
+              " of",
+              " of",
+              " the",
+              " via"
+            ],
+            "q4_mean_delta": 0.0325,
+            "q1_mean_delta": 0.0404
+          }
+        }
+      ],
+      "time_seconds": 474.8
+    },
+    "17": {
+      "all_linear_ppl": 18.28,
+      "all_linear_delta_pct": 3.38,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.89,
+          "delta_pct": 1.18,
+          "pct_linear": 49.9
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.97,
+          "delta_pct": 1.65,
+          "pct_linear": 47.6
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.95,
+          "delta_pct": 1.51,
+          "pct_linear": 37.5
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.96,
+          "delta_pct": 1.57,
+          "pct_linear": 44.7,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0234,
+            "corr_function_word": -0.1407,
+            "top_tokens_linear_ok": [
+              "-",
+              ",",
+              "-",
+              "-",
+              ",",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              ",",
+              "-",
+              "-",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " comedy",
+              " comedy",
+              " series",
+              " series",
+              " show",
+              " comedy",
+              " drama",
+              " film",
+              " comedy",
+              " comedy",
+              " comedy",
+              " comedy",
+              " comedy",
+              " on",
+              " comedy"
+            ],
+            "q4_mean_delta": 0.0333,
+            "q1_mean_delta": 0.0425
+          }
+        }
+      ],
+      "time_seconds": 493.8
+    },
+    "18": {
+      "all_linear_ppl": 18.51,
+      "all_linear_delta_pct": 4.7,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.91,
+          "delta_pct": 1.31,
+          "pct_linear": 45.8
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 18.31,
+          "delta_pct": 3.55,
+          "pct_linear": 65.4
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.1,
+          "delta_pct": 2.39,
+          "pct_linear": 36.5
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.15,
+          "delta_pct": 2.65,
+          "pct_linear": 54.6,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0434,
+            "corr_function_word": -0.1563,
+            "top_tokens_linear_ok": [
+              ",",
+              "-",
+              ",",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              ",",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              " form",
+              " of",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the",
+              "ide",
+              " of"
+            ],
+            "q4_mean_delta": 0.0378,
+            "q1_mean_delta": 0.0612
+          }
+        }
+      ],
+      "time_seconds": 473.3
+    },
+    "19": {
+      "all_linear_ppl": 18.5,
+      "all_linear_delta_pct": 4.61,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.04,
+          "delta_pct": 2.06,
+          "pct_linear": 52.6
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 18.34,
+          "delta_pct": 3.74,
+          "pct_linear": 67.6
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.07,
+          "delta_pct": 2.23,
+          "pct_linear": 42.9
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.98,
+          "delta_pct": 1.67,
+          "pct_linear": 49.7,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0536,
+            "corr_function_word": -0.2203,
+            "top_tokens_linear_ok": [
+              ",",
+              ",",
+              ",",
+              "-",
+              "-",
+              "-",
+              "-",
+              " @",
+              " @",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " series",
+              "s",
+              " comedy",
+              " comedy",
+              " show",
+              " series",
+              " comedy",
+              " on",
+              " the",
+              " comedy",
+              " film",
+              " the",
+              " comedy",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.025,
+            "q1_mean_delta": 0.0666
+          }
+        }
+      ],
+      "time_seconds": 480.8
+    },
+    "20": {
+      "all_linear_ppl": 18.59,
+      "all_linear_delta_pct": 5.17,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.05,
+          "delta_pct": 2.11,
+          "pct_linear": 52.1
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.86,
+          "delta_pct": 1.0,
+          "pct_linear": 46.1
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.13,
+          "delta_pct": 2.53,
+          "pct_linear": 47.4
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.05,
+          "delta_pct": 2.09,
+          "pct_linear": 53.6,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0521,
+            "corr_function_word": -0.1856,
+            "top_tokens_linear_ok": [
+              ",",
+              ",",
+              ",",
+              "-",
+              "-",
+              " @",
+              "-",
+              " @",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " series",
+              " the",
+              " the",
+              " the",
+              " on",
+              " comedy",
+              " the",
+              " series",
+              " the",
+              " the",
+              " the",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0238,
+            "q1_mean_delta": 0.0667
+          }
+        }
+      ],
+      "time_seconds": 479.0
+    },
+    "21": {
+      "all_linear_ppl": 18.49,
+      "all_linear_delta_pct": 4.58,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.98,
+          "delta_pct": 1.68,
+          "pct_linear": 54.7
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.8,
+          "delta_pct": 0.71,
+          "pct_linear": 40.0
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.89,
+          "delta_pct": 1.21,
+          "pct_linear": 45.7
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.9,
+          "delta_pct": 1.24,
+          "pct_linear": 51.1,
+          "direction_analysis": {
+            "corr_loss_delta": -0.059,
+            "corr_function_word": -0.1459,
+            "top_tokens_linear_ok": [
+              ",",
+              ",",
+              ",",
+              "-",
+              " @",
+              " @",
+              "-",
+              "-",
+              "-",
+              ",",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " series",
+              " comedy",
+              " the",
+              " show",
+              " comedy",
+              " on",
+              " the",
+              " comedy",
+              " the",
+              " the",
+              " show",
+              " the",
+              " the",
+              " series"
+            ],
+            "q4_mean_delta": 0.0225,
+            "q1_mean_delta": 0.0747
+          }
+        }
+      ],
+      "time_seconds": 479.4
+    },
+    "22": {
+      "all_linear_ppl": 18.58,
+      "all_linear_delta_pct": 5.08,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.01,
+          "delta_pct": 1.85,
+          "pct_linear": 55.4
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.79,
+          "delta_pct": 0.6,
+          "pct_linear": 46.8
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.11,
+          "delta_pct": 2.42,
+          "pct_linear": 51.3
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.92,
+          "delta_pct": 1.33,
+          "pct_linear": 52.9,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0685,
+            "corr_function_word": -0.131,
+            "top_tokens_linear_ok": [
+              ",",
+              ",",
+              ",",
+              "-",
+              "-",
+              "-",
+              ",",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              " @",
+              ","
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " series",
+              " comedy",
+              " show",
+              " the",
+              " comedy",
+              " the",
+              " comedy",
+              " 2015",
+              " the",
+              " series",
+              " the",
+              " the"
+            ],
+            "q4_mean_delta": 0.0199,
+            "q1_mean_delta": 0.0825
+          }
+        }
+      ],
+      "time_seconds": 477.9
+    },
+    "23": {
+      "all_linear_ppl": 18.52,
+      "all_linear_delta_pct": 4.76,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 17.92,
+          "delta_pct": 1.39,
+          "pct_linear": 52.4
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.76,
+          "delta_pct": 0.47,
+          "pct_linear": 43.9
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.78,
+          "delta_pct": 0.57,
+          "pct_linear": 43.9
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.79,
+          "delta_pct": 0.6,
+          "pct_linear": 52.0,
+          "direction_analysis": {
+            "corr_loss_delta": -0.1336,
+            "corr_function_word": -0.0799,
+            "top_tokens_linear_ok": [
+              ",",
+              "-",
+              " @",
+              ",",
+              ",",
+              "-",
+              " other",
+              " @",
+              "-",
+              "-",
+              " the",
+              "-",
+              " by",
+              " No",
+              " other"
+            ],
+            "bottom_tokens_need_mlp": [
+              " series",
+              " stars",
+              "us",
+              "quez",
+              " on",
+              " series",
+              " and",
+              " star",
+              "mate",
+              " including",
+              " member",
+              " and",
+              " star",
+              " stars",
+              " as"
+            ],
+            "q4_mean_delta": 0.014,
+            "q1_mean_delta": 0.1475
+          }
+        }
+      ],
+      "time_seconds": 496.3
+    },
+    "24": {
+      "all_linear_ppl": 18.82,
+      "all_linear_delta_pct": 6.44,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.09,
+          "delta_pct": 2.35,
+          "pct_linear": 52.1
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.89,
+          "delta_pct": 1.19,
+          "pct_linear": 46.5
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.81,
+          "delta_pct": 0.73,
+          "pct_linear": 43.0
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.83,
+          "delta_pct": 0.83,
+          "pct_linear": 57.0,
+          "direction_analysis": {
+            "corr_loss_delta": -0.1522,
+            "corr_function_word": -0.0099,
+            "top_tokens_linear_ok": [
+              ",",
+              "-",
+              " @",
+              ",",
+              "-",
+              ",",
+              "-",
+              " @",
+              "-",
+              "-",
+              "-",
+              "-",
+              ",",
+              "-",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " series",
+              " series",
+              " stars",
+              "us",
+              " on",
+              " stars",
+              " star",
+              " and",
+              " star",
+              " film",
+              " including",
+              " of",
+              "mate",
+              " and",
+              " as"
+            ],
+            "q4_mean_delta": 0.0142,
+            "q1_mean_delta": 0.167
+          }
+        }
+      ],
+      "time_seconds": 490.6
+    },
+    "25": {
+      "all_linear_ppl": 18.87,
+      "all_linear_delta_pct": 6.71,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.18,
+          "delta_pct": 2.83,
+          "pct_linear": 66.4
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.81,
+          "delta_pct": 0.75,
+          "pct_linear": 46.5
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.79,
+          "delta_pct": 0.61,
+          "pct_linear": 43.8
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.92,
+          "delta_pct": 1.33,
+          "pct_linear": 62.0,
+          "direction_analysis": {
+            "corr_loss_delta": -0.1595,
+            "corr_function_word": 0.0083,
+            "top_tokens_linear_ok": [
+              " by",
+              " such",
+              "-",
+              " on",
+              " and",
+              "-",
+              " conjunction",
+              ",",
+              " No",
+              " @",
+              " No",
+              " seen",
+              "-",
+              " No",
+              " one"
+            ],
+            "bottom_tokens_need_mlp": [
+              " series",
+              " series",
+              " stars",
+              " star",
+              "us",
+              " star",
+              " film",
+              " and",
+              " stars",
+              "mate",
+              " including",
+              " ,",
+              " and",
+              " comedian",
+              " ,"
+            ],
+            "q4_mean_delta": 0.0221,
+            "q1_mean_delta": 0.1766
+          }
+        }
+      ],
+      "time_seconds": 474.8
+    },
+    "26": {
+      "all_linear_ppl": 19.16,
+      "all_linear_delta_pct": 8.35,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.15,
+          "delta_pct": 2.69,
+          "pct_linear": 57.3
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.78,
+          "delta_pct": 0.58,
+          "pct_linear": 42.3
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 17.79,
+          "delta_pct": 0.62,
+          "pct_linear": 41.5
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.87,
+          "delta_pct": 1.09,
+          "pct_linear": 53.9,
+          "direction_analysis": {
+            "corr_loss_delta": -0.1704,
+            "corr_function_word": 0.0532,
+            "top_tokens_linear_ok": [
+              " by",
+              " such",
+              " one",
+              " conjunction",
+              " along",
+              " regard",
+              " along",
+              " one",
+              " faced",
+              " one",
+              " participated",
+              " keeping",
+              " along",
+              " part",
+              " end"
+            ],
+            "bottom_tokens_need_mlp": [
+              "\u00eda",
+              " Station",
+              "quez",
+              "ardo",
+              "ighter",
+              "us",
+              " series",
+              " stars",
+              " film",
+              "\u00f3n",
+              "ual",
+              " of",
+              " star",
+              " star",
+              " series"
+            ],
+            "q4_mean_delta": 0.0227,
+            "q1_mean_delta": 0.2018
+          }
+        }
+      ],
+      "time_seconds": 475.9
+    },
+    "27": {
+      "all_linear_ppl": 18.92,
+      "all_linear_delta_pct": 7.04,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.01,
+          "delta_pct": 1.86,
+          "pct_linear": 55.7
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.77,
+          "delta_pct": 0.53,
+          "pct_linear": 42.4
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.24,
+          "delta_pct": 3.18,
+          "pct_linear": 51.3
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.92,
+          "delta_pct": 1.39,
+          "pct_linear": 52.0,
+          "direction_analysis": {
+            "corr_loss_delta": -0.133,
+            "corr_function_word": -0.0907,
+            "top_tokens_linear_ok": [
+              " by",
+              " participated",
+              " conjunction",
+              " one",
+              " along",
+              " such",
+              " faced",
+              " along",
+              " keeping",
+              " joined",
+              " seen",
+              " carried",
+              " over",
+              " series",
+              " participated"
+            ],
+            "bottom_tokens_need_mlp": [
+              " comedy",
+              " film",
+              "ate",
+              " film",
+              " series",
+              " film",
+              " comedy",
+              " series",
+              " dictator",
+              "\u00eda",
+              " comedy",
+              " comedy",
+              "us",
+              " stars",
+              " dictator"
+            ],
+            "q4_mean_delta": 0.0245,
+            "q1_mean_delta": 0.1794
+          }
+        }
+      ],
+      "time_seconds": 458.8
+    },
+    "28": {
+      "all_linear_ppl": 19.03,
+      "all_linear_delta_pct": 7.63,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.2,
+          "delta_pct": 2.95,
+          "pct_linear": 53.8
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.83,
+          "delta_pct": 0.86,
+          "pct_linear": 46.5
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.17,
+          "delta_pct": 2.79,
+          "pct_linear": 46.2
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 17.89,
+          "delta_pct": 1.17,
+          "pct_linear": 50.4,
+          "direction_analysis": {
+            "corr_loss_delta": -0.1265,
+            "corr_function_word": -0.0251,
+            "top_tokens_linear_ok": [
+              " regard",
+              " such",
+              " by",
+              " conjunction",
+              " one",
+              " faced",
+              " keeping",
+              " along",
+              " series",
+              " along",
+              " along",
+              " soon",
+              " anticipation",
+              " carried",
+              " rise"
+            ],
+            "bottom_tokens_need_mlp": [
+              " film",
+              " stars",
+              " comedy",
+              " series",
+              " series",
+              " film",
+              "\u00eda",
+              " star",
+              " star",
+              " film",
+              "us",
+              " includes",
+              " Station",
+              " comedy",
+              " alongside"
+            ],
+            "q4_mean_delta": 0.0183,
+            "q1_mean_delta": 0.1537
+          }
+        }
+      ],
+      "time_seconds": 468.9
+    },
+    "29": {
+      "all_linear_ppl": 19.05,
+      "all_linear_delta_pct": 7.75,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.05,
+          "delta_pct": 2.12,
+          "pct_linear": 40.1
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.85,
+          "delta_pct": 0.97,
+          "pct_linear": 44.0
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.52,
+          "delta_pct": 4.76,
+          "pct_linear": 48.5
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.14,
+          "delta_pct": 2.6,
+          "pct_linear": 48.3,
+          "direction_analysis": {
+            "corr_loss_delta": -0.092,
+            "corr_function_word": -0.1371,
+            "top_tokens_linear_ok": [
+              "-",
+              " by",
+              " conjunction",
+              " regard",
+              " along",
+              " such",
+              " carried",
+              "-",
+              " along",
+              "-",
+              " keeping",
+              " @",
+              " along",
+              "ock",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              "ate",
+              " of",
+              "ighter",
+              "ined",
+              " film",
+              " Station",
+              " dictator",
+              " at",
+              " \"",
+              " comedy",
+              " capable",
+              " stars",
+              " range",
+              "F",
+              " dictator"
+            ],
+            "q4_mean_delta": 0.038,
+            "q1_mean_delta": 0.1337
+          }
+        }
+      ],
+      "time_seconds": 474.5
+    },
+    "30": {
+      "all_linear_ppl": 19.39,
+      "all_linear_delta_pct": 9.67,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.38,
+          "delta_pct": 3.95,
+          "pct_linear": 46.4
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 17.99,
+          "delta_pct": 1.74,
+          "pct_linear": 45.3
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 18.78,
+          "delta_pct": 6.21,
+          "pct_linear": 48.5
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.46,
+          "delta_pct": 4.41,
+          "pct_linear": 46.1,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0759,
+            "corr_function_word": -0.2059,
+            "top_tokens_linear_ok": [
+              "ock",
+              " conjunction",
+              "-",
+              " along",
+              " carried",
+              " by",
+              "ett",
+              " regard",
+              "-",
+              "-",
+              "-",
+              "-",
+              " keeping",
+              " rise",
+              " F"
+            ],
+            "bottom_tokens_need_mlp": [
+              "ighter",
+              " of",
+              " capable",
+              "ined",
+              " four",
+              " \"",
+              " comedy",
+              " (",
+              " comedy",
+              " drama",
+              " \"",
+              " range",
+              " comedy",
+              " comedy",
+              " film"
+            ],
+            "q4_mean_delta": 0.0455,
+            "q1_mean_delta": 0.1356
+          }
+        }
+      ],
+      "time_seconds": 464.4
+    },
+    "31": {
+      "all_linear_ppl": 19.94,
+      "all_linear_delta_pct": 12.81,
+      "gates": [
+        {
+          "name": "linear",
+          "params": 2561,
+          "ppl": 18.42,
+          "delta_pct": 4.18,
+          "pct_linear": 42.6
+        },
+        {
+          "name": "b=1",
+          "params": 5125,
+          "ppl": 18.24,
+          "delta_pct": 3.17,
+          "pct_linear": 30.8
+        },
+        {
+          "name": "b=3",
+          "params": 15373,
+          "ppl": 19.12,
+          "delta_pct": 8.14,
+          "pct_linear": 54.6
+        },
+        {
+          "name": "b=6",
+          "params": 30745,
+          "ppl": 18.47,
+          "delta_pct": 4.49,
+          "pct_linear": 43.2,
+          "direction_analysis": {
+            "corr_loss_delta": -0.0308,
+            "corr_function_word": -0.3326,
+            "top_tokens_linear_ok": [
+              "ett",
+              "-",
+              "-",
+              "-",
+              "-",
+              "-",
+              " F",
+              ",",
+              "ett",
+              "-",
+              " @",
+              "ett",
+              " F",
+              "-",
+              "-"
+            ],
+            "bottom_tokens_need_mlp": [
+              " the",
+              " the",
+              " the",
+              " the",
+              " of",
+              " the",
+              " the",
+              " traditional",
+              " of",
+              " the",
+              " classical",
+              " of",
+              " a",
+              " to",
+              " of"
+            ],
+            "q4_mean_delta": 0.0955,
+            "q1_mean_delta": 0.1159
+          }
+        }
+      ],
+      "time_seconds": 462.4
+    }
+  }
+}

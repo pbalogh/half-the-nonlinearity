@@ -1,0 +1,1413 @@
+{
+  "model": "EleutherAI/pythia-410m",
+  "per_layer": [
+    {
+      "layer": 0,
+      "n_tokens": 25039,
+      "decomposition": {
+        "mean_token_norm": 0.7459,
+        "mean_context_norm": 15.5962,
+        "mean_full_norm": 16.3253,
+        "context_fraction_mean": 0.9526,
+        "context_fraction_std": 0.0121,
+        "cos_token_context_mean": 0.9748,
+        "cos_token_context_std": 0.0168
+      },
+      "gates_median": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.5426,
+          "auc": 0.5553,
+          "pct_linear": 46.5,
+          "n_params": 1025,
+          "direction_norm": 1.3371
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.5423,
+          "auc": 0.5556,
+          "pct_linear": 46.1,
+          "n_params": 1025,
+          "direction_norm": 1.2714
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.5423,
+          "auc": 0.5553,
+          "pct_linear": 46.4,
+          "n_params": 1025,
+          "direction_norm": 1.3436
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.5543,
+          "auc": 0.5708,
+          "pct_linear": 46.1,
+          "n_params": 1025,
+          "direction_norm": 2.9755
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.4932,
+          "auc": 0.5,
+          "pct_linear": 49.8,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.4984,
+          "auc": 0.5053,
+          "pct_linear": 79.6,
+          "n_params": 2,
+          "direction_norm": 0.0539
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.5314,
+          "auc": 0.5387,
+          "pct_linear": 45.4,
+          "n_params": 1025,
+          "direction_norm": 1.3257
+        }
+      },
+      "gates_q25": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.7358,
+          "auc": 0.5416,
+          "pct_linear": 5.4,
+          "n_params": 1025,
+          "direction_norm": 1.5184
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.7356,
+          "auc": 0.5416,
+          "pct_linear": 5.4,
+          "n_params": 1025,
+          "direction_norm": 1.473
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.7362,
+          "auc": 0.5415,
+          "pct_linear": 5.5,
+          "n_params": 1025,
+          "direction_norm": 1.5239
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.7404,
+          "auc": 0.5893,
+          "pct_linear": 7.4,
+          "n_params": 1025,
+          "direction_norm": 4.1256
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.4985,
+          "auc": 0.5,
+          "pct_linear": 49.8,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.7601,
+          "auc": 0.5094,
+          "pct_linear": 0.0,
+          "n_params": 2,
+          "direction_norm": 0.0273
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.7368,
+          "auc": 0.5262,
+          "pct_linear": 4.8,
+          "n_params": 1025,
+          "direction_norm": 1.5406
+        }
+      },
+      "correlations": {
+        "delta_vs_token_norm": 0.0186,
+        "delta_vs_context_norm": -0.0108,
+        "delta_vs_full_norm": -0.0105,
+        "delta_vs_context_fraction": -0.0195,
+        "delta_vs_cos_ec": 0.0258
+      },
+      "routing_consistency": {
+        "most_consistent": [
+          {
+            "token": "eder",
+            "count": 5,
+            "mean_delta": 0.0007,
+            "var_delta": 0.0,
+            "cv": 1.27
+          },
+          {
+            "token": "ib",
+            "count": 5,
+            "mean_delta": -0.0046,
+            "var_delta": 0.0,
+            "cv": 1.07
+          },
+          {
+            "token": "ought",
+            "count": 6,
+            "mean_delta": 0.0085,
+            "var_delta": 0.0,
+            "cv": 0.77
+          },
+          {
+            "token": "zzle",
+            "count": 10,
+            "mean_delta": 0.0013,
+            "var_delta": 0.0001,
+            "cv": 8.17
+          },
+          {
+            "token": " century",
+            "count": 8,
+            "mean_delta": 0.0136,
+            "var_delta": 0.0003,
+            "cv": 1.36
+          },
+          {
+            "token": "S",
+            "count": 8,
+            "mean_delta": 0.0143,
+            "var_delta": 0.0003,
+            "cv": 1.14
+          },
+          {
+            "token": " wounded",
+            "count": 5,
+            "mean_delta": -0.0054,
+            "var_delta": 0.0008,
+            "cv": 5.2
+          },
+          {
+            "token": "imental",
+            "count": 10,
+            "mean_delta": 0.0197,
+            "var_delta": 0.0011,
+            "cv": 1.67
+          },
+          {
+            "token": " When",
+            "count": 5,
+            "mean_delta": 0.0687,
+            "var_delta": 0.0015,
+            "cv": 0.56
+          },
+          {
+            "token": "igate",
+            "count": 6,
+            "mean_delta": 0.0179,
+            "var_delta": 0.0015,
+            "cv": 2.13
+          },
+          {
+            "token": "uls",
+            "count": 5,
+            "mean_delta": -0.0222,
+            "var_delta": 0.0019,
+            "cv": 1.94
+          },
+          {
+            "token": " re",
+            "count": 8,
+            "mean_delta": 0.0225,
+            "var_delta": 0.0022,
+            "cv": 2.08
+          },
+          {
+            "token": " beginning",
+            "count": 5,
+            "mean_delta": 0.1119,
+            "var_delta": 0.0026,
+            "cv": 0.45
+          },
+          {
+            "token": "ats",
+            "count": 5,
+            "mean_delta": 0.025,
+            "var_delta": 0.0026,
+            "cv": 2.04
+          },
+          {
+            "token": "em",
+            "count": 6,
+            "mean_delta": -0.0464,
+            "var_delta": 0.0029,
+            "cv": 1.16
+          }
+        ],
+        "most_variable": [
+          {
+            "token": "ible",
+            "count": 8,
+            "mean_delta": 4.3874,
+            "var_delta": 10.1163,
+            "cv": 0.72
+          },
+          {
+            "token": "pp",
+            "count": 5,
+            "mean_delta": 1.3278,
+            "var_delta": 6.4895,
+            "cv": 1.92
+          },
+          {
+            "token": "able",
+            "count": 6,
+            "mean_delta": 1.0423,
+            "var_delta": 5.7317,
+            "cv": 2.3
+          },
+          {
+            "token": "ation",
+            "count": 11,
+            "mean_delta": 1.0877,
+            "var_delta": 2.3268,
+            "cv": 1.4
+          },
+          {
+            "token": " Monitor",
+            "count": 8,
+            "mean_delta": 0.5386,
+            "var_delta": 2.1576,
+            "cv": 2.73
+          },
+          {
+            "token": " world",
+            "count": 10,
+            "mean_delta": 0.6284,
+            "var_delta": 2.107,
+            "cv": 2.31
+          },
+          {
+            "token": " rig",
+            "count": 8,
+            "mean_delta": 0.2732,
+            "var_delta": 1.9449,
+            "cv": 5.1
+          },
+          {
+            "token": " away",
+            "count": 5,
+            "mean_delta": -0.4539,
+            "var_delta": 1.8822,
+            "cv": 3.02
+          },
+          {
+            "token": "ans",
+            "count": 35,
+            "mean_delta": 0.664,
+            "var_delta": 1.5095,
+            "cv": 1.85
+          },
+          {
+            "token": " No",
+            "count": 15,
+            "mean_delta": 0.465,
+            "var_delta": 1.3741,
+            "cv": 2.52
+          },
+          {
+            "token": " Hitler",
+            "count": 34,
+            "mean_delta": 0.2912,
+            "var_delta": 1.0864,
+            "cv": 3.58
+          },
+          {
+            "token": "io",
+            "count": 6,
+            "mean_delta": 0.2974,
+            "var_delta": 1.0235,
+            "cv": 3.4
+          },
+          {
+            "token": " strength",
+            "count": 9,
+            "mean_delta": -0.3475,
+            "var_delta": 0.98,
+            "cv": 2.85
+          },
+          {
+            "token": " him",
+            "count": 8,
+            "mean_delta": 0.3223,
+            "var_delta": 0.974,
+            "cv": 3.06
+          },
+          {
+            "token": " carried",
+            "count": 12,
+            "mean_delta": 0.4983,
+            "var_delta": 0.9377,
+            "cv": 1.94
+          }
+        ],
+        "overall_mean_variance": 0.177567
+      },
+      "time_seconds": 73.4
+    },
+    {
+      "layer": 6,
+      "n_tokens": 25039,
+      "decomposition": {
+        "mean_token_norm": 0.7459,
+        "mean_context_norm": 32.6209,
+        "mean_full_norm": 32.6704,
+        "context_fraction_mean": 0.9985,
+        "context_fraction_std": 0.001,
+        "cos_token_context_mean": 0.053,
+        "cos_token_context_std": 0.0402
+      },
+      "gates_median": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.5662,
+          "auc": 0.5944,
+          "pct_linear": 49.6,
+          "n_params": 1025,
+          "direction_norm": 1.1519
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.5556,
+          "auc": 0.5642,
+          "pct_linear": 43.0,
+          "n_params": 1025,
+          "direction_norm": 1.2066
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.5656,
+          "auc": 0.5944,
+          "pct_linear": 49.7,
+          "n_params": 1025,
+          "direction_norm": 1.1538
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.5872,
+          "auc": 0.6111,
+          "pct_linear": 47.1,
+          "n_params": 1025,
+          "direction_norm": 3.4704
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.4975,
+          "auc": 0.5,
+          "pct_linear": 49.8,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.5182,
+          "auc": 0.5206,
+          "pct_linear": 44.7,
+          "n_params": 2,
+          "direction_norm": 0.0717
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.5453,
+          "auc": 0.5659,
+          "pct_linear": 47.1,
+          "n_params": 1025,
+          "direction_norm": 0.7592
+        }
+      },
+      "gates_q25": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.7324,
+          "auc": 0.5548,
+          "pct_linear": 5.1,
+          "n_params": 1025,
+          "direction_norm": 1.2918
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.7328,
+          "auc": 0.5305,
+          "pct_linear": 3.9,
+          "n_params": 1025,
+          "direction_norm": 1.4565
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.7323,
+          "auc": 0.5544,
+          "pct_linear": 5.1,
+          "n_params": 1025,
+          "direction_norm": 1.2924
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.7331,
+          "auc": 0.5783,
+          "pct_linear": 5.5,
+          "n_params": 1025,
+          "direction_norm": 4.3373
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.4985,
+          "auc": 0.5,
+          "pct_linear": 49.8,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.7511,
+          "auc": 0.5194,
+          "pct_linear": 0.0,
+          "n_params": 2,
+          "direction_norm": 0.0039
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.7266,
+          "auc": 0.5341,
+          "pct_linear": 5.1,
+          "n_params": 1025,
+          "direction_norm": 0.8593
+        }
+      },
+      "correlations": {
+        "delta_vs_token_norm": -0.0305,
+        "delta_vs_context_norm": 0.0163,
+        "delta_vs_full_norm": 0.0151,
+        "delta_vs_context_fraction": 0.0251,
+        "delta_vs_cos_ec": -0.0224
+      },
+      "routing_consistency": {
+        "most_consistent": [
+          {
+            "token": "eder",
+            "count": 5,
+            "mean_delta": 0.0054,
+            "var_delta": 0.0,
+            "cv": 0.21
+          },
+          {
+            "token": "ought",
+            "count": 6,
+            "mean_delta": 0.0022,
+            "var_delta": 0.0,
+            "cv": 2.92
+          },
+          {
+            "token": "isers",
+            "count": 11,
+            "mean_delta": 0.0072,
+            "var_delta": 0.0003,
+            "cv": 2.21
+          },
+          {
+            "token": "ated",
+            "count": 8,
+            "mean_delta": 0.024,
+            "var_delta": 0.0004,
+            "cv": 0.86
+          },
+          {
+            "token": "zzle",
+            "count": 10,
+            "mean_delta": 0.0199,
+            "var_delta": 0.0004,
+            "cv": 1.06
+          },
+          {
+            "token": "S",
+            "count": 8,
+            "mean_delta": -0.0007,
+            "var_delta": 0.0011,
+            "cv": 45.23
+          },
+          {
+            "token": "etto",
+            "count": 5,
+            "mean_delta": 0.0117,
+            "var_delta": 0.0012,
+            "cv": 2.94
+          },
+          {
+            "token": "led",
+            "count": 5,
+            "mean_delta": 0.0373,
+            "var_delta": 0.0013,
+            "cv": 0.95
+          },
+          {
+            "token": "igate",
+            "count": 6,
+            "mean_delta": -0.0023,
+            "var_delta": 0.0016,
+            "cv": 17.6
+          },
+          {
+            "token": " States",
+            "count": 8,
+            "mean_delta": 0.0308,
+            "var_delta": 0.0016,
+            "cv": 1.3
+          },
+          {
+            "token": "ades",
+            "count": 5,
+            "mean_delta": -0.0007,
+            "var_delta": 0.0051,
+            "cv": 98.43
+          },
+          {
+            "token": "ats",
+            "count": 5,
+            "mean_delta": 0.0379,
+            "var_delta": 0.0052,
+            "cv": 1.89
+          },
+          {
+            "token": "st",
+            "count": 17,
+            "mean_delta": 0.0544,
+            "var_delta": 0.0058,
+            "cv": 1.4
+          },
+          {
+            "token": "ines",
+            "count": 7,
+            "mean_delta": 0.0566,
+            "var_delta": 0.0077,
+            "cv": 1.54
+          },
+          {
+            "token": "g",
+            "count": 6,
+            "mean_delta": 0.0282,
+            "var_delta": 0.0081,
+            "cv": 3.19
+          }
+        ],
+        "most_variable": [
+          {
+            "token": " frig",
+            "count": 8,
+            "mean_delta": 2.5214,
+            "var_delta": 13.4579,
+            "cv": 1.45
+          },
+          {
+            "token": " Warrior",
+            "count": 16,
+            "mean_delta": 2.065,
+            "var_delta": 8.7732,
+            "cv": 1.43
+          },
+          {
+            "token": " ever",
+            "count": 6,
+            "mean_delta": 2.9431,
+            "var_delta": 8.2607,
+            "cv": 0.98
+          },
+          {
+            "token": " movement",
+            "count": 6,
+            "mean_delta": 2.189,
+            "var_delta": 8.1063,
+            "cv": 1.3
+          },
+          {
+            "token": " Per",
+            "count": 8,
+            "mean_delta": 1.1262,
+            "var_delta": 7.6176,
+            "cv": 2.45
+          },
+          {
+            "token": " CSS",
+            "count": 12,
+            "mean_delta": 1.9794,
+            "var_delta": 7.53,
+            "cv": 1.39
+          },
+          {
+            "token": "lette",
+            "count": 5,
+            "mean_delta": 1.8754,
+            "var_delta": 6.8757,
+            "cv": 1.4
+          },
+          {
+            "token": "ost",
+            "count": 5,
+            "mean_delta": 5.8637,
+            "var_delta": 6.7052,
+            "cv": 0.44
+          },
+          {
+            "token": " process",
+            "count": 5,
+            "mean_delta": 2.234,
+            "var_delta": 6.2457,
+            "cv": 1.12
+          },
+          {
+            "token": "board",
+            "count": 6,
+            "mean_delta": 1.683,
+            "var_delta": 6.0367,
+            "cv": 1.46
+          },
+          {
+            "token": "able",
+            "count": 6,
+            "mean_delta": 1.6002,
+            "var_delta": 5.7157,
+            "cv": 1.49
+          },
+          {
+            "token": "issa",
+            "count": 6,
+            "mean_delta": 2.3017,
+            "var_delta": 5.7118,
+            "cv": 1.04
+          },
+          {
+            "token": " Eliot",
+            "count": 17,
+            "mean_delta": 1.6166,
+            "var_delta": 5.6748,
+            "cv": 1.47
+          },
+          {
+            "token": "ulsion",
+            "count": 7,
+            "mean_delta": 1.2773,
+            "var_delta": 5.6005,
+            "cv": 1.85
+          },
+          {
+            "token": " class",
+            "count": 10,
+            "mean_delta": 1.4404,
+            "var_delta": 5.278,
+            "cv": 1.59
+          }
+        ],
+        "overall_mean_variance": 0.86531
+      },
+      "time_seconds": 69.7
+    },
+    {
+      "layer": 12,
+      "n_tokens": 25039,
+      "decomposition": {
+        "mean_token_norm": 0.7459,
+        "mean_context_norm": 26.4791,
+        "mean_full_norm": 26.5048,
+        "context_fraction_mean": 0.999,
+        "context_fraction_std": 0.0011,
+        "cos_token_context_mean": 0.0187,
+        "cos_token_context_std": 0.0379
+      },
+      "gates_median": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.5491,
+          "auc": 0.573,
+          "pct_linear": 47.2,
+          "n_params": 1025,
+          "direction_norm": 1.0344
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.5327,
+          "auc": 0.5473,
+          "pct_linear": 39.6,
+          "n_params": 1025,
+          "direction_norm": 1.2791
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.5513,
+          "auc": 0.573,
+          "pct_linear": 47.2,
+          "n_params": 1025,
+          "direction_norm": 1.0314
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.5587,
+          "auc": 0.5754,
+          "pct_linear": 48.5,
+          "n_params": 1025,
+          "direction_norm": 3.3122
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.4933,
+          "auc": 0.5,
+          "pct_linear": 49.8,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.5206,
+          "auc": 0.533,
+          "pct_linear": 53.8,
+          "n_params": 2,
+          "direction_norm": 0.0988
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.5326,
+          "auc": 0.553,
+          "pct_linear": 46.6,
+          "n_params": 1025,
+          "direction_norm": 0.7031
+        }
+      },
+      "gates_q25": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.7344,
+          "auc": 0.5766,
+          "pct_linear": 5.8,
+          "n_params": 1025,
+          "direction_norm": 1.079
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.7379,
+          "auc": 0.5317,
+          "pct_linear": 4.3,
+          "n_params": 1025,
+          "direction_norm": 1.4708
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.7354,
+          "auc": 0.5766,
+          "pct_linear": 5.9,
+          "n_params": 1025,
+          "direction_norm": 1.0808
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.7362,
+          "auc": 0.5779,
+          "pct_linear": 5.3,
+          "n_params": 1025,
+          "direction_norm": 4.741
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.4912,
+          "auc": 0.5,
+          "pct_linear": 49.8,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.7559,
+          "auc": 0.5539,
+          "pct_linear": 0.4,
+          "n_params": 2,
+          "direction_norm": 0.1483
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.7374,
+          "auc": 0.5544,
+          "pct_linear": 4.9,
+          "n_params": 1025,
+          "direction_norm": 0.7968
+        }
+      },
+      "correlations": {
+        "delta_vs_token_norm": -0.0096,
+        "delta_vs_context_norm": 0.0142,
+        "delta_vs_full_norm": 0.0144,
+        "delta_vs_context_fraction": -0.0118,
+        "delta_vs_cos_ec": 0.0138
+      },
+      "routing_consistency": {
+        "most_consistent": [
+          {
+            "token": "eder",
+            "count": 5,
+            "mean_delta": 0.0018,
+            "var_delta": 0.0,
+            "cv": 0.88
+          },
+          {
+            "token": "ought",
+            "count": 6,
+            "mean_delta": -0.0018,
+            "var_delta": 0.0,
+            "cv": 1.55
+          },
+          {
+            "token": "isers",
+            "count": 11,
+            "mean_delta": 0.0011,
+            "var_delta": 0.0001,
+            "cv": 7.4
+          },
+          {
+            "token": "igate",
+            "count": 6,
+            "mean_delta": 0.0075,
+            "var_delta": 0.0001,
+            "cv": 1.31
+          },
+          {
+            "token": "ib",
+            "count": 5,
+            "mean_delta": 0.0069,
+            "var_delta": 0.0001,
+            "cv": 1.16
+          },
+          {
+            "token": "ated",
+            "count": 8,
+            "mean_delta": 0.0067,
+            "var_delta": 0.0002,
+            "cv": 2.29
+          },
+          {
+            "token": "zzle",
+            "count": 10,
+            "mean_delta": 0.0128,
+            "var_delta": 0.0002,
+            "cv": 1.17
+          },
+          {
+            "token": "pp",
+            "count": 5,
+            "mean_delta": -0.0074,
+            "var_delta": 0.0002,
+            "cv": 1.75
+          },
+          {
+            "token": "ines",
+            "count": 7,
+            "mean_delta": -0.0092,
+            "var_delta": 0.0003,
+            "cv": 1.78
+          },
+          {
+            "token": " screw",
+            "count": 5,
+            "mean_delta": -0.0416,
+            "var_delta": 0.0006,
+            "cv": 0.6
+          },
+          {
+            "token": " wounded",
+            "count": 5,
+            "mean_delta": 0.0359,
+            "var_delta": 0.0007,
+            "cv": 0.73
+          },
+          {
+            "token": "n",
+            "count": 8,
+            "mean_delta": -0.0033,
+            "var_delta": 0.0007,
+            "cv": 7.94
+          },
+          {
+            "token": "asts",
+            "count": 7,
+            "mean_delta": -0.0114,
+            "var_delta": 0.0011,
+            "cv": 2.89
+          },
+          {
+            "token": "S",
+            "count": 8,
+            "mean_delta": 0.0038,
+            "var_delta": 0.0012,
+            "cv": 9.26
+          },
+          {
+            "token": "ades",
+            "count": 5,
+            "mean_delta": -0.0088,
+            "var_delta": 0.0013,
+            "cv": 4.08
+          }
+        ],
+        "most_variable": [
+          {
+            "token": " By",
+            "count": 7,
+            "mean_delta": 0.4488,
+            "var_delta": 1.5537,
+            "cv": 2.78
+          },
+          {
+            "token": " For",
+            "count": 5,
+            "mean_delta": 0.7051,
+            "var_delta": 1.3697,
+            "cv": 1.66
+          },
+          {
+            "token": "y",
+            "count": 5,
+            "mean_delta": 0.7181,
+            "var_delta": 0.7741,
+            "cv": 1.23
+          },
+          {
+            "token": " another",
+            "count": 6,
+            "mean_delta": 0.6545,
+            "var_delta": 0.598,
+            "cv": 1.18
+          },
+          {
+            "token": " PE",
+            "count": 17,
+            "mean_delta": 0.367,
+            "var_delta": 0.5568,
+            "cv": 2.03
+          },
+          {
+            "token": " Hampton",
+            "count": 5,
+            "mean_delta": 0.2897,
+            "var_delta": 0.5296,
+            "cv": 2.51
+          },
+          {
+            "token": " Chang",
+            "count": 11,
+            "mean_delta": -0.3791,
+            "var_delta": 0.5276,
+            "cv": 1.92
+          },
+          {
+            "token": " positions",
+            "count": 8,
+            "mean_delta": -0.0005,
+            "var_delta": 0.4434,
+            "cv": 1357.82
+          },
+          {
+            "token": " rear",
+            "count": 7,
+            "mean_delta": 0.291,
+            "var_delta": 0.4418,
+            "cv": 2.28
+          },
+          {
+            "token": " major",
+            "count": 5,
+            "mean_delta": -0.0907,
+            "var_delta": 0.4294,
+            "cv": 7.22
+          },
+          {
+            "token": " close",
+            "count": 10,
+            "mean_delta": 0.1344,
+            "var_delta": 0.4275,
+            "cv": 4.86
+          },
+          {
+            "token": " present",
+            "count": 5,
+            "mean_delta": 0.3323,
+            "var_delta": 0.4226,
+            "cv": 1.96
+          },
+          {
+            "token": "io",
+            "count": 6,
+            "mean_delta": 0.2331,
+            "var_delta": 0.3646,
+            "cv": 2.59
+          },
+          {
+            "token": " increasing",
+            "count": 7,
+            "mean_delta": 0.245,
+            "var_delta": 0.3401,
+            "cv": 2.38
+          },
+          {
+            "token": " decade",
+            "count": 6,
+            "mean_delta": 0.0048,
+            "var_delta": 0.3198,
+            "cv": 117.66
+          }
+        ],
+        "overall_mean_variance": 0.087415
+      },
+      "time_seconds": 69.1
+    },
+    {
+      "layer": 23,
+      "n_tokens": 25039,
+      "decomposition": {
+        "mean_token_norm": 0.7459,
+        "mean_context_norm": 36.1667,
+        "mean_full_norm": 36.1716,
+        "context_fraction_mean": 0.9999,
+        "context_fraction_std": 0.0007,
+        "cos_token_context_mean": -0.0036,
+        "cos_token_context_std": 0.0324
+      },
+      "gates_median": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.5647,
+          "auc": 0.5989,
+          "pct_linear": 46.8,
+          "n_params": 1025,
+          "direction_norm": 1.2477
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.5494,
+          "auc": 0.5596,
+          "pct_linear": 43.4,
+          "n_params": 1025,
+          "direction_norm": 1.1323
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.5654,
+          "auc": 0.5994,
+          "pct_linear": 46.8,
+          "n_params": 1025,
+          "direction_norm": 1.2512
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.5719,
+          "auc": 0.5998,
+          "pct_linear": 46.9,
+          "n_params": 1025,
+          "direction_norm": 3.6371
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.4984,
+          "auc": 0.5,
+          "pct_linear": 49.8,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.5296,
+          "auc": 0.5458,
+          "pct_linear": 55.2,
+          "n_params": 2,
+          "direction_norm": 0.147
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.551,
+          "auc": 0.5658,
+          "pct_linear": 47.3,
+          "n_params": 1025,
+          "direction_norm": 0.7581
+        }
+      },
+      "gates_q25": {
+        "full": {
+          "name": "full",
+          "accuracy": 0.7284,
+          "auc": 0.5908,
+          "pct_linear": 6.7,
+          "n_params": 1025,
+          "direction_norm": 1.6005
+        },
+        "token_only": {
+          "name": "token_only",
+          "accuracy": 0.7327,
+          "auc": 0.5657,
+          "pct_linear": 5.2,
+          "n_params": 1025,
+          "direction_norm": 1.5432
+        },
+        "context_only": {
+          "name": "context_only",
+          "accuracy": 0.7271,
+          "auc": 0.5908,
+          "pct_linear": 6.8,
+          "n_params": 1025,
+          "direction_norm": 1.6087
+        },
+        "token_type": {
+          "name": "token_type",
+          "accuracy": 0.7379,
+          "auc": 0.6347,
+          "pct_linear": 7.1,
+          "n_params": 1025,
+          "direction_norm": 5.4054
+        },
+        "random": {
+          "name": "random",
+          "accuracy": 0.5068,
+          "auc": 0.5,
+          "pct_linear": 49.8,
+          "n_params": 0
+        },
+        "context_norm_only": {
+          "name": "context_norm_only",
+          "accuracy": 0.7524,
+          "auc": 0.5223,
+          "pct_linear": 0.0,
+          "n_params": 2,
+          "direction_norm": 0.1124
+        },
+        "interaction": {
+          "name": "interaction",
+          "accuracy": 0.7308,
+          "auc": 0.5679,
+          "pct_linear": 5.2,
+          "n_params": 1025,
+          "direction_norm": 0.8454
+        }
+      },
+      "correlations": {
+        "delta_vs_token_norm": 0.0218,
+        "delta_vs_context_norm": -0.0285,
+        "delta_vs_full_norm": -0.028,
+        "delta_vs_context_fraction": -0.0228,
+        "delta_vs_cos_ec": 0.0191
+      },
+      "routing_consistency": {
+        "most_consistent": [
+          {
+            "token": "eder",
+            "count": 5,
+            "mean_delta": 0.0017,
+            "var_delta": 0.0,
+            "cv": 1.01
+          },
+          {
+            "token": "ought",
+            "count": 6,
+            "mean_delta": 0.009,
+            "var_delta": 0.0001,
+            "cv": 1.22
+          },
+          {
+            "token": "isers",
+            "count": 11,
+            "mean_delta": 0.0042,
+            "var_delta": 0.0004,
+            "cv": 4.87
+          },
+          {
+            "token": "asts",
+            "count": 7,
+            "mean_delta": 0.0403,
+            "var_delta": 0.0006,
+            "cv": 0.62
+          },
+          {
+            "token": "zzle",
+            "count": 10,
+            "mean_delta": 0.0214,
+            "var_delta": 0.0011,
+            "cv": 1.54
+          },
+          {
+            "token": "ated",
+            "count": 8,
+            "mean_delta": -0.0093,
+            "var_delta": 0.0013,
+            "cv": 3.87
+          },
+          {
+            "token": "ling",
+            "count": 5,
+            "mean_delta": 0.0021,
+            "var_delta": 0.0014,
+            "cv": 17.55
+          },
+          {
+            "token": "S",
+            "count": 8,
+            "mean_delta": -0.0541,
+            "var_delta": 0.0028,
+            "cv": 0.98
+          },
+          {
+            "token": "ible",
+            "count": 8,
+            "mean_delta": 0.045,
+            "var_delta": 0.0041,
+            "cv": 1.42
+          },
+          {
+            "token": "lette",
+            "count": 5,
+            "mean_delta": 0.0078,
+            "var_delta": 0.0042,
+            "cv": 8.39
+          },
+          {
+            "token": "acy",
+            "count": 5,
+            "mean_delta": -0.0871,
+            "var_delta": 0.0049,
+            "cv": 0.8
+          },
+          {
+            "token": " full",
+            "count": 5,
+            "mean_delta": -0.0768,
+            "var_delta": 0.005,
+            "cv": 0.92
+          },
+          {
+            "token": " ]",
+            "count": 5,
+            "mean_delta": -0.0363,
+            "var_delta": 0.0051,
+            "cv": 1.96
+          },
+          {
+            "token": " 2014",
+            "count": 5,
+            "mean_delta": 0.0621,
+            "var_delta": 0.0051,
+            "cv": 1.15
+          },
+          {
+            "token": " 1862",
+            "count": 5,
+            "mean_delta": 0.06,
+            "var_delta": 0.0057,
+            "cv": 1.26
+          }
+        ],
+        "most_variable": [
+          {
+            "token": " community",
+            "count": 9,
+            "mean_delta": 0.7517,
+            "var_delta": 2.4081,
+            "cv": 2.06
+          },
+          {
+            "token": " Hampton",
+            "count": 5,
+            "mean_delta": 0.6248,
+            "var_delta": 1.9147,
+            "cv": 2.21
+          },
+          {
+            "token": " while",
+            "count": 22,
+            "mean_delta": 0.5018,
+            "var_delta": 1.8479,
+            "cv": 2.71
+          },
+          {
+            "token": " shot",
+            "count": 9,
+            "mean_delta": 0.8091,
+            "var_delta": 1.7837,
+            "cv": 1.65
+          },
+          {
+            "token": " until",
+            "count": 20,
+            "mean_delta": 0.1423,
+            "var_delta": 1.7142,
+            "cv": 9.2
+          },
+          {
+            "token": "oire",
+            "count": 10,
+            "mean_delta": 1.5758,
+            "var_delta": 1.6568,
+            "cv": 0.82
+          },
+          {
+            "token": " life",
+            "count": 12,
+            "mean_delta": 0.5961,
+            "var_delta": 1.6533,
+            "cv": 2.16
+          },
+          {
+            "token": " when",
+            "count": 17,
+            "mean_delta": 0.5626,
+            "var_delta": 1.6285,
+            "cv": 2.27
+          },
+          {
+            "token": " strategic",
+            "count": 5,
+            "mean_delta": 1.3024,
+            "var_delta": 1.41,
+            "cv": 0.91
+          },
+          {
+            "token": " mortar",
+            "count": 7,
+            "mean_delta": 0.272,
+            "var_delta": 1.4095,
+            "cv": 4.36
+          },
+          {
+            "token": " ever",
+            "count": 6,
+            "mean_delta": 0.228,
+            "var_delta": 1.3021,
+            "cv": 5.0
+          },
+          {
+            "token": " @",
+            "count": 276,
+            "mean_delta": -0.0726,
+            "var_delta": 1.2808,
+            "cv": 15.59
+          },
+          {
+            "token": " Confederate",
+            "count": 7,
+            "mean_delta": 0.5022,
+            "var_delta": 1.2423,
+            "cv": 2.22
+          },
+          {
+            "token": " alive",
+            "count": 7,
+            "mean_delta": 0.0222,
+            "var_delta": 1.2197,
+            "cv": 49.8
+          },
+          {
+            "token": " France",
+            "count": 15,
+            "mean_delta": 0.0428,
+            "var_delta": 1.2029,
+            "cv": 25.63
+          }
+        ],
+        "overall_mean_variance": 0.295085
+      },
+      "time_seconds": 73.1
+    }
+  ]
+}

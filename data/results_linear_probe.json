@@ -1,0 +1,111 @@
+{
+  "model": "gpt2-medium",
+  "n_tokens": 10000,
+  "layers": {
+    "3": {
+      "delta_method": {
+        "n_samples": 10000,
+        "class_balance": 0.501,
+        "majority_baseline_acc": 0.501375,
+        "linear_probe": {
+          "accuracy": 0.916,
+          "f1": 0.9147208121827411,
+          "auroc": 0.9731879731879731
+        },
+        "mlp_probe": {
+          "accuracy": 0.9235,
+          "f1": 0.9222955815134586,
+          "auroc": 0.9730714730714731
+        },
+        "nonlinear_advantage": {
+          "accuracy_delta": 0.007499999999999951,
+          "auroc_delta": -0.0001165001164999957
+        }
+      }
+    },
+    "10": {
+      "delta_method": {
+        "n_samples": 10000,
+        "class_balance": 0.5008,
+        "majority_baseline_acc": 0.503625,
+        "linear_probe": {
+          "accuracy": 0.8255,
+          "f1": 0.8209338122113905,
+          "auroc": 0.9064097266894701
+        },
+        "mlp_probe": {
+          "accuracy": 0.8175,
+          "f1": 0.8097967691505993,
+          "auroc": 0.9024344736028589
+        },
+        "nonlinear_advantage": {
+          "accuracy_delta": -0.008000000000000007,
+          "auroc_delta": -0.003975253086611175
+        }
+      }
+    },
+    "13": {
+      "delta_method": {
+        "n_samples": 10000,
+        "class_balance": 0.4999,
+        "majority_baseline_acc": 0.50075,
+        "linear_probe": {
+          "accuracy": 0.8255,
+          "f1": 0.8229325215626585,
+          "auroc": 0.908580714517863
+        },
+        "mlp_probe": {
+          "accuracy": 0.8245,
+          "f1": 0.8229954614220878,
+          "auroc": 0.9093722343058577
+        },
+        "nonlinear_advantage": {
+          "accuracy_delta": -0.0010000000000000009,
+          "auroc_delta": 0.0007915197879946323
+        }
+      }
+    },
+    "18": {
+      "delta_method": {
+        "n_samples": 10000,
+        "class_balance": 0.4977,
+        "majority_baseline_acc": 0.500875,
+        "linear_probe": {
+          "accuracy": 0.8515,
+          "f1": 0.8483920367534457,
+          "auroc": 0.9214372935642078
+        },
+        "mlp_probe": {
+          "accuracy": 0.8605,
+          "f1": 0.8575803981623277,
+          "auroc": 0.9319977980182164
+        },
+        "nonlinear_advantage": {
+          "accuracy_delta": 0.009000000000000008,
+          "auroc_delta": 0.010560504454008579
+        }
+      }
+    },
+    "22": {
+      "delta_method": {
+        "n_samples": 10000,
+        "class_balance": 0.5008,
+        "majority_baseline_acc": 0.50225,
+        "linear_probe": {
+          "accuracy": 0.872,
+          "f1": 0.873767258382643,
+          "auroc": 0.9541419999919947
+        },
+        "mlp_probe": {
+          "accuracy": 0.899,
+          "f1": 0.8996023856858847,
+          "auroc": 0.9706711737134303
+        },
+        "nonlinear_advantage": {
+          "accuracy_delta": 0.027000000000000024,
+          "auroc_delta": 0.016529173721435586
+        }
+      }
+    }
+  }
+}

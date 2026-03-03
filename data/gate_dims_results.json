@@ -1,0 +1,2972 @@
+{
+  "layer_2": {
+    "effective_rank": 6,
+    "singular_values": [
+      10.313054084777832,
+      3.7991530895233154,
+      2.6920182704925537,
+      2.1379313468933105,
+      1.8910421133041382,
+      1.5929813385009766,
+      1.2646197080612183,
+      1.2261569499969482,
+      0.9846673607826233,
+      0.852188766002655,
+      0.7911896705627441,
+      0.7535897493362427,
+      0.7345444560050964,
+      0.6910638809204102,
+      0.6751654148101807,
+      0.6610852479934692
+    ],
+    "directions": [
+      {
+        "dim": 0,
+        "singular_value": 10.313054084777832,
+        "corr_with_loss_delta": 0.1318,
+        "top_tokens": [
+          {
+            "token": " coin",
+            "proj": 1.133,
+            "delta": -0.051
+          },
+          {
+            "token": " ep",
+            "proj": 1.107,
+            "delta": 0.222
+          },
+          {
+            "token": " coin",
+            "proj": 1.101,
+            "delta": 0.085
+          },
+          {
+            "token": " insurrection",
+            "proj": 1.087,
+            "delta": -0.057
+          },
+          {
+            "token": " occupied",
+            "proj": 1.081,
+            "delta": 0.011
+          },
+          {
+            "token": " succeeding",
+            "proj": 1.073,
+            "delta": 0.249
+          },
+          {
+            "token": " joined",
+            "proj": 1.072,
+            "delta": -0.375
+          },
+          {
+            "token": " coin",
+            "proj": 1.069,
+            "delta": 0.522
+          },
+          {
+            "token": " ep",
+            "proj": 1.063,
+            "delta": 0.226
+          },
+          {
+            "token": " coin",
+            "proj": 1.061,
+            "delta": 0.881
+          },
+          {
+            "token": " coin",
+            "proj": 1.059,
+            "delta": -0.729
+          },
+          {
+            "token": " joined",
+            "proj": 1.057,
+            "delta": -0.202
+          },
+          {
+            "token": " produced",
+            "proj": 1.054,
+            "delta": 0.163
+          },
+          {
+            "token": " meeting",
+            "proj": 1.048,
+            "delta": 0.058
+          },
+          {
+            "token": " coin",
+            "proj": 1.042,
+            "delta": -0.024
+          },
+          {
+            "token": " gathered",
+            "proj": 1.038,
+            "delta": 0.083
+          },
+          {
+            "token": " coin",
+            "proj": 1.033,
+            "delta": -0.007
+          },
+          {
+            "token": " survived",
+            "proj": 1.03,
+            "delta": 1.06
+          },
+          {
+            "token": " coin",
+            "proj": 1.025,
+            "delta": -0.251
+          },
+          {
+            "token": " until",
+            "proj": 1.025,
+            "delta": -0.081
+          }
+        ],
+        "bottom_tokens": [
+          {
+            "token": " 2",
+            "proj": -0.769,
+            "delta": -0.073
+          },
+          {
+            "token": " 2",
+            "proj": -0.718,
+            "delta": 0.295
+          },
+          {
+            "token": " 2",
+            "proj": -0.685,
+            "delta": -0.636
+          },
+          {
+            "token": " y",
+            "proj": -0.66,
+            "delta": -0.307
+          },
+          {
+            "token": " y",
+            "proj": -0.66,
+            "delta": -0.307
+          },
+          {
+            "token": " y",
+            "proj": -0.66,
+            "delta": -0.307
+          },
+          {
+            "token": "-",
+            "proj": -0.647,
+            "delta": -0.504
+          },
+          {
+            "token": " 3",
+            "proj": -0.631,
+            "delta": -0.102
+          },
+          {
+            "token": " 1",
+            "proj": -0.627,
+            "delta": 0.483
+          },
+          {
+            "token": " Types",
+            "proj": -0.623,
+            "delta": -1.173
+          },
+          {
+            "token": " 7",
+            "proj": -0.614,
+            "delta": -0.349
+          },
+          {
+            "token": " 3",
+            "proj": -0.611,
+            "delta": 0.049
+          },
+          {
+            "token": " y",
+            "proj": -0.611,
+            "delta": -0.044
+          },
+          {
+            "token": " types",
+            "proj": -0.61,
+            "delta": 0.055
+          },
+          {
+            "token": " 4",
+            "proj": -0.605,
+            "delta": 0.554
+          },
+          {
+            "token": " y",
+            "proj": -0.589,
+            "delta": -0.601
+          },
+          {
+            "token": " .",
+            "proj": -0.585,
+            "delta": -1.077
+          },
+          {
+            "token": " y",
+            "proj": -0.565,
+            "delta": -0.002
+          },
+          {
+            "token": " y",
+            "proj": -0.549,
+            "delta": -0.311
+          },
+          {
+            "token": " .",
+            "proj": -0.549,
+            "delta": 0.165
+          }
+        ],
+        "corr_position": 0.4424,
+        "corr_log_frequency": -0.0587,
+        "corr_capitalized": -0.156,
+        "corr_punctuation": -0.2287,
+        "corr_subword": 0.0018,
+        "corr_token_length": 0.1032,
+        "corr_norm": -0.3348,
+        "corr_kurtosis": -0.2632,
+        "top_mlp_neurons": [
+          3034,
+          281,
+          1686,
+          248,
+          1153,
+          2903,
+          500,
+          2769,
+          308,
+          97
+        ],
+        "top_neuron_alignments": [
+          -1.4488921165466309,
+          -0.6732478737831116,
+          -0.6250545382499695,
+          -0.6106666922569275,
+          -0.5850864052772522,
+          -0.5799658894538879,
+          -0.5794466733932495,
+          -0.5619705319404602,
+          -0.5608313679695129,
+          -0.5604419708251953
+        ],
+        "top_embedding_tokens": [
+          "elsen",
+          " confess",
+          "\u30c6\u30a3",
+          "yss",
+          " Boe",
+          "otal",
+          " Clause",
+          " \u300c",
+          "orno",
+          "amn"
+        ],
+        "bottom_embedding_tokens": [
+          "FTWARE",
+          "TEXTURE",
+          "Listener",
+          " Dynamics",
+          "Interested",
+          "leans",
+          "\u0650",
+          " \ufffd",
+          " Bounce",
+          "2200"
+        ],
+        "positional_embedding_corr": -0.4826,
+        "positional_embedding_variance": 0.0095,
+        "quartile_analysis": {
+          "high": {
+            "freq": 0.006,
+            "cap": 0.048,
+            "subword": 0.149,
+            "punct": 0.083,
+            "loss_delta": 0.0896
+          },
+          "low": {
+            "freq": 0.009,
+            "cap": 0.156,
+            "subword": 0.154,
+            "punct": 0.268,
+            "loss_delta": -0.0372
+          }
+        }
+      },
+      {
+        "dim": 1,
+        "singular_value": 3.7991530895233154,
+        "corr_with_loss_delta": 0.0014,
+        "top_tokens": [
+          {
+            "token": " Book",
+            "proj": -0.945,
+            "delta": 0.63
+          },
+          {
+            "token": " Once",
+            "proj": -0.949,
+            "delta": -0.647
+          },
+          {
+            "token": "acre",
+            "proj": -0.963,
+            "delta": 0.272
+          },
+          {
+            "token": " 31",
+            "proj": -0.97,
+            "delta": -0.044
+          },
+          {
+            "token": "ate",
+            "proj": -0.97,
+            "delta": -0.538
+          },
+          {
+            "token": " Guide",
+            "proj": -0.977,
+            "delta": -0.77
+          },
+          {
+            "token": "ness",
+            "proj": -0.982,
+            "delta": -0.371
+          },
+          {
+            "token": " suddenly",
+            "proj": -0.986,
+            "delta": 0.165
+          },
+          {
+            "token": " Normally",
+            "proj": -0.995,
+            "delta": -0.029
+          },
+          {
+            "token": " \"",
+            "proj": -1.008,
+            "delta": 0.071
+          },
+          {
+            "token": "age",
+            "proj": -1.011,
+            "delta": -0.101
+          },
+          {
+            "token": "ed",
+            "proj": -1.016,
+            "delta": -0.917
+          },
+          {
+            "token": " ;",
+            "proj": -1.017,
+            "delta": 0.926
+          },
+          {
+            "token": " circle",
+            "proj": -1.019,
+            "delta": -0.831
+          },
+          {
+            "token": " ;",
+            "proj": -1.023,
+            "delta": -0.042
+          },
+          {
+            "token": " ,",
+            "proj": -1.025,
+            "delta": 0.075
+          },
+          {
+            "token": " '",
+            "proj": -1.025,
+            "delta": -0.014
+          },
+          {
+            "token": " ,",
+            "proj": -1.033,
+            "delta": 0.592
+          },
+          {
+            "token": " use",
+            "proj": -1.034,
+            "delta": 0.135
+          },
+          {
+            "token": " seeking",
+            "proj": -1.034,
+            "delta": 0.124
+          }
+        ],
+        "bottom_tokens": [
+          {
+            "token": " de",
+            "proj": -2.421,
+            "delta": -0.227
+          },
+          {
+            "token": " al",
+            "proj": -2.37,
+            "delta": -0.03
+          },
+          {
+            "token": "\u00e1",
+            "proj": -2.366,
+            "delta": 0.045
+          },
+          {
+            "token": "\u00e1",
+            "proj": -2.366,
+            "delta": 0.111
+          },
+          {
+            "token": "ulf",
+            "proj": -2.36,
+            "delta": -1.288
+          },
+          {
+            "token": " de",
+            "proj": -2.354,
+            "delta": 0.849
+          },
+          {
+            "token": " sulf",
+            "proj": -2.347,
+            "delta": 0.726
+          },
+          {
+            "token": "\u00e1",
+            "proj": -2.341,
+            "delta": 0.145
+          },
+          {
+            "token": "\u00e1",
+            "proj": -2.324,
+            "delta": 0.001
+          },
+          {
+            "token": "\u00f1",
+            "proj": -2.316,
+            "delta": -1.611
+          },
+          {
+            "token": " y",
+            "proj": -2.311,
+            "delta": -0.311
+          },
+          {
+            "token": "ulf",
+            "proj": -2.303,
+            "delta": -1.639
+          },
+          {
+            "token": " y",
+            "proj": -2.294,
+            "delta": -0.601
+          },
+          {
+            "token": " sulf",
+            "proj": -2.274,
+            "delta": -0.405
+          },
+          {
+            "token": " re",
+            "proj": -2.273,
+            "delta": -0.381
+          },
+          {
+            "token": " methyl",
+            "proj": -2.265,
+            "delta": -0.593
+          },
+          {
+            "token": " sulf",
+            "proj": -2.264,
+            "delta": 0.089
+          },
+          {
+            "token": "ulf",
+            "proj": -2.257,
+            "delta": 0.288
+          },
+          {
+            "token": " de",
+            "proj": -2.256,
+            "delta": 0.611
+          },
+          {
+            "token": " sulf",
+            "proj": -2.256,
+            "delta": 0.685
+          }
+        ],
+        "corr_position": 0.6222,
+        "corr_log_frequency": -0.0557,
+        "corr_capitalized": 0.0191,
+        "corr_punctuation": 0.0656,
+        "corr_subword": -0.0576,
+        "corr_token_length": 0.1787,
+        "corr_norm": -0.1976,
+        "corr_kurtosis": -0.1484,
+        "top_mlp_neurons": [
+          3034,
+          954,
+          2720,
+          983,
+          2703,
+          814,
+          1312,
+          2027,
+          849,
+          1393
+        ],
+        "top_neuron_alignments": [
+          2.808706045150757,
+          1.3173285722732544,
+          1.315300703048706,
+          1.185160517692566,
+          1.1563334465026855,
+          1.1478990316390991,
+          1.133444905281067,
+          1.1038670539855957,
+          1.0564240217208862,
+          1.0259921550750732
+        ],
+        "top_embedding_tokens": [
+          "leep",
+          "\u30fc\u30c6\u30a3",
+          "\u30ef\u30f3",
+          "guyen",
+          " advoc",
+          " Rober",
+          "laughs",
+          "itialized",
+          "soDeliveryDate",
+          " experien"
+        ],
+        "bottom_embedding_tokens": [
+          "uro",
+          "min",
+          " ext",
+          " formation",
+          " cell",
+          "rate",
+          " al",
+          " their",
+          " excess",
+          "ce"
+        ],
+        "positional_embedding_corr": 0.9064,
+        "positional_embedding_variance": 0.1241,
+        "quartile_analysis": {
+          "high": {
+            "freq": 0.007,
+            "cap": 0.108,
+            "subword": 0.151,
+            "punct": 0.183,
+            "loss_delta": 0.0504
+          },
+          "low": {
+            "freq": 0.01,
+            "cap": 0.102,
+            "subword": 0.207,
+            "punct": 0.129,
+            "loss_delta": 0.0394
+          }
+        }
+      },
+      {
+        "dim": 2,
+        "singular_value": 2.6920182704925537,
+        "corr_with_loss_delta": 0.0347,
+        "top_tokens": [
+          {
+            "token": " Lim",
+            "proj": 1.115,
+            "delta": 0.064
+          },
+          {
+            "token": " Lim",
+            "proj": 0.916,
+            "delta": -0.77
+          },
+          {
+            "token": " Lim",
+            "proj": 0.874,
+            "delta": 0.017
+          },
+          {
+            "token": "kov",
+            "proj": 0.871,
+            "delta": -0.059
+          },
+          {
+            "token": " Lim",
+            "proj": 0.861,
+            "delta": -0.806
+          },
+          {
+            "token": " Lim",
+            "proj": 0.86,
+            "delta": -0.284
+          },
+          {
+            "token": " Lim",
+            "proj": 0.855,
+            "delta": -0.608
+          },
+          {
+            "token": "kov",
+            "proj": 0.831,
+            "delta": 0.006
+          },
+          {
+            "token": "kov",
+            "proj": 0.829,
+            "delta": 0.232
+          },
+          {
+            "token": "kov",
+            "proj": 0.804,
+            "delta": 1.497
+          },
+          {
+            "token": "ide",
+            "proj": 0.792,
+            "delta": -1.172
+          },
+          {
+            "token": "ide",
+            "proj": 0.792,
+            "delta": -1.172
+          },
+          {
+            "token": "ide",
+            "proj": 0.792,
+            "delta": -1.172
+          },
+          {
+            "token": "ero",
+            "proj": 0.792,
+            "delta": 0.009
+          },
+          {
+            "token": "kov",
+            "proj": 0.786,
+            "delta": 0.003
+          },
+          {
+            "token": "kov",
+            "proj": 0.784,
+            "delta": 1.163
+          },
+          {
+            "token": "ero",
+            "proj": 0.776,
+            "delta": -0.294
+          },
+          {
+            "token": "kov",
+            "proj": 0.768,
+            "delta": 0.011
+          },
+          {
+            "token": "ero",
+            "proj": 0.759,
+            "delta": -0.584
+          },
+          {
+            "token": "kov",
+            "proj": 0.754,
+            "delta": 0.333
+          }
+        ],
+        "bottom_tokens": [
+          {
+            "token": " y",
+            "proj": -1.652,
+            "delta": -0.228
+          },
+          {
+            "token": " y",
+            "proj": -1.645,
+            "delta": -0.733
+          },
+          {
+            "token": " y",
+            "proj": -1.642,
+            "delta": -0.382
+          },
+          {
+            "token": " y",
+            "proj": -1.59,
+            "delta": -0.164
+          },
+          {
+            "token": " y",
+            "proj": -1.564,
+            "delta": 0.628
+          },
+          {
+            "token": " y",
+            "proj": -1.56,
+            "delta": -0.13
+          },
+          {
+            "token": " y",
+            "proj": -1.518,
+            "delta": -1.239
+          },
+          {
+            "token": " y",
+            "proj": -1.507,
+            "delta": -0.956
+          },
+          {
+            "token": " y",
+            "proj": -1.477,
+            "delta": -0.632
+          },
+          {
+            "token": " y",
+            "proj": -1.46,
+            "delta": -0.422
+          },
+          {
+            "token": " y",
+            "proj": -1.444,
+            "delta": -0.949
+          },
+          {
+            "token": " y",
+            "proj": -1.438,
+            "delta": -0.404
+          },
+          {
+            "token": " y",
+            "proj": -1.416,
+            "delta": -0.004
+          },
+          {
+            "token": " y",
+            "proj": -1.415,
+            "delta": 0.016
+          },
+          {
+            "token": " 1",
+            "proj": -1.408,
+            "delta": -1.491
+          },
+          {
+            "token": " y",
+            "proj": -1.403,
+            "delta": 0.159
+          },
+          {
+            "token": " y",
+            "proj": -1.398,
+            "delta": 0.012
+          },
+          {
+            "token": " y",
+            "proj": -1.383,
+            "delta": 0.05
+          },
+          {
+            "token": " 1",
+            "proj": -1.369,
+            "delta": -0.319
+          },
+          {
+            "token": " 1",
+            "proj": -1.365,
+            "delta": -0.388
+          }
+        ],
+        "corr_position": 0.2198,
+        "corr_log_frequency": 0.0477,
+        "corr_capitalized": -0.0418,
+        "corr_punctuation": -0.2583,
+        "corr_subword": 0.1022,
+        "corr_token_length": 0.1893,
+        "corr_norm": -0.2393,
+        "corr_kurtosis": -0.1044,
+        "top_mlp_neurons": [
+          3034,
+          1773,
+          1341,
+          2459,
+          1169,
+          1060,
+          2152,
+          117,
+          1220,
+          2617
+        ],
+        "top_neuron_alignments": [
+          0.9164004325866699,
+          0.539393961429596,
+          -0.5187219381332397,
+          -0.5017275810241699,
+          0.4957228899002075,
+          -0.4816911816596985,
+          -0.4487432837486267,
+          -0.44836339354515076,
+          -0.44231972098350525,
+          -0.4418446719646454
+        ],
+        "top_embedding_tokens": [
+          "ulic",
+          "borgh",
+          "kov",
+          "egal",
+          "jriwal",
+          " turb",
+          "eport",
+          " Lumpur",
+          "alde",
+          "\u306e\ufffd"
+        ],
+        "bottom_embedding_tokens": [
+          "st",
+          "strap",
+          "size",
+          "click",
+          "stop",
+          "Cor",
+          "worthy",
+          " Peb",
+          "comes",
+          "some"
+        ],
+        "positional_embedding_corr": 0.1302,
+        "positional_embedding_variance": 0.0346,
+        "quartile_analysis": {
+          "high": {
+            "freq": 0.012,
+            "cap": 0.098,
+            "subword": 0.223,
+            "punct": 0.108,
+            "loss_delta": 0.0302
+          },
+          "low": {
+            "freq": 0.007,
+            "cap": 0.138,
+            "subword": 0.146,
+            "punct": 0.246,
+            "loss_delta": 0.0444
+          }
+        }
+      },
+      {
+        "dim": 3,
+        "singular_value": 2.1379313468933105,
+        "corr_with_loss_delta": -0.0143,
+        "top_tokens": [
+          {
+            "token": "l",
+            "proj": 1.973,
+            "delta": 0.049
+          },
+          {
+            "token": "l",
+            "proj": 1.973,
+            "delta": 0.049
+          },
+          {
+            "token": "l",
+            "proj": 1.973,
+            "delta": 0.049
+          },
+          {
+            "token": "l",
+            "proj": 1.834,
+            "delta": -0.216
+          },
+          {
+            "token": "l",
+            "proj": 1.799,
+            "delta": -0.168
+          },
+          {
+            "token": "l",
+            "proj": 1.743,
+            "delta": -0.954
+          },
+          {
+            "token": "l",
+            "proj": 1.703,
+            "delta": -0.678
+          },
+          {
+            "token": "l",
+            "proj": 1.67,
+            "delta": -0.807
+          },
+          {
+            "token": "l",
+            "proj": 1.598,
+            "delta": 0.465
+          },
+          {
+            "token": "l",
+            "proj": 1.573,
+            "delta": -0.577
+          },
+          {
+            "token": " Lim",
+            "proj": 1.491,
+            "delta": -0.608
+          },
+          {
+            "token": "l",
+            "proj": 1.477,
+            "delta": -0.29
+          },
+          {
+            "token": "l",
+            "proj": 1.462,
+            "delta": 0.474
+          },
+          {
+            "token": "l",
+            "proj": 1.45,
+            "delta": 0.859
+          },
+          {
+            "token": "\u00f1",
+            "proj": 1.406,
+            "delta": -1.611
+          },
+          {
+            "token": "l",
+            "proj": 1.382,
+            "delta": -1.511
+          },
+          {
+            "token": "l",
+            "proj": 1.365,
+            "delta": -0.283
+          },
+          {
+            "token": "l",
+            "proj": 1.347,
+            "delta": 0.278
+          },
+          {
+            "token": " Lim",
+            "proj": 1.337,
+            "delta": -0.284
+          },
+          {
+            "token": "l",
+            "proj": 1.333,
+            "delta": -0.537
+          }
+        ],
+        "bottom_tokens": [
+          {
+            "token": " high",
+            "proj": -1.272,
+            "delta": -1.933
+          },
+          {
+            "token": " Type",
+            "proj": -1.251,
+            "delta": -0.129
+          },
+          {
+            "token": " Type",
+            "proj": -1.243,
+            "delta": 0.027
+          },
+          {
+            "token": " rate",
+            "proj": -1.225,
+            "delta": -0.488
+          },
+          {
+            "token": " types",
+            "proj": -1.215,
+            "delta": -0.192
+          },
+          {
+            "token": " Type",
+            "proj": -1.211,
+            "delta": 0.049
+          },
+          {
+            "token": " dollar",
+            "proj": -1.194,
+            "delta": -0.0
+          },
+          {
+            "token": " Type",
+            "proj": -1.187,
+            "delta": 0.051
+          },
+          {
+            "token": " dollar",
+            "proj": -1.169,
+            "delta": -0.091
+          },
+          {
+            "token": " rate",
+            "proj": -1.168,
+            "delta": -0.651
+          },
+          {
+            "token": " Type",
+            "proj": -1.167,
+            "delta": 0.093
+          },
+          {
+            "token": " high",
+            "proj": -1.166,
+            "delta": -0.723
+          },
+          {
+            "token": " rates",
+            "proj": -1.161,
+            "delta": 0.316
+          },
+          {
+            "token": " dollar",
+            "proj": -1.149,
+            "delta": -0.81
+          },
+          {
+            "token": " dollar",
+            "proj": -1.13,
+            "delta": -1.511
+          },
+          {
+            "token": " dollar",
+            "proj": -1.128,
+            "delta": 0.078
+          },
+          {
+            "token": " high",
+            "proj": -1.122,
+            "delta": 0.054
+          },
+          {
+            "token": " dollar",
+            "proj": -1.119,
+            "delta": 0.067
+          },
+          {
+            "token": " example",
+            "proj": -1.118,
+            "delta": -0.997
+          },
+          {
+            "token": " Type",
+            "proj": -1.112,
+            "delta": -0.171
+          }
+        ],
+        "corr_position": -0.453,
+        "corr_log_frequency": 0.0064,
+        "corr_capitalized": 0.0434,
+        "corr_punctuation": 0.0962,
+        "corr_subword": 0.2376,
+        "corr_token_length": -0.107,
+        "corr_norm": 0.3345,
+        "corr_kurtosis": 0.2209,
+        "top_mlp_neurons": [
+          3034,
+          1825,
+          1179,
+          1820,
+          1404,
+          2769,
+          2542,
+          1989,
+          2443,
+          1508
+        ],
+        "top_neuron_alignments": [
+          -1.688156247138977,
+          -0.8273612260818481,
+          0.5793893933296204,
+          0.5182308554649353,
+          -0.49244168400764465,
+          -0.488553911447525,
+          0.46912530064582825,
+          -0.46240711212158203,
+          -0.45413726568222046,
+          -0.44065093994140625
+        ],
+        "top_embedding_tokens": [
+          "pard",
+          "mer",
+          "rief",
+          " Rosenstein",
+          "ove",
+          " externalToEVAOnly",
+          "displayText",
+          "itte",
+          "olulu",
+          "oves"
+        ],
+        "bottom_embedding_tokens": [
+          "urat",
+          " notch",
+          " ante",
+          " digit",
+          "cliffe",
+          " multiply",
+          "ressing",
+          " VC",
+          " unidentified",
+          " Variable"
+        ],
+        "positional_embedding_corr": -0.023,
+        "positional_embedding_variance": 0.0152,
+        "quartile_analysis": {
+          "high": {
+            "freq": 0.007,
+            "cap": 0.133,
+            "subword": 0.29,
+            "punct": 0.166,
+            "loss_delta": 0.0387
+          },
+          "low": {
+            "freq": 0.004,
+            "cap": 0.127,
+            "subword": 0.089,
+            "punct": 0.05,
+            "loss_delta": 0.0501
+          }
+        }
+      },
+      {
+        "dim": 4,
+        "singular_value": 1.8910421133041382,
+        "corr_with_loss_delta": 0.0093,
+        "top_tokens": [
+          {
+            "token": " Ll",
+            "proj": 1.716,
+            "delta": 0.544
+          },
+          {
+            "token": " gold",
+            "proj": 1.598,
+            "delta": 0.19
+          },
+          {
+            "token": " gold",
+            "proj": 1.597,
+            "delta": -0.051
+          },
+          {
+            "token": " gold",
+            "proj": 1.597,
+            "delta": -0.051
+          },
+          {
+            "token": " Poll",
+            "proj": 1.533,
+            "delta": 0.539
+          },
+          {
+            "token": " Feast",
+            "proj": 1.514,
+            "delta": 0.177
+          },
+          {
+            "token": " Feast",
+            "proj": 1.514,
+            "delta": 0.177
+          },
+          {
+            "token": " Feast",
+            "proj": 1.514,
+            "delta": 0.177
+          },
+          {
+            "token": " Ll",
+            "proj": 1.501,
+            "delta": 0.848
+          },
+          {
+            "token": " records",
+            "proj": 1.454,
+            "delta": 0.143
+          },
+          {
+            "token": " Act",
+            "proj": 1.445,
+            "delta": 0.088
+          },
+          {
+            "token": " types",
+            "proj": 1.402,
+            "delta": 0.055
+          },
+          {
+            "token": " dollar",
+            "proj": 1.396,
+            "delta": 0.25
+          },
+          {
+            "token": " dollar",
+            "proj": 1.396,
+            "delta": 0.379
+          },
+          {
+            "token": " Type",
+            "proj": 1.377,
+            "delta": 0.158
+          },
+          {
+            "token": " Type",
+            "proj": 1.377,
+            "delta": 0.242
+          },
+          {
+            "token": " Guerrero",
+            "proj": 1.373,
+            "delta": 0.636
+          },
+          {
+            "token": " Treaty",
+            "proj": 1.368,
+            "delta": -0.32
+          },
+          {
+            "token": " Johnson",
+            "proj": 1.351,
+            "delta": -0.151
+          },
+          {
+            "token": " treaty",
+            "proj": 1.322,
+            "delta": 0.599
+          }
+        ],
+        "bottom_tokens": [
+          {
+            "token": " re",
+            "proj": -0.827,
+            "delta": -0.418
+          },
+          {
+            "token": " re",
+            "proj": -0.808,
+            "delta": 0.607
+          },
+          {
+            "token": " re",
+            "proj": -0.785,
+            "delta": -0.208
+          },
+          {
+            "token": " sto",
+            "proj": -0.782,
+            "delta": 0.392
+          },
+          {
+            "token": " prohib",
+            "proj": -0.761,
+            "delta": 0.0
+          },
+          {
+            "token": " \"",
+            "proj": -0.754,
+            "delta": -0.685
+          },
+          {
+            "token": " re",
+            "proj": -0.754,
+            "delta": -0.982
+          },
+          {
+            "token": " re",
+            "proj": -0.751,
+            "delta": 0.064
+          },
+          {
+            "token": " re",
+            "proj": -0.746,
+            "delta": 0.033
+          },
+          {
+            "token": " re",
+            "proj": -0.745,
+            "delta": -0.007
+          },
+          {
+            "token": " re",
+            "proj": -0.742,
+            "delta": 0.097
+          },
+          {
+            "token": " re",
+            "proj": -0.734,
+            "delta": 0.443
+          },
+          {
+            "token": " \"",
+            "proj": -0.724,
+            "delta": -0.912
+          },
+          {
+            "token": " re",
+            "proj": -0.718,
+            "delta": 0.076
+          },
+          {
+            "token": " re",
+            "proj": -0.707,
+            "delta": 0.056
+          },
+          {
+            "token": " prohib",
+            "proj": -0.705,
+            "delta": 0.002
+          },
+          {
+            "token": " upper",
+            "proj": -0.693,
+            "delta": -0.29
+          },
+          {
+            "token": " re",
+            "proj": -0.678,
+            "delta": -0.042
+          },
+          {
+            "token": " re",
+            "proj": -0.678,
+            "delta": 0.217
+          },
+          {
+            "token": " \"",
+            "proj": -0.676,
+            "delta": -1.009
+          }
+        ],
+        "corr_position": 0.0735,
+        "corr_log_frequency": -0.4506,
+        "corr_capitalized": 0.207,
+        "corr_punctuation": -0.2902,
+        "corr_subword": 0.1754,
+        "corr_token_length": 0.3022,
+        "corr_norm": 0.0521,
+        "corr_kurtosis": -0.2629,
+        "top_mlp_neurons": [
+          3034,
+          1825,
+          2134,
+          666,
+          1773,
+          928,
+          926,
+          2720,
+          1718,
+          2245
+        ],
+        "top_neuron_alignments": [
+          -1.3998069763183594,
+          -0.9962530136108398,
+          -0.7748301029205322,
+          -0.6453845500946045,
+          -0.5445113778114319,
+          -0.5333210229873657,
+          -0.531208336353302,
+          0.5221931338310242,
+          -0.5033837556838989,
+          -0.4926200211048126
+        ],
+        "top_embedding_tokens": [
+          "elf",
+          "coin",
+          "coins",
+          "mania",
+          "sworth",
+          "reys",
+          "worms",
+          "oyd",
+          " Coffin",
+          " Holder"
+        ],
+        "bottom_embedding_tokens": [
+          "\u30cb",
+          "aternal",
+          "\u2550\u2550",
+          "values",
+          "-+",
+          "ample",
+          "shr",
+          "exist",
+          " contiguous",
+          "ceived"
+        ],
+        "positional_embedding_corr": 0.1102,
+        "positional_embedding_variance": 0.0572,
+        "quartile_analysis": {
+          "high": {
+            "freq": 0.001,
+            "cap": 0.199,
+            "subword": 0.247,
+            "punct": 0.019,
+            "loss_delta": 0.0496
+          },
+          "low": {
+            "freq": 0.019,
+            "cap": 0.056,
+            "subword": 0.052,
+            "punct": 0.293,
+            "loss_delta": 0.04
+          }
+        }
+      },
+      {
+        "dim": 5,
+        "singular_value": 1.5929813385009766,
+        "corr_with_loss_delta": 0.0007,
+        "top_tokens": [
+          {
+            "token": " Lim",
+            "proj": 2.003,
+            "delta": -0.608
+          },
+          {
+            "token": " Lim",
+            "proj": 1.924,
+            "delta": -0.284
+          },
+          {
+            "token": " Lim",
+            "proj": 1.881,
+            "delta": -0.806
+          },
+          {
+            "token": " Lim",
+            "proj": 1.85,
+            "delta": 0.017
+          },
+          {
+            "token": " Lim",
+            "proj": 1.8,
+            "delta": -0.77
+          },
+          {
+            "token": " Lim",
+            "proj": 1.537,
+            "delta": 0.064
+          },
+          {
+            "token": " (",
+            "proj": 1.477,
+            "delta": -0.219
+          },
+          {
+            "token": " (",
+            "proj": 1.46,
+            "delta": -0.23
+          },
+          {
+            "token": " (",
+            "proj": 1.459,
+            "delta": -0.376
+          },
+          {
+            "token": " (",
+            "proj": 1.44,
+            "delta": -0.603
+          },
+          {
+            "token": " Mad",
+            "proj": 1.399,
+            "delta": 0.062
+          },
+          {
+            "token": " (",
+            "proj": 1.393,
+            "delta": 0.029
+          },
+          {
+            "token": " \"",
+            "proj": 1.38,
+            "delta": -1.009
+          },
+          {
+            "token": " (",
+            "proj": 1.376,
+            "delta": 0.826
+          },
+          {
+            "token": " (",
+            "proj": 1.373,
+            "delta": -0.412
+          },
+          {
+            "token": " (",
+            "proj": 1.369,
+            "delta": 0.026
+          },
+          {
+            "token": " (",
+            "proj": 1.352,
+            "delta": 0.438
+          },
+          {
+            "token": " (",
+            "proj": 1.349,
+            "delta": -0.44
+          },
+          {
+            "token": " \"",
+            "proj": 1.341,
+            "delta": -0.685
+          },
+          {
+            "token": " Mad",
+            "proj": 1.337,
+            "delta": -0.109
+          }
+        ],
+        "bottom_tokens": [
+          {
+            "token": " y",
+            "proj": -1.373,
+            "delta": -0.307
+          },
+          {
+            "token": " y",
+            "proj": -1.373,
+            "delta": -0.307
+          },
+          {
+            "token": " y",
+            "proj": -1.373,
+            "delta": -0.307
+          },
+          {
+            "token": " y",
+            "proj": -1.333,
+            "delta": -0.002
+          },
+          {
+            "token": " y",
+            "proj": -1.316,
+            "delta": 0.159
+          },
+          {
+            "token": " y",
+            "proj": -1.294,
+            "delta": -0.404
+          },
+          {
+            "token": " y",
+            "proj": -1.281,
+            "delta": -0.018
+          },
+          {
+            "token": " y",
+            "proj": -1.265,
+            "delta": -0.601
+          },
+          {
+            "token": " y",
+            "proj": -1.259,
+            "delta": -0.311
+          },
+          {
+            "token": " y",
+            "proj": -1.241,
+            "delta": -0.044
+          },
+          {
+            "token": " y",
+            "proj": -1.202,
+            "delta": 0.05
+          },
+          {
+            "token": " y",
+            "proj": -1.197,
+            "delta": -1.239
+          },
+          {
+            "token": " y",
+            "proj": -1.152,
+            "delta": -0.956
+          },
+          {
+            "token": " y",
+            "proj": -1.124,
+            "delta": -0.632
+          },
+          {
+            "token": " y",
+            "proj": -1.082,
+            "delta": -0.004
+          },
+          {
+            "token": " y",
+            "proj": -1.06,
+            "delta": -0.382
+          },
+          {
+            "token": " y",
+            "proj": -1.058,
+            "delta": -0.733
+          },
+          {
+            "token": " y",
+            "proj": -1.025,
+            "delta": -0.164
+          },
+          {
+            "token": " y",
+            "proj": -0.987,
+            "delta": -0.228
+          },
+          {
+            "token": " y",
+            "proj": -0.987,
+            "delta": -0.13
+          }
+        ],
+        "corr_position": -0.2642,
+        "corr_log_frequency": -0.1835,
+        "corr_capitalized": 0.1836,
+        "corr_punctuation": -0.0477,
+        "corr_subword": 0.1627,
+        "corr_token_length": -0.0397,
+        "corr_norm": 0.1418,
+        "corr_kurtosis": 0.0455,
+        "top_mlp_neurons": [
+          3034,
+          2562,
+          1703,
+          2419,
+          666,
+          2133,
+          2206,
+          1825,
+          1773,
+          1481
+        ],
+        "top_neuron_alignments": [
+          -1.2646032571792603,
+          -0.6853122115135193,
+          -0.5615071654319763,
+          -0.5578753352165222,
+          0.556809663772583,
+          -0.5518026947975159,
+          0.5506463646888733,
+          0.5286102294921875,
+          0.5250633358955383,
+          -0.5097988843917847
+        ],
+        "top_embedding_tokens": [
+          "itative",
+          "ban",
+          "\u00f3n",
+          "ocrat",
+          "note",
+          "Pal",
+          "vision",
+          "ness",
+          "ament",
+          "bred"
+        ],
+        "bottom_embedding_tokens": [
+          "estern",
+          " Flavoring",
+          "uka",
+          " Spice",
+          "icro",
+          "dds",
+          " Manson",
+          "asers",
+          "xf",
+          "uers"
+        ],
+        "positional_embedding_corr": -0.1419,
+        "positional_embedding_variance": 0.028,
+        "quartile_analysis": {
+          "high": {
+            "freq": 0.003,
+            "cap": 0.195,
+            "subword": 0.266,
+            "punct": 0.118,
+            "loss_delta": 0.0429
+          },
+          "low": {
+            "freq": 0.011,
+            "cap": 0.052,
+            "subword": 0.113,
+            "punct": 0.226,
+            "loss_delta": 0.0212
+          }
+        }
+      }
+    ],
+    "boundary": {
+      "linear_centroid": [
+        -0.18507824838161469,
+        -1.7969976663589478,
+        -0.30735674500465393,
+        0.15063558518886566,
+        0.09477309882640839,
+        0.1577790230512619
+      ],
+      "nonlinear_centroid": [
+        0.4527677893638611,
+        -1.6359142065048218,
+        -0.020514577627182007,
+        -0.1026419997215271,
+        0.020128704607486725,
+        0.1864171028137207
+      ],
+      "separation_vector": [
+        -0.637846052646637,
+        -0.16108345985412598,
+        -0.2868421673774719,
+        0.25327759981155396,
+        0.07464439421892166,
+        -0.0286380797624588
+      ],
+      "separation_norm": 0.7653,
+      "n_linear": 1127,
+      "n_nonlinear": 8873,
+      "top_separating_dims": [
+        0,
+        2,
+        3,
+        1,
+        4
+      ],
+      "dim_contributions": [
+        0.833507776260376,
+        0.3748320937156677,
+        0.33097147941589355,
+        0.2104964256286621,
+        0.09754184633493423
+      ],
+      "logistic_accuracy_in_subspace": 0.9926,
+      "logistic_weights": [
+        -19.448631125545194,
+        -0.22896590822421123,
+        0.23618088940661333,
+        0.06472492085542988,
+        0.23914473483496343,
+        0.5872808001317478
+      ]
+    }
+  },
+  "layer_11": {
+    "effective_rank": 4,
+    "singular_values": [
+      9.616388320922852,
+      3.263991594314575,
+      1.9237892627716064,
+      1.6720958948135376,
+      1.012312412261963,
+      0.7812256217002869,
+      0.7094816565513611,
+      0.6917228102684021,
+      0.6846734881401062,
+      0.6682631373405457,
+      0.6476752161979675,
+      0.6459517478942871,
+      0.6365428566932678,
+      0.6283143758773804,
+      0.6238894462585449,
+      0.6143549680709839
+    ],
+    "directions": [
+      {
+        "dim": 0,
+        "singular_value": 9.616388320922852,
+        "corr_with_loss_delta": -0.288,
+        "top_tokens": [
+          {
+            "token": " regime",
+            "proj": 1.24,
+            "delta": -0.987
+          },
+          {
+            "token": " occasions",
+            "proj": 1.181,
+            "delta": -1.285
+          },
+          {
+            "token": " name",
+            "proj": 1.139,
+            "delta": -1.308
+          },
+          {
+            "token": " 13",
+            "proj": 1.138,
+            "delta": 1.19
+          },
+          {
+            "token": "54",
+            "proj": 1.138,
+            "delta": -1.556
+          },
+          {
+            "token": " ",
+            "proj": 1.113,
+            "delta": -1.867
+          },
+          {
+            "token": " above",
+            "proj": 1.085,
+            "delta": -1.041
+          },
+          {
+            "token": " rise",
+            "proj": 1.074,
+            "delta": -1.256
+          },
+          {
+            "token": "agents",
+            "proj": 1.072,
+            "delta": -1.192
+          },
+          {
+            "token": " possible",
+            "proj": 1.066,
+            "delta": 0.006
+          },
+          {
+            "token": " record",
+            "proj": 1.065,
+            "delta": -0.845
+          },
+          {
+            "token": " period",
+            "proj": 1.062,
+            "delta": -1.793
+          },
+          {
+            "token": " 1",
+            "proj": 1.059,
+            "delta": -2.285
+          },
+          {
+            "token": " variety",
+            "proj": 1.051,
+            "delta": -0.676
+          },
+          {
+            "token": " government",
+            "proj": 1.048,
+            "delta": -2.66
+          },
+          {
+            "token": "49",
+            "proj": 1.041,
+            "delta": -0.991
+          },
+          {
+            "token": " sides",
+            "proj": 1.029,
+            "delta": -1.439
+          },
+          {
+            "token": " 99",
+            "proj": 1.022,
+            "delta": -2.648
+          },
+          {
+            "token": " research",
+            "proj": 1.013,
+            "delta": -1.945
+          },
+          {
+            "token": " ",
+            "proj": 1.005,
+            "delta": -1.917
+          }
+        ],
+        "bottom_tokens": [
+          {
+            "token": " )",
+            "proj": -2.355,
+            "delta": 1.321
+          },
+          {
+            "token": " ,",
+            "proj": -2.288,
+            "delta": 0.334
+          },
+          {
+            "token": " he",
+            "proj": -2.197,
+            "delta": 0.187
+          },
+          {
+            "token": " ,",
+            "proj": -2.171,
+            "delta": -0.012
+          },
+          {
+            "token": "ero",
+            "proj": -2.095,
+            "delta": 1.654
+          },
+          {
+            "token": " future",
+            "proj": -2.092,
+            "delta": 1.831
+          },
+          {
+            "token": " ,",
+            "proj": -2.085,
+            "delta": 0.702
+          },
+          {
+            "token": " they",
+            "proj": -2.083,
+            "delta": -0.05
+          },
+          {
+            "token": " also",
+            "proj": -2.045,
+            "delta": 0.461
+          },
+          {
+            "token": " to",
+            "proj": -2.037,
+            "delta": 1.327
+          },
+          {
+            "token": " it",
+            "proj": -2.012,
+            "delta": -0.285
+          },
+          {
+            "token": " gold",
+            "proj": -2.007,
+            "delta": 1.051
+          },
+          {
+            "token": "az",
+            "proj": -2.004,
+            "delta": 2.27
+          },
+          {
+            "token": "ero",
+            "proj": -2.003,
+            "delta": 0.391
+          },
+          {
+            "token": "ium",
+            "proj": -2.002,
+            "delta": 0.721
+          },
+          {
+            "token": " ,",
+            "proj": -2.002,
+            "delta": 2.755
+          },
+          {
+            "token": " Mint",
+            "proj": -2.0,
+            "delta": 1.724
+          },
+          {
+            "token": "ero",
+            "proj": -1.996,
+            "delta": 1.494
+          },
+          {
+            "token": " He",
+            "proj": -1.994,
+            "delta": -2.29
+          },
+          {
+            "token": " to",
+            "proj": -1.991,
+            "delta": 2.21
+          }
+        ],
+        "corr_position": -0.1554,
+        "corr_log_frequency": -0.1961,
+        "corr_capitalized": 0.0627,
+        "corr_punctuation": 0.0573,
+        "corr_subword": 0.0275,
+        "corr_token_length": 0.1358,
+        "corr_norm": -0.154,
+        "corr_kurtosis": 0.0128,
+        "top_mlp_neurons": [
+          1623,
+          2378,
+          2328,
+          214,
+          2256,
+          2462,
+          1611,
+          1632,
+          2377,
+          26
+        ],
+        "top_neuron_alignments": [
+          1.272213339805603,
+          1.1197848320007324,
+          -0.7934842705726624,
+          0.7160717844963074,
+          0.7035523653030396,
+          -0.6491788625717163,
+          -0.6257368922233582,
+          0.6250068545341492,
+          0.6192859411239624,
+          0.6163932085037231
+        ],
+        "top_embedding_tokens": [
+          "CTV",
+          "SEE",
+          " tatt",
+          " DVDs",
+          "Untitled",
+          ".",
+          " contrace",
+          "CDC",
+          "Twe",
+          "flix"
+        ],
+        "bottom_embedding_tokens": [
+          "anian",
+          "zan",
+          "ility",
+          "rior",
+          "Mat",
+          "hiro",
+          "iating",
+          "pher",
+          "ivating",
+          "oslav"
+        ],
+        "positional_embedding_corr": 0.505,
+        "positional_embedding_variance": 0.0083,
+        "quartile_analysis": {
+          "high": {
+            "freq": 0.004,
+            "cap": 0.15,
+            "subword": 0.167,
+            "punct": 0.153,
+            "loss_delta": 0.0295
+          },
+          "low": {
+            "freq": 0.012,
+            "cap": 0.071,
+            "subword": 0.13,
+            "punct": 0.061,
+            "loss_delta": 0.8127
+          }
+        }
+      },
+      {
+        "dim": 1,
+        "singular_value": 3.263991594314575,
+        "corr_with_loss_delta": 0.0853,
+        "top_tokens": [
+          {
+            "token": " of",
+            "proj": -0.308,
+            "delta": -1.115
+          },
+          {
+            "token": " to",
+            "proj": -0.313,
+            "delta": 0.643
+          },
+          {
+            "token": " Flying",
+            "proj": -0.363,
+            "delta": 0.554
+          },
+          {
+            "token": " for",
+            "proj": -0.392,
+            "delta": 0.141
+          },
+          {
+            "token": " =",
+            "proj": -0.396,
+            "delta": -1.116
+          },
+          {
+            "token": " to",
+            "proj": -0.438,
+            "delta": 1.598
+          },
+          {
+            "token": "ching",
+            "proj": -0.458,
+            "delta": -1.56
+          },
+          {
+            "token": " =",
+            "proj": -0.462,
+            "delta": -2.379
+          },
+          {
+            "token": " the",
+            "proj": -0.468,
+            "delta": 0.112
+          },
+          {
+            "token": "vation",
+            "proj": -0.528,
+            "delta": 0.507
+          },
+          {
+            "token": " =",
+            "proj": -0.528,
+            "delta": -0.297
+          },
+          {
+            "token": " =",
+            "proj": -0.54,
+            "delta": 0.164
+          },
+          {
+            "token": " =",
+            "proj": -0.561,
+            "delta": -1.874
+          },
+          {
+            "token": "aly",
+            "proj": -0.562,
+            "delta": -2.455
+          },
+          {
+            "token": " the",
+            "proj": -0.565,
+            "delta": 0.855
+          },
+          {
+            "token": "tic",
+            "proj": -0.578,
+            "delta": 2.219
+          },
+          {
+            "token": " of",
+            "proj": -0.579,
+            "delta": 0.346
+          },
+          {
+            "token": " on",
+            "proj": -0.583,
+            "delta": -0.156
+          },
+          {
+            "token": " a",
+            "proj": -0.586,
+            "delta": 0.235
+          },
+          {
+            "token": " =",
+            "proj": -0.594,
+            "delta": -1.726
+          }
+        ],
+        "bottom_tokens": [
+          {
+            "token": "74",
+            "proj": -3.833,
+            "delta": -0.197
+          },
+          {
+            "token": " volatile",
+            "proj": -3.729,
+            "delta": -1.069
+          },
+          {
+            "token": "ids",
+            "proj": -3.693,
+            "delta": -1.242
+          },
+          {
+            "token": " end",
+            "proj": -3.642,
+            "delta": 2.439
+          },
+          {
+            "token": "73",
+            "proj": -3.629,
+            "delta": 0.191
+          },
+          {
+            "token": "ters",
+            "proj": -3.623,
+            "delta": -0.277
+          },
+          {
+            "token": " dollar",
+            "proj": -3.531,
+            "delta": -0.537
+          },
+          {
+            "token": "oros",
+            "proj": -3.529,
+            "delta": 0.445
+          },
+          {
+            "token": "ides",
+            "proj": -3.508,
+            "delta": -0.382
+          },
+          {
+            "token": "a",
+            "proj": -3.505,
+            "delta": 2.465
+          },
+          {
+            "token": "orous",
+            "proj": -3.503,
+            "delta": 1.099
+          },
+          {
+            "token": " however",
+            "proj": -3.492,
+            "delta": -0.757
+          },
+          {
+            "token": " dollar",
+            "proj": -3.488,
+            "delta": -1.46
+          },
+          {
+            "token": "rez",
+            "proj": -3.477,
+            "delta": -0.91
+          },
+          {
+            "token": "55",
+            "proj": -3.473,
+            "delta": -0.516
+          },
+          {
+            "token": "49",
+            "proj": -3.467,
+            "delta": -0.199
+          },
+          {
+            "token": "es",
+            "proj": -3.462,
+            "delta": 1.584
+          },
+          {
+            "token": " struck",
+            "proj": -3.45,
+            "delta": 0.874
+          },
+          {
+            "token": " dollar",
+            "proj": -3.446,
+            "delta": 3.229
+          },
+          {
+            "token": " century",
+            "proj": -3.445,
+            "delta": -0.415
+          }
+        ],
+        "corr_position": -0.3266,
+        "corr_log_frequency": 0.056,
+        "corr_capitalized": 0.1254,
+        "corr_punctuation": -0.0426,
+        "corr_subword": -0.1567,
+        "corr_token_length": -0.0782,
+        "corr_norm": -0.4978,
+        "corr_kurtosis": 0.2928,
+        "top_mlp_neurons": [
+          2378,
+          1623,
+          3029,
+          611,
+          2679,
+          2910,
+          737,
+          43,
+          2921,
+          2044
+        ],
+        "top_neuron_alignments": [
+          3.9341204166412354,
+          2.361278533935547,
+          2.0531129837036133,
+          1.8080347776412964,
+          1.6784054040908813,
+          -1.6747808456420898,
+          1.5557225942611694,
+          1.4451724290847778,
+          1.0767145156860352,
+          -1.0323469638824463
+        ],
+        "top_embedding_tokens": [
+          " ensu",
+          " mathemat",
+          "bnb",
+          "yip",
+          " nodd",
+          " answ",
+          "PDATE",
+          " livest",
+          " treadmill",
+          " blat"
+        ],
+        "bottom_embedding_tokens": [
+          "\ufffd",
+          "\u00e1n",
+          "icular",
+          "\u00ed",
+          "\u00e9s",
+          "osa",
+          " ,",
+          "\u00e9",
+          "iment",
+          "eral"
+        ],
+        "positional_embedding_corr": 0.3358,
+        "positional_embedding_variance": 0.0128,
+        "quartile_analysis": {
+          "high": {
+            "freq": 0.008,
+            "cap": 0.146,
+            "subword": 0.123,
+            "punct": 0.112,
+            "loss_delta": 0.6063
+          },
+          "low": {
+            "freq": 0.007,
+            "cap": 0.063,
+            "subword": 0.255,
+            "punct": 0.171,
+            "loss_delta": 0.2773
+          }
+        }
+      },
+      {
+        "dim": 2,
+        "singular_value": 1.9237892627716064,
+        "corr_with_loss_delta": 0.0832,
+        "top_tokens": [
+          {
+            "token": " such",
+            "proj": 2.161,
+            "delta": -0.589
+          },
+          {
+            "token": " dollar",
+            "proj": 1.767,
+            "delta": -0.537
+          },
+          {
+            "token": " liberties",
+            "proj": 1.731,
+            "delta": -2.251
+          },
+          {
+            "token": " century",
+            "proj": 1.718,
+            "delta": -0.415
+          },
+          {
+            "token": "est",
+            "proj": 1.707,
+            "delta": -1.516
+          },
+          {
+            "token": " exclusively",
+            "proj": 1.702,
+            "delta": 0.3
+          },
+          {
+            "token": " circulation",
+            "proj": 1.687,
+            "delta": -1.911
+          },
+          {
+            "token": " jewelry",
+            "proj": 1.638,
+            "delta": -1.647
+          },
+          {
+            "token": " used",
+            "proj": 1.611,
+            "delta": 0.56
+          },
+          {
+            "token": " \"",
+            "proj": 1.593,
+            "delta": 1.302
+          },
+          {
+            "token": "ide",
+            "proj": 1.568,
+            "delta": -0.461
+          },
+          {
+            "token": "ime",
+            "proj": 1.564,
+            "delta": 1.273
+          },
+          {
+            "token": "oros",
+            "proj": 1.562,
+            "delta": 0.445
+          },
+          {
+            "token": " small",
+            "proj": 1.559,
+            "delta": 0.716
+          },
+          {
+            "token": "est",
+            "proj": 1.559,
+            "delta": -1.928
+          },
+          {
+            "token": " corn",
+            "proj": 1.553,
+            "delta": -0.734
+          },
+          {
+            "token": " preserved",
+            "proj": 1.552,
+            "delta": -1.583
+          },
+          {
+            "token": " circulated",
+            "proj": 1.546,
+            "delta": 0.887
+          },
+          {
+            "token": "ters",
+            "proj": 1.542,
+            "delta": -0.277
+          },
+          {
+            "token": " part",
+            "proj": 1.524,
+            "delta": -2.431
+          }
+        ],
+        "bottom_tokens": [
+          {
+            "token": " ",
+            "proj": -3.658,
+            "delta": -2.296
+          },
+          {
+            "token": " ",
+            "proj": -3.604,
+            "delta": -2.384
+          },
+          {
+            "token": " ",
+            "proj": -3.583,
+            "delta": -2.229
+          },
+          {
+            "token": " ",
+            "proj": -3.553,
+            "delta": -2.417
+          },
+          {
+            "token": " ",
+            "proj": -3.547,
+            "delta": -2.45
+          },
+          {
+            "token": " ",
+            "proj": -3.524,
+            "delta": -2.642
+          },
+          {
+            "token": " ",
+            "proj": -3.515,
+            "delta": -1.889
+          },
+          {
+            "token": " ",
+            "proj": -3.51,
+            "delta": -1.733
+          },
+          {
+            "token": " ",
+            "proj": -3.51,
+            "delta": -1.717
+          },
+          {
+            "token": " ",
+            "proj": -3.493,
+            "delta": -2.186
+          },
+          {
+            "token": " ",
+            "proj": -3.485,
+            "delta": -2.378
+          },
+          {
+            "token": " ",
+            "proj": -3.468,
+            "delta": -1.877
+          },
+          {
+            "token": " ",
+            "proj": -3.466,
+            "delta": -2.1
+          },
+          {
+            "token": " ",
+            "proj": -3.442,
+            "delta": -2.339
+          },
+          {
+            "token": " ",
+            "proj": -3.426,
+            "delta": -2.185
+          },
+          {
+            "token": " ",
+            "proj": -3.424,
+            "delta": -2.503
+          },
+          {
+            "token": " ",
+            "proj": -3.416,
+            "delta": -2.063
+          },
+          {
+            "token": " ",
+            "proj": -3.415,
+            "delta": -1.599
+          },
+          {
+            "token": " ",
+            "proj": -3.411,
+            "delta": -2.216
+          },
+          {
+            "token": " ",
+            "proj": -3.409,
+            "delta": -1.765
+          }
+        ],
+        "corr_position": 0.2224,
+        "corr_log_frequency": 0.0531,
+        "corr_capitalized": -0.0777,
+        "corr_punctuation": 0.0586,
+        "corr_subword": 0.0265,
+        "corr_token_length": 0.1065,
+        "corr_norm": 0.1577,
+        "corr_kurtosis": 0.0037,
+        "top_mlp_neurons": [
+          2592,
+          802,
+          946,
+          3039,
+          2654,
+          316,
+          8,
+          1276,
+          290,
+          341
+        ],
+        "top_neuron_alignments": [
+          -0.857114315032959,
+          0.5224182605743408,
+          0.472145676612854,
+          0.46908366680145264,
+          0.46291622519493103,
+          0.4424302279949188,
+          0.42555490136146545,
+          0.42319855093955994,
+          0.4095577299594879,
+          0.3999629318714142
+        ],
+        "top_embedding_tokens": [
+          "agy",
+          "oult",
+          "issan",
+          "assetsadobe",
+          "ombie",
+          " ,",
+          "bidden",
+          "aque",
+          "shown",
+          " Haas"
+        ],
+        "bottom_embedding_tokens": [
+          "\u3010",
+          "\u300e",
+          "\u2011",
+          "------------------------",
+          "--------------",
+          "\u4f5c",
+          "________________",
+          "________",
+          "\ufffd",
+          " hotline"
+        ],
+        "positional_embedding_corr": -0.6165,
+        "positional_embedding_variance": 0.0141,
+        "quartile_analysis": {
+          "high": {
+            "freq": 0.009,
+            "cap": 0.052,
+            "subword": 0.146,
+            "punct": 0.133,
+            "loss_delta": 0.451
+          },
+          "low": {
+            "freq": 0.006,
+            "cap": 0.13,
+            "subword": 0.15,
+            "punct": 0.092,
+            "loss_delta": 0.4162
+          }
+        }
+      },
+      {
+        "dim": 3,
+        "singular_value": 1.6720958948135376,
+        "corr_with_loss_delta": 0.0114,
+        "top_tokens": [
+          {
+            "token": " president",
+            "proj": 2.518,
+            "delta": 0.333
+          },
+          {
+            "token": " government",
+            "proj": 2.371,
+            "delta": -2.66
+          },
+          {
+            "token": " president",
+            "proj": 2.36,
+            "delta": -2.299
+          },
+          {
+            "token": " years",
+            "proj": 2.298,
+            "delta": 0.961
+          },
+          {
+            "token": " regime",
+            "proj": 2.192,
+            "delta": -0.987
+          },
+          {
+            "token": " matter",
+            "proj": 2.19,
+            "delta": -1.615
+          },
+          {
+            "token": " rise",
+            "proj": 2.175,
+            "delta": -1.256
+          },
+          {
+            "token": "49",
+            "proj": 2.167,
+            "delta": -0.991
+          },
+          {
+            "token": " soldiers",
+            "proj": 2.154,
+            "delta": -0.898
+          },
+          {
+            "token": " soldiers",
+            "proj": 2.148,
+            "delta": 0.881
+          },
+          {
+            "token": " offices",
+            "proj": 2.146,
+            "delta": -1.892
+          },
+          {
+            "token": "54",
+            "proj": 2.146,
+            "delta": -1.659
+          },
+          {
+            "token": " each",
+            "proj": 2.065,
+            "delta": -1.299
+          },
+          {
+            "token": " troops",
+            "proj": 2.029,
+            "delta": 1.062
+          },
+          {
+            "token": "54",
+            "proj": 2.024,
+            "delta": -1.556
+          },
+          {
+            "token": " possible",
+            "proj": 2.012,
+            "delta": -1.736
+          },
+          {
+            "token": " sides",
+            "proj": 2.012,
+            "delta": -1.439
+          },
+          {
+            "token": " president",
+            "proj": 2.007,
+            "delta": -1.736
+          },
+          {
+            "token": " 1910",
+            "proj": 1.995,
+            "delta": -3.267
+          },
+          {
+            "token": "ings",
+            "proj": 1.976,
+            "delta": -3.051
+          }
+        ],
+        "bottom_tokens": [
+          {
+            "token": " ",
+            "proj": -4.703,
+            "delta": -1.613
+          },
+          {
+            "token": " ",
+            "proj": -4.641,
+            "delta": -0.286
+          },
+          {
+            "token": " ",
+            "proj": -4.572,
+            "delta": -1.288
+          },
+          {
+            "token": " ",
+            "proj": -4.565,
+            "delta": -1.08
+          },
+          {
+            "token": " ",
+            "proj": -4.555,
+            "delta": -1.166
+          },
+          {
+            "token": " ",
+            "proj": -4.55,
+            "delta": -1.411
+          },
+          {
+            "token": " ",
+            "proj": -4.546,
+            "delta": -1.889
+          },
+          {
+            "token": " ",
+            "proj": -4.545,
+            "delta": -0.746
+          },
+          {
+            "token": " ",
+            "proj": -4.544,
+            "delta": -1.755
+          },
+          {
+            "token": " ",
+            "proj": -4.527,
+            "delta": -1.385
+          },
+          {
+            "token": " ",
+            "proj": -4.516,
+            "delta": -0.918
+          },
+          {
+            "token": " ",
+            "proj": -4.51,
+            "delta": -0.801
+          },
+          {
+            "token": " ",
+            "proj": -4.492,
+            "delta": -1.867
+          },
+          {
+            "token": " ",
+            "proj": -4.488,
+            "delta": -0.804
+          },
+          {
+            "token": " ",
+            "proj": -4.475,
+            "delta": -2.488
+          },
+          {
+            "token": " ",
+            "proj": -4.458,
+            "delta": -1.346
+          },
+          {
+            "token": " ",
+            "proj": -4.452,
+            "delta": -0.05
+          },
+          {
+            "token": " ",
+            "proj": -4.44,
+            "delta": -1.24
+          },
+          {
+            "token": " ",
+            "proj": -4.436,
+            "delta": -1.492
+          },
+          {
+            "token": " ",
+            "proj": -4.427,
+            "delta": -1.667
+          }
+        ],
+        "corr_position": 0.0121,
+        "corr_log_frequency": -0.2296,
+        "corr_capitalized": 0.0073,
+        "corr_punctuation": -0.2443,
+        "corr_subword": 0.1302,
+        "corr_token_length": 0.3664,
+        "corr_norm": 0.145,
+        "corr_kurtosis": -0.072,
+        "top_mlp_neurons": [
+          2378,
+          2679,
+          2592,
+          2824,
+          640,
+          177,
+          896,
+          43,
+          3020,
+          2328
+        ],
+        "top_neuron_alignments": [
+          -1.3720200061798096,
+          -0.8562679290771484,
+          -0.814324140548706,
+          0.6059595346450806,
+          0.5643705129623413,
+          -0.5597705841064453,
+          0.5209261178970337,
+          0.5174403786659241,
+          -0.501282274723053,
+          -0.4940737783908844
+        ],
+        "top_embedding_tokens": [
+          "hens",
+          "aye",
+          "ele",
+          "minus",
+          ".",
+          "runners",
+          " whom",
+          "rity",
+          "caster",
+          " until"
+        ],
+        "bottom_embedding_tokens": [
+          "********",
+          "________________________________",
+          "~~~~~~~~",
+          "~~",
+          "arus",
+          "------------------------",
+          "_____",
+          " CONFIG",
+          "________________",
+          "************"
+        ],
+        "positional_embedding_corr": -0.6289,
+        "positional_embedding_variance": 0.0207,
+        "quartile_analysis": {
+          "high": {
+            "freq": 0.003,
+            "cap": 0.079,
+            "subword": 0.224,
+            "punct": 0.058,
+            "loss_delta": 0.276
+          },
+          "low": {
+            "freq": 0.015,
+            "cap": 0.104,
+            "subword": 0.084,
+            "punct": 0.305,
+            "loss_delta": 0.4466
+          }
+        }
+      }
+    ],
+    "boundary": {
+      "linear_centroid": [
+        0.35233521461486816,
+        -2.5128045082092285,
+        -0.27400869131088257,
+        0.32591599225997925
+      ],
+      "nonlinear_centroid": [
+        -0.9060380458831787,
+        -1.9601198434829712,
+        0.16985073685646057,
+        0.08773593604564667
+      ],
+      "separation_vector": [
+        1.2583732604980469,
+        -0.5526846647262573,
+        -0.44385942816734314,
+        0.23818005621433258
+      ],
+      "separation_norm": 1.4638,
+      "n_linear": 1002,
+      "n_nonlinear": 8998,
+      "top_separating_dims": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "dim_contributions": [
+        0.8596632480621338,
+        0.37756896018981934,
+        0.3032245337963104,
+        0.16271375119686127
+      ],
+      "logistic_accuracy_in_subspace": 0.9983,
+      "logistic_weights": [
+        14.175806450170139,
+        -0.5288305797334255,
+        0.14555998081708973,
+        0.24926133441615916
+      ]
+    }
+  }
+}

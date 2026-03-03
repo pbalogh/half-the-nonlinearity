@@ -1,0 +1,117 @@
+{
+  "model": "gpt2-medium",
+  "linear_layers": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "fit_tokens": 50000,
+  "train_corpus": "wikitext103_train_tokens.npy",
+  "train_corpus_size": 117920140,
+  "steps": 2000,
+  "tokens_seen": 512000,
+  "corpus_coverage_pct": 0.43419215750591883,
+  "lr": 2e-05,
+  "batch_size": 256,
+  "baseline": {
+    "wiki": 22.983386325605338,
+    "lambada": 40.421122269589645
+  },
+  "post_linearization": {
+    "wiki": 40.63739563918707,
+    "lambada": 107.80411914062277
+  },
+  "final": {
+    "wiki": 25.237295347247898,
+    "lambada": 80.52546656632416
+  },
+  "wiki_delta_pct": 9.80668814295448,
+  "lambada_delta_pct": 99.21630584439893,
+  "trajectory": [
+    {
+      "step": 200,
+      "wiki_ppl": 29.045006197031704,
+      "lambada_ppl": 94.93946439456629,
+      "wiki_delta": 26.373919776448414,
+      "lambada_delta": 134.87587445337428,
+      "train_pos": 51200
+    },
+    {
+      "step": 400,
+      "wiki_ppl": 28.211628279713377,
+      "lambada_ppl": 91.16904806822278,
+      "wiki_delta": 22.74791834431882,
+      "lambada_delta": 125.54803763282135,
+      "train_pos": 102400
+    },
+    {
+      "step": 600,
+      "wiki_ppl": 27.9069298776645,
+      "lambada_ppl": 92.32831466890357,
+      "wiki_delta": 21.42218506144997,
+      "lambada_delta": 128.4160099591438,
+      "train_pos": 153600
+    },
+    {
+      "step": 800,
+      "wiki_ppl": 27.13543984151858,
+      "lambada_ppl": 85.7221930718484,
+      "wiki_delta": 18.06545587795964,
+      "lambada_delta": 112.07276853948332,
+      "train_pos": 204800
+    },
+    {
+      "step": 1000,
+      "wiki_ppl": 26.30962474205097,
+      "lambada_ppl": 84.18346723947676,
+      "wiki_delta": 14.472360031384657,
+      "lambada_delta": 108.2660315020773,
+      "train_pos": 256000
+    },
+    {
+      "step": 1200,
+      "wiki_ppl": 26.256572381616945,
+      "lambada_ppl": 82.01638620981205,
+      "wiki_delta": 14.24153085903192,
+      "lambada_delta": 102.90477256618902,
+      "train_pos": 307200
+    },
+    {
+      "step": 1400,
+      "wiki_ppl": 25.465789228920467,
+      "lambada_ppl": 82.28989132856853,
+      "wiki_delta": 10.800857924706829,
+      "lambada_delta": 103.58141166822168,
+      "train_pos": 358400
+    },
+    {
+      "step": 1600,
+      "wiki_ppl": 25.324908172484466,
+      "lambada_ppl": 80.68096996749244,
+      "wiki_delta": 10.187888824156802,
+      "lambada_delta": 99.60101411679958,
+      "train_pos": 409600
+    },
+    {
+      "step": 1800,
+      "wiki_ppl": 25.271039808325888,
+      "lambada_ppl": 80.67669364856397,
+      "wiki_delta": 9.953509244944991,
+      "lambada_delta": 99.59043470017687,
+      "train_pos": 460800
+    },
+    {
+      "step": 2000,
+      "wiki_ppl": 25.237295347247898,
+      "lambada_ppl": 80.52546656632416,
+      "wiki_delta": 9.80668814295448,
+      "lambada_delta": 99.21630584439893,
+      "train_pos": 512000
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "baseline_ppl": 47.57,
+  "layer_2": [
+    {
+      "bottleneck": 0,
+      "params": 769,
+      "ppl": 47.57,
+      "delta_pct": 0.0,
+      "pct_linear": 0.0
+    },
+    {
+      "bottleneck": 1,
+      "params": 771,
+      "ppl": 47.47,
+      "delta_pct": -0.22,
+      "pct_linear": 6.4
+    },
+    {
+      "bottleneck": 2,
+      "params": 1541,
+      "ppl": 47.47,
+      "delta_pct": -0.21,
+      "pct_linear": 2.8
+    },
+    {
+      "bottleneck": 3,
+      "params": 2311,
+      "ppl": 47.34,
+      "delta_pct": -0.48,
+      "pct_linear": 6.8
+    },
+    {
+      "bottleneck": 4,
+      "params": 3081,
+      "ppl": 47.42,
+      "delta_pct": -0.32,
+      "pct_linear": 4.5
+    },
+    {
+      "bottleneck": 6,
+      "params": 4621,
+      "ppl": 47.31,
+      "delta_pct": -0.56,
+      "pct_linear": 4.8
+    },
+    {
+      "bottleneck": 8,
+      "params": 6161,
+      "ppl": 47.39,
+      "delta_pct": -0.39,
+      "pct_linear": 5.9
+    },
+    {
+      "bottleneck": 16,
+      "params": 12321,
+      "ppl": 47.31,
+      "delta_pct": -0.55,
+      "pct_linear": 5.4
+    },
+    {
+      "bottleneck": 32,
+      "params": 24641,
+      "ppl": 47.37,
+      "delta_pct": -0.42,
+      "pct_linear": 6.6
+    }
+  ],
+  "layer_11": [
+    {
+      "bottleneck": 0,
+      "params": 769,
+      "ppl": 46.4,
+      "delta_pct": -2.46,
+      "pct_linear": 5.8
+    },
+    {
+      "bottleneck": 1,
+      "params": 771,
+      "ppl": 46.31,
+      "delta_pct": -2.66,
+      "pct_linear": 6.4
+    },
+    {
+      "bottleneck": 2,
+      "params": 1541,
+      "ppl": 46.32,
+      "delta_pct": -2.63,
+      "pct_linear": 7.5
+    },
+    {
+      "bottleneck": 3,
+      "params": 2311,
+      "ppl": 46.29,
+      "delta_pct": -2.69,
+      "pct_linear": 7.7
+    },
+    {
+      "bottleneck": 4,
+      "params": 3081,
+      "ppl": 46.34,
+      "delta_pct": -2.6,
+      "pct_linear": 5.9
+    },
+    {
+      "bottleneck": 6,
+      "params": 4621,
+      "ppl": 46.34,
+      "delta_pct": -2.59,
+      "pct_linear": 6.7
+    },
+    {
+      "bottleneck": 8,
+      "params": 6161,
+      "ppl": 46.33,
+      "delta_pct": -2.61,
+      "pct_linear": 6.9
+    },
+    {
+      "bottleneck": 16,
+      "params": 12321,
+      "ppl": 46.3,
+      "delta_pct": -2.68,
+      "pct_linear": 6.7
+    },
+    {
+      "bottleneck": 32,
+      "params": 24641,
+      "ppl": 46.37,
+      "delta_pct": -2.53,
+      "pct_linear": 7.5
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "experiment": "control_finetune_no_linearization",
+  "model": "gpt2-medium",
+  "linear_layers": [],
+  "steps": 2000,
+  "lr": 2e-05,
+  "batch_size": 256,
+  "train_corpus_size": 117920140,
+  "baseline": {
+    "wiki": 22.983386325605338,
+    "lambada": 40.421122269589645
+  },
+  "final": {
+    "wiki": 18.248339557051274,
+    "lambada": 45.48734405407392
+  },
+  "wiki_delta_pct": -20.602041411447022,
+  "lambada_delta_pct": 12.533600009161026,
+  "trajectory": [
+    {
+      "step": 200,
+      "wiki_ppl": 19.543417992759682,
+      "lambada_ppl": 46.478751436970015,
+      "wiki_delta": -14.9671953649983,
+      "lambada_delta": 14.98629634026207
+    },
+    {
+      "step": 400,
+      "wiki_ppl": 19.583196165765177,
+      "lambada_ppl": 47.173220934249215,
+      "wiki_delta": -14.794121769828477,
+      "lambada_delta": 16.704381980357415
+    },
+    {
+      "step": 600,
+      "wiki_ppl": 19.567715481730733,
+      "lambada_ppl": 47.15065352143714,
+      "wiki_delta": -14.861477745206209,
+      "lambada_delta": 16.648551237555274
+    },
+    {
+      "step": 800,
+      "wiki_ppl": 19.157386419190722,
+      "lambada_ppl": 47.60093692049775,
+      "wiki_delta": -16.646806750805666,
+      "lambada_delta": 17.76253168584029
+    },
+    {
+      "step": 1000,
+      "wiki_ppl": 18.753533300805934,
+      "lambada_ppl": 46.519080057714625,
+      "wiki_delta": -18.403959124539483,
+      "lambada_delta": 15.086067495737757
+    },
+    {
+      "step": 1200,
+      "wiki_ppl": 18.96018160549473,
+      "lambada_ppl": 46.209981976628804,
+      "wiki_delta": -17.504838769683108,
+      "lambada_delta": 14.32137303964551
+    },
+    {
+      "step": 1400,
+      "wiki_ppl": 18.421528460086584,
+      "lambada_ppl": 46.140853553528196,
+      "wiki_delta": -19.848501873879556,
+      "lambada_delta": 14.150352495882387
+    },
+    {
+      "step": 1600,
+      "wiki_ppl": 18.404706000047987,
+      "lambada_ppl": 45.50808126947335,
+      "wiki_delta": -19.921695874973537,
+      "lambada_delta": 12.584902927623116
+    },
+    {
+      "step": 1800,
+      "wiki_ppl": 18.22327533328194,
+      "lambada_ppl": 45.39824765948351,
+      "wiki_delta": -20.71109507053037,
+      "lambada_delta": 12.313179621037749
+    },
+    {
+      "step": 2000,
+      "wiki_ppl": 18.248339557051274,
+      "lambada_ppl": 45.48734405407392,
+      "wiki_delta": -20.602041411447022,
+      "lambada_delta": 12.533600009161026
+    }
+  ]
+}

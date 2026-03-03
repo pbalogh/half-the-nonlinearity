@@ -1,0 +1,177 @@
+{
+  "model": "gpt2-medium",
+  "source_results": "phase2_gated_gpt2-medium.json",
+  "gate_threshold": 0.5,
+  "layer_threshold": 0.5,
+  "gated_layers": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "quality": {
+    "wiki_delta_pct": -17.346526893242366,
+    "lambada_delta_pct": 19.670935181607625
+  },
+  "gate_summary": {
+    "avg_gate": 0.3562944605946541,
+    "effective_linear_frac": 0.6437055394053459
+  },
+  "flops": {
+    "baseline": {
+      "total_flops_per_token": 503365632,
+      "mlp_flops_per_token": 402653184,
+      "description": "24 layers \u00d7 full MLP"
+    },
+    "hard_gate": {
+      "total_flops_per_token": 460101642.24,
+      "mlp_flops_per_token": 359389194.24,
+      "per_layer": {
+        "0": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "1": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "2": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "3": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "4": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "5": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "6": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "7": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "8": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "9": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "10": {
+          "frac_linear": 0.8508,
+          "mlp_flops": 4353017.5488,
+          "savings_vs_full": 0.7405399353027344
+        },
+        "11": {
+          "frac_linear": 0.7532,
+          "mlp_flops": 5785791.7952000005,
+          "savings_vs_full": 0.6551399353027343
+        },
+        "12": {
+          "frac_linear": 0.6392,
+          "mlp_flops": 7459319.0912,
+          "savings_vs_full": 0.5553899353027344
+        },
+        "13": {
+          "frac_linear": 0.7218,
+          "mlp_flops": 6246745.8048,
+          "savings_vs_full": 0.6276649353027344
+        },
+        "14": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "15": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "16": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "17": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "18": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "19": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "20": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "21": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "22": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        },
+        "23": {
+          "frac_linear": 0,
+          "mlp_flops": 16777216,
+          "savings_vs_full": 0
+        }
+      },
+      "total_savings_pct": 8.594943120788978,
+      "mlp_savings_pct": 10.744728088378908
+    }
+  },
+  "params": {
+    "baseline": {
+      "total_params": 354823168,
+      "description": "Original model"
+    },
+    "all_gated_linearized": {
+      "total_params": 354823168,
+      "linearized_params": 325446656,
+      "params_saved": 29376512,
+      "params_saved_pct": 8.279197822843406,
+      "n_linearized_layers": 4,
+      "description": "4 layers linearized"
+    },
+    "conservative_linearized": {
+      "total_params": 354823168,
+      "linearized_params": 325446656,
+      "params_saved": 29376512,
+      "params_saved_pct": 8.279197822843406,
+      "n_linearized_layers": 4,
+      "description": "4 layers linearized"
+    }
+  }
+}
