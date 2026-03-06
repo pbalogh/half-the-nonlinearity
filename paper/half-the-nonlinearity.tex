@@ -529,6 +529,8 @@ The GELU activation function is \textit{locally} approximately linear for the ma
 
 The deeper answer may be architectural. The residual connection means the MLP's output is \textit{added} to the input: $x + \mathrm{MLP}(x)$. If the MLP's contribution is small relative to the residual stream norm, then even a highly nonlinear MLP produces an approximately linear \textit{layer}. This explanation holds for middle layers but fails at Layer~0 of Pythia-2.8B, where something qualitatively different happens at the embedding-to-residual-stream boundary.
 
+Recent work provides a complementary perspective on the role of activation functions. \citet{teney2024neural} showed that activation functions are a primary determinant of a network's inductive biases, with even untrained random-weight networks exhibiting strong biases controlled by components like ReLUs and residual connections. \citet{teney2025simplicity} meta-learned activation functions tailored to specific tasks, finding that GeLUs/ReLUs are near-optimal for image classification but suboptimal for tabular data, regression, and algorithmic tasks. \citet{teney2025transformers} extended this to transformers, replacing GeLUs and softmax with parametrized splines optimized on held-out data, finding consistent improvements on language modeling---crucially, with the best architectures sometimes using \emph{different} learned activation functions in different layers. Our work is complementary: where Teney et al.\ ask ``what is the \emph{optimal} nonlinearity at each layer?'', we ask ``does this layer need nonlinearity \emph{at all}?'' Their finding that different layers benefit from different activation functions aligns with our finding that different layers need different \emph{amounts} of nonlinearity. A natural synthesis would use our gating framework to identify which layers and tokens need nonlinear computation, and learned activation functions to optimize the nonlinearity that remains.
+
 \subsection{Connections to Mixture of Experts}
 
 Our adaptive gating can be viewed as an extreme case of Mixture of Experts \citep{shazeer2017}: two experts (linear matrix and full MLP), with a $(d{+}1)$-parameter router. Unlike standard MoE, our experts are not learned jointly. This ``post-hoc MoE'' framing suggests that pretrained transformers already contain latent expert structure that can be exposed without retraining.
@@ -687,6 +689,21 @@ Tenney, I., Das, D., and Pavlick, E.
 Merity, S., Xiong, C., Bradbury, J., and Socher, R.
 \newblock Pointer sentinel mixture models.
 \newblock In \textit{Proceedings of ICLR}, 2017.
+
+\bibitem[Teney et~al.(2024)]{teney2024neural}
+Teney, D., Nicolicioiu, A.~M., Hartmann, V., and Abbasnejad, E.
+\newblock Neural Redshift: Random Networks are not Random Functions.
+\newblock In \textit{IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 2024.
+
+\bibitem[Teney et~al.(2025a)]{teney2025simplicity}
+Teney, D., Jiang, L., Gogianu, F., and Abbasnejad, E.
+\newblock Do We Always Need the Simplicity Bias? Looking for Optimal Inductive Biases in the Wild.
+\newblock In \textit{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 2025.
+
+\bibitem[Teney et~al.(2026)]{teney2025transformers}
+Teney, D., Jiang, L., Saratchandran, H., and Lucey, S.
+\newblock Can Transformers Really Do It All? On the Compatibility of Inductive Biases Across Tasks.
+\newblock In \textit{International Conference on Learning Representations (ICLR)}, 2026.
 
 \end{thebibliography}
 
